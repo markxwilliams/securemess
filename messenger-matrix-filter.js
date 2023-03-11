@@ -92,4 +92,13 @@
     setFilter(u.get('filter'));
   }
 
+  window.addFilter = options => {
+    if (!options.buttonContainer) {
+      throw new Error('options.buttonContainer missing');
+    }
+
+    document.body.insertBefore(form, table);
+    options.buttonContainer.appendChild(button(options.buttonLabel || 'filter'));
+  };
+
 })();
