@@ -2,38 +2,38 @@
 <html lang="de-DE">
 
 <head>
-	<meta charset="utf-8">
+	<meta charset="utf-8"/>
 	<title>Messenger-Matrix • Kuketz IT-Security Blog</title>
-	<meta name="description" content="Gegenüberstellung sicherheits- und datenschutzrelevanter Eigenschaften von Messengern">
-	<meta name="robots" content="index, follow">
+	<meta name="description" content="Gegenüberstellung sicherheits- und datenschutzrelevanter Eigenschaften von Messengern"/>	
+	<meta name="robots" content="index, follow"/>	
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="referrer" content="no-referrer">
-	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html">
-
+	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html"/> 	
+	
 	<style>
 		/* DEFAULTS */
 		html {
-			font-size: 16px;
+			font-size: 16px;			
 		}
 		body {
 			font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
 			font-size: 0.9rem;
 			padding: 0;
-			margin: 0;
-			background-color: #2F363D;
+			margin: 0;		
+			background-color: #2F363D;	
 		}
 		a {
 			color: #467AA3;
 			text-decoration: underline;
 		}
-
+		
 		/* TABLE */
-		table {
+		table {			
 			border-spacing: 0;
 			vertical-align: top;
 			text-align: center;
 		}
-		th, td {
+		th, td {	
 			padding: 10px 5px;
 		}
 		th, .sticky {
@@ -44,11 +44,11 @@
 			position: relative;
 			z-index: 10;
 		}
-		th {
+		th { 
 			top: 0;
 			background-color: #37474f;
 			color: #FFF;
-			font-weight: bold;
+			font-weight: bold;			
 			height: 60px;
 		}
 		th:first-child {
@@ -56,7 +56,7 @@
 			z-index: 2;
 		}
 		.sticky {
-			left: 0;
+			left: 0;  
 			z-index: 1;
 		}
 		tbody th {
@@ -66,9 +66,9 @@
 		}
 		tfoot {
 			height: 90px;
-		}
-
-		/* COLORS */
+		}	
+			
+		/* COLORS */	
 		.darkgrey {
 			background-color: #2F363D;
 			color: #FFF;
@@ -80,8 +80,8 @@
 		}
 		.green {
 			background-color: #DBEBA4;
-		}
-		.yellow {
+		}	
+		.yellow { 
 			background-color: #FFF17E;
 		}
 		.red {
@@ -99,47 +99,43 @@
 		.blue a {
 			color: #FFF;
 		}
-
+		
 		/* SORT JAVASCRIPT */
 		form {
 			color: #FFF;
 			background-color: #2F363D;
-			padding: 20px;
 		}
 		button {
-			width: 200px;
+			width: 150px;
 			height: 40px;
 			display: block;
 			border: none;
-			background: #628098;
+			background: #628098;  		
 			border-radius: 4px;
 			color: #FFF;
 			font-weight: bold;
 			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 			cursor: pointer;
-			text-align: center;
-			line-height: 40px;
-			vertical-align: middle;
-			margin-bottom: 10px;
+			margin: 0 auto;
 			font-size: 1.1rem;
 		}
 		input {
 			width: 15px;
 			height: 15px;
 			margin-right: 10px;
-		}
+		}			    
 		label {
 			display: block;
 			user-select: none;
 			height: 25px;
-		}
-		fieldset {
+		}	
+		fieldset {     
 			border: none;
-		}
+		} 
 		.hide {
 			display: none;
 		}
-		@media all and (max-width: 600px) {
+		@media all and (max-width: 600px) {	
 			input {
 				width: 20px;
 				height: 20px;
@@ -149,32 +145,14 @@
 				font-size: 1.3rem;
 			}
 		}
-		/* filter selects */
-		.feature-filter select {
-			background-color: #628098;
-			color: #ffffff;
-			border-radius: 4px;
-			font-weight: bold;
-			border: none;
-			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-			padding: .4rem;
-			margin-right: 1rem;
-		}
-		.highlight {
-			border-top: solid 2px red;
-			border-bottom: solid 2px red;
-		}
-		th.highlight {
-			color: red;
-		}
-	</style>
+	</style>	
 </head>
 
 <body>
 	<table>
 		<thead>
 			<tr>
-				<th>Messenger<br>Stand: 12.01.2023</th>
+				<th></th>
 				<th>Briar</th>
 				<th>Conversations <br>(XMPP)</th>
 				<th>Delta Chat</th>
@@ -868,7 +846,7 @@
 				<td class="red">nein</td>
 				<td class="yellow">eingeschränkt</td>
 			</tr>
-
+			
 		</tbody>
 		<tfoot>
 			<tr>
@@ -876,13 +854,13 @@
 				<td class="darkgrey" colspan="4"></td>
 				<td class="darkgrey" colspan="5">Blog: <a href="https://www.kuketz-blog.de/">www.kuketz-blog.de</a> | Forum: <a	href="https://www.kuketz-forum.de/">www.kuketz-forum.de</a></td>
 			</tr>
-		</tfoot>
+		</tfoot>		
 	</table>
-	<script src="messenger-matrix-feature-filter.js"></script>
+	<script src="messenger-matrix-filter.js"></script>
 	<script>
 		addFilter({
-			highlightClass: 'highlight',
-			hiddenClass: 'hide',
+			buttonContainer: document.querySelector('thead th:first-child'),
+			buttonLabel: 'Tabelle filtern',
 		});
 	</script>
 </body>
