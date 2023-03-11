@@ -13,7 +13,7 @@
 	<style>
 		/* DEFAULTS */
 		html {
-			font-size: calc(80% + 0.208333vw);
+			font-size: 16px;
 		}
 		body {
 			font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
@@ -867,6 +867,12 @@
 		</table>
 	</div>
 	<script src="messenger-matrix-filter.js"></script>
+	<script>
+		addFilter({
+			buttonContainer: document.querySelector('thead th:first-child'),
+			buttonLabel: 'Tabelle filtern',
+		});
+	</script>
 </body>
 
 </html>
