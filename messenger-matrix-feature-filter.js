@@ -15,15 +15,35 @@
     return [form, fieldset];
   };
 
-  const getFeatureRowCells = feature => {
+  const hightlightFeature = feature => {
+    Array.from(document.querySelectorAll('.highlight'))
+      .forEach(element => element.classList.remove('highlight'));
+    try {
+      const tr = getFeatureRow(feature);
+      Array.from(tr.cells)
+        .forEach(element => element.classList.add('highlight'));
+    } catch {
+    }
+  };
+
+  const getFeatureRow = feature => {
     const cell = getHeaderCells()
       .find(th => th.textContent === feature);
-    if (!cell) {
-      console.warn(`Kann ${feature} nicht finden.`);
+    if (cell) {
+      return cell.closest('tr');
+    }
+    throw new Error(`unknown feature ${feature}`);
+  };
+
+  const getFeatureRowCells = feature => {
+    try {
+      const tr = getFeatureRow(feature);
+      return Array.from(tr.cells)
+        .filter(cell => cell.tagName === 'TD');
+    } catch (e) {
+      console.error(e);
       return [];
     }
-    return Array.from(cell.closest('tr').cells)
-      .filter(cell => cell.tagName === 'TD');
   };
 
   const getValues = feature => {
@@ -34,6 +54,7 @@
   };
 
   const onChangeFeature = (feature, valueSelect) => {
+    hightlightFeature(feature);
     while (valueSelect.options.length) {
       valueSelect.options.remove(0);
     }
