@@ -69,16 +69,19 @@
   };
 
   const filterform = () => {
-    const button = dce('button');
     const form = dce('form');
-    const fieldset = dce('fieldset');  
+    const fieldset = dce('fieldset');
     fieldset.classList.add('hide');
-    button.addEventListener('click', evt => onClick(evt, fieldset));
-    button.textContent = 'Tabelle filtern';
-    button.setAttribute('type', 'button');
-    form.appendChild(button);
     form.appendChild(fieldset);
     return [form, fieldset];
+  };
+
+  const button = (label) => {
+    const button = dce('button');
+    button.addEventListener('click', evt => onClick(evt, fieldset));
+    button.textContent = label;
+    button.setAttribute('type', 'button');
+    return button;
   };
 
   const [form, fieldset] = filterform();
@@ -88,11 +91,17 @@
     .map(c => checkbox(c))
     .forEach(cb => fieldset.appendChild(cb));
 
-  document.body.insertBefore(form, table);
 
   const u = new URLSearchParams(window.location.search);
   if (u.get('filter')) {
     setFilter(u.get('filter'));
   }
+
+  window.addFilter = options => {
+    if (options.buttonContainer) {
+      document.body.insertBefore(form, table);
+      options.buttonContainer.appendChild(button(options.buttonLabel));
+    }
+  };
 
 })();
