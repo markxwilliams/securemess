@@ -99,7 +99,7 @@
 
   window.addFilter = options => {
     if (options.buttonContainer) {
-      document.body.insertBefore(form, table);
+      document.body.prepend(form);
       options.buttonContainer.appendChild(button(options.buttonLabel));
     }
   };
