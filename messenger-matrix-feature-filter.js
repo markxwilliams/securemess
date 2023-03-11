@@ -59,8 +59,8 @@
 
   const removeFilter = () => {
     removeHighlight();
-    Array.from(document.querySelectorAll('table .hide'))
-      .forEach(element => element.classList.remove('hide'));
+    Array.from(document.querySelectorAll(`table .${options.hiddenClass}`))
+      .forEach(element => element.classList.remove(options.hiddenClass));
   };
 
   const onChangeFeature = (feature, valueSelect) => {
@@ -94,10 +94,10 @@
       .forEach(tr => {
         Array.from(tr.cells)
           .slice(1)
-          .forEach((cell, idx) => cell.classList.toggle('hide', !idxs.includes(idx)));
+          .forEach((cell, idx) => cell.classList.toggle(options.hiddenClass, !idxs.includes(idx)));
       });
 
-    const len = document.querySelectorAll('thead th:not(:first-child):not(.hide)').length;
+    const len = document.querySelectorAll(`thead th:not(:first-child):not(.${options.hiddenClass})`).length;
     Array.from(document.querySelectorAll('tbody td[colspan]'))
       .forEach(td => td.setAttribute('colspan', len));
   };
@@ -134,4 +134,5 @@
 
 })({
   highlightClass: 'highlight',
+  hiddenClass: 'hide',
 });
