@@ -31,10 +31,7 @@
     if (isNaN(idx)) {
       return;
     }
-    Array.from(table.tHead.rows)
-      .filter(r => r.cells.length > 2)
-      .forEach(r => toggle(r, idx));
-    Array.from(table.tBodies[0].rows)
+    Array.from(table.rows)
       .filter(r => r.cells.length > 2)
       .forEach(r => toggle(r, idx));
 
@@ -69,19 +66,16 @@
   };
 
   const filterform = () => {
+    const button = dce('button');
     const form = dce('form');
-    const fieldset = dce('fieldset');
+    const fieldset = dce('fieldset');  
     fieldset.classList.add('hide');
+    button.addEventListener('click', evt => onClick(evt, fieldset));
+    button.textContent = 'Tabelle filtern';
+    button.setAttribute('type', 'button');
+    form.appendChild(button);
     form.appendChild(fieldset);
     return [form, fieldset];
-  };
-
-  const button = (label) => {
-    const button = dce('button');
-    button.addEventListener('click', evt => onClick(evt, fieldset));
-    button.textContent = label;
-    button.setAttribute('type', 'button');
-    return button;
   };
 
   const [form, fieldset] = filterform();
@@ -91,17 +85,11 @@
     .map(c => checkbox(c))
     .forEach(cb => fieldset.appendChild(cb));
 
+  document.body.prepend(form);
 
   const u = new URLSearchParams(window.location.search);
   if (u.get('filter')) {
     setFilter(u.get('filter'));
   }
-
-  window.addFilter = options => {
-    if (options.buttonContainer) {
-      document.body.prepend(form);
-      options.buttonContainer.appendChild(button(options.buttonLabel));
-    }
-  };
 
 })();
