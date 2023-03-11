@@ -4,37 +4,44 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>Messenger-Matrix • Kuketz IT-Security Blog</title>
-	<meta name="description" content="Gegenüberstellung sicherheits- und datenschutzrelevanter Eigenschaften von Messengern"/>	
-	<meta name="robots" content="index, follow"/>	
+	<meta name="description" content="Gegenüberstellung sicherheits- und datenschutzrelevanter Eigenschaften von Messengern"/>
+	<meta name="robots" content="index, follow"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="referrer" content="no-referrer">
-	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html"/> 	
-	
+	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html"/>
+
 	<style>
 		/* DEFAULTS */
 		html {
-			font-size: 16px;			
+			/* Respektiert die vom OS eingestellte Grösse und die view width anstatt fix auf 16px zu stellen*/
+			font-size: calc(80% + 0.208333vw);
 		}
 		body {
 			font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
 			font-size: 0.9rem;
 			padding: 0;
-			margin: 0;		
-			background-color: #2F363D;	
+			margin: 0;
+			background-color: #2F363D;
 		}
 		a {
 			color: #467AA3;
 			text-decoration: underline;
 		}
-		
+
+		.c-scroll-wrapper{
+			position: relative;
+			overflow: auto;
+			height: 100vh;
+		}
+
 		/* TABLE */
-		table {			
+		table {
 			border-spacing: 0;
 			vertical-align: top;
 			text-align: center;
 		}
-		th, td {	
-			padding: 10px 5px;
+		th, td {
+			padding: 0.7rem 0.5rem;
 		}
 		th, .sticky {
 			position: -webkit-sticky;
@@ -44,19 +51,19 @@
 			position: relative;
 			z-index: 10;
 		}
-		th { 
+		th {
 			top: 0;
 			background-color: #37474f;
 			color: #FFF;
-			font-weight: bold;			
-			height: 60px;
+			font-weight: bold;
+			min-height: 3rem;
 		}
 		th:first-child {
 			left: 0;
 			z-index: 2;
 		}
 		.sticky {
-			left: 0;  
+			left: 0;
 			z-index: 1;
 		}
 		tbody th {
@@ -65,23 +72,26 @@
 			font-weight: bold;
 		}
 		tfoot {
-			height: 90px;
-		}	
-			
-		/* COLORS */	
+			position: sticky;
+			bottom: 0;
+			z-index: 3;
+			height: 2rem;
+		}
+
+		/* COLORS */
 		.darkgrey {
 			background-color: #2F363D;
 			color: #FFF;
 			font-weight: bold;
-			height: 35px;
+			height: 2rem;
 		}
 		.darkgrey a {
 			color: #FFF;
 		}
 		.green {
 			background-color: #DBEBA4;
-		}	
-		.yellow { 
+		}
+		.yellow {
 			background-color: #FFF17E;
 		}
 		.red {
@@ -99,7 +109,7 @@
 		.blue a {
 			color: #FFF;
 		}
-		
+
 		/* SORT JAVASCRIPT */
 		form {
 			color: #FFF;
@@ -110,7 +120,7 @@
 			height: 40px;
 			display: block;
 			border: none;
-			background: #628098;  		
+			background: #628098;
 			border-radius: 4px;
 			color: #FFF;
 			font-weight: bold;
@@ -123,19 +133,19 @@
 			width: 15px;
 			height: 15px;
 			margin-right: 10px;
-		}			    
+		}
 		label {
 			display: block;
 			user-select: none;
 			height: 25px;
-		}	
-		fieldset {     
+		}
+		fieldset {
 			border: none;
-		} 
+		}
 		.hide {
 			display: none;
 		}
-		@media all and (max-width: 600px) {	
+		@media all and (max-width: 600px) {
 			input {
 				width: 20px;
 				height: 20px;
@@ -145,10 +155,11 @@
 				font-size: 1.3rem;
 			}
 		}
-	</style>	
+	</style>
 </head>
 
 <body>
+<section class="c-scroll-wrapper">
 	<table>
 		<thead>
 			<tr>
@@ -173,7 +184,7 @@
 		</thead>
 		<tbody>
 			<tr>
-				<th class="darkgrey sticky">Systemunterstützung</th>
+				<th class="darkgrey sticky">System&shy;unterstützung</th>
 				<td class="darkgrey" colspan="16"></td>
 			</tr>
 			<tr>
@@ -285,7 +296,7 @@
 				<td class="red">proprietär, unbekannt</td>
 				<td class="yellow">RSA-Keys (4096-Bit)</td>
 				<td class="green"><a href="https://de.wikipedia.org/wiki/Signal-Protokoll">Signal-Protokoll</a></td>
-				<td class="green">NaCl und weitere Verschlüsselungsprimitive (<a href="https://de.wikipedia.org/wiki/Signal-Protokoll">Signal-Protokoll</a>)</td>
+				<td class="green">NaCl und weitere Verschlüsselungs&shy;primitive (<a href="https://de.wikipedia.org/wiki/Signal-Protokoll">Signal-Protokoll</a>)</td>
 				<td class="green"><a href="https://de.m.wikipedia.org/wiki/Omemo">OMEMO</a> (<a	href="https://de.wikipedia.org/wiki/Signal-Protokoll">Signal-Protokoll</a>)</td>
 				<td class="orange">proprietär / Signal-Protokoll</td>
 				<td class="yellow"><a href="https://core.telegram.org/mtproto">MTProto 2.0</a></td>
@@ -314,7 +325,7 @@
 				<td class="green">ja</td>
 			</tr>
 			<tr>
-				<th>Lokale Nachrichtenverschlüsselung</th>
+				<th>Lokale Nachrichten&shy;verschlüsselung</th>
 				<td class="green">ja</td>
 				<td class="red">nein</td>
 				<td class="red">nein</td>
@@ -846,7 +857,7 @@
 				<td class="red">nein</td>
 				<td class="yellow">eingeschränkt</td>
 			</tr>
-			
+
 		</tbody>
 		<tfoot>
 			<tr>
@@ -854,8 +865,9 @@
 				<td class="darkgrey" colspan="4"></td>
 				<td class="darkgrey" colspan="5">Blog: <a href="https://www.kuketz-blog.de/">www.kuketz-blog.de</a> | Forum: <a	href="https://www.kuketz-forum.de/">www.kuketz-forum.de</a></td>
 			</tr>
-		</tfoot>		
+		</tfoot>
 	</table>
+</section>
 	<script src="messenger-matrix-filter.js"></script>
 	<script>
 		addFilter({
