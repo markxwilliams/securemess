@@ -15,9 +15,13 @@
     return [form, fieldset];
   };
 
-  const highlightFeature = feature => {
+  const removeHighlight = () => {
     Array.from(document.querySelectorAll(`.${options.highlightClass}`))
       .forEach(element => element.classList.remove(options.highlightClass));
+  };
+
+  const highlightFeature = feature => {
+    removeHighlight();
     try {
       const tr = getFeatureRow(feature);
       Array.from(tr.cells)
@@ -53,11 +57,21 @@
     return Array.from(new Set(values));
   };
 
+  const removeFilter = () => {
+    removeHighlight();
+    Array.from(document.querySelectorAll('table .hide'))
+      .forEach(element => element.classList.remove('hide'));
+  };
+
   const onChangeFeature = (feature, valueSelect) => {
-    highlightFeature(feature);
     while (valueSelect.options.length) {
       valueSelect.options.remove(0);
     }
+    if (feature == -1) {
+      removeFilter();
+      return;
+    }
+    highlightFeature(feature);
     getValues(feature)
       .map(f => new Option(f, f))
       .forEach(o => valueSelect.options.add(o));
@@ -90,6 +104,7 @@
 
   const featureFilter = () => {
     const featureSelect = dce('select');
+    featureSelect.options.add(new Option('—', -1));
     getHeaderCells()
       .filter(td => !td.nextElementSibling.hasAttribute('colspan'))
       .map(td => td.textContent)
