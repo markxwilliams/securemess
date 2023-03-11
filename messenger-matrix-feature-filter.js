@@ -1,4 +1,4 @@
-(() => {
+((options) => {
   'use strict';
 
   const table = document.querySelector('table');
@@ -15,13 +15,13 @@
     return [form, fieldset];
   };
 
-  const hightlightFeature = feature => {
-    Array.from(document.querySelectorAll('.highlight'))
-      .forEach(element => element.classList.remove('highlight'));
+  const highlightFeature = feature => {
+    Array.from(document.querySelectorAll(`.${options.highlightClass}`))
+      .forEach(element => element.classList.remove(options.highlightClass));
     try {
       const tr = getFeatureRow(feature);
       Array.from(tr.cells)
-        .forEach(element => element.classList.add('highlight'));
+        .forEach(element => element.classList.add(options.highlightClass));
     } catch {
     }
   };
@@ -54,7 +54,7 @@
   };
 
   const onChangeFeature = (feature, valueSelect) => {
-    hightlightFeature(feature);
+    highlightFeature(feature);
     while (valueSelect.options.length) {
       valueSelect.options.remove(0);
     }
@@ -117,4 +117,6 @@
 
   addFilter();
 
-})();
+})({
+  highlightClass: 'highlight',
+});
