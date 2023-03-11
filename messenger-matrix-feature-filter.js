@@ -10,6 +10,7 @@
   const filterform = () => {
     const form = dce('form');
     const fieldset = dce('fieldset');
+    form.className = 'feature-filter';
     form.appendChild(fieldset);
     return [form, fieldset];
   };
