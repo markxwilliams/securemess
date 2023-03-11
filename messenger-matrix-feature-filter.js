@@ -1,5 +1,7 @@
-((options) => {
+(() => {
   'use strict';
+
+  let options;
 
   const table = document.querySelector('table');
 
@@ -122,17 +124,17 @@
 
   const [form, fieldset] = filterform();
 
-  document.body.insertBefore(form, table);
-
-  const addFilter = () => {
+  const addFeatureFilter = () => {
     const [f, v] = featureFilter();
     form.appendChild(f);
     form.appendChild(v);
   };
 
-  addFilter();
 
-})({
-  highlightClass: 'highlight',
-  hiddenClass: 'hide',
-});
+  window.addFilter = opts => {
+    options = opts;
+    document.body.insertBefore(form, table);
+    addFeatureFilter();
+  };
+
+})();
