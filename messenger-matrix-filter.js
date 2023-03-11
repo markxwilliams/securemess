@@ -31,7 +31,10 @@
     if (isNaN(idx)) {
       return;
     }
-    Array.from(table.rows)
+    Array.from(table.tHead.rows)
+      .filter(r => r.cells.length > 2)
+      .forEach(r => toggle(r, idx));
+    Array.from(table.tBodies[0].rows)
       .filter(r => r.cells.length > 2)
       .forEach(r => toggle(r, idx));
 
