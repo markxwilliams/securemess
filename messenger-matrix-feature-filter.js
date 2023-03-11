@@ -5,7 +5,7 @@
 
   const dce = type => document.createElement(type);
 
-  const getHeader = () => Array.from(document.querySelectorAll('tbody th'));
+  const getHeaderCells = () => Array.from(document.querySelectorAll('tbody th'));
 
   const filterform = () => {
     const form = dce('form');
@@ -15,8 +15,8 @@
     return [form, fieldset];
   };
 
-  const getFeatureRow = feature => {
-    const cell = getHeader()
+  const getFeatureRowCells = feature => {
+    const cell = getHeaderCells()
       .find(th => th.textContent === feature);
     if (!cell) {
       console.warn(`Kann ${feature} nicht finden.`);
@@ -27,7 +27,7 @@
   };
 
   const getValues = feature => {
-    const values = getFeatureRow(feature)
+    const values = getFeatureRowCells(feature)
       .map(td => td.textContent.trim())
       .filter(text => text != null && text.length > 0);
     return Array.from(new Set(values));
@@ -45,7 +45,7 @@
   };
 
   const onChangeValue = (feature, value) => {
-    const row = getFeatureRow(feature);
+    const row = getFeatureRowCells(feature);
     const matchingIdx = row
       .map((td, idx) => [td.textContent === value, idx])
       .filter(([match, idx]) => match)
@@ -69,7 +69,7 @@
 
   const featureFilter = () => {
     const featureSelect = dce('select');
-    getHeader()
+    getHeaderCells()
       .filter(td => !td.nextElementSibling.hasAttribute('colspan'))
       .map(td => td.textContent)
       .map(feature => new Option(feature, feature))
