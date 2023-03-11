@@ -87,10 +87,6 @@
 
   document.body.prepend(form);
 
-  const u = new URLSearchParams(window.location.search);
-  if (u.get('filter')) {
-    setFilter(u.get('filter'));
-  }
 
   window.addFilter = options => {
     if (!options.buttonContainer) {
@@ -99,6 +95,12 @@
 
     document.body.insertBefore(form, table);
     options.buttonContainer.appendChild(button(options.buttonLabel || 'filter'));
+
+    const u = new URLSearchParams(window.location.search);
+    if (u.get('filter')) {
+      setFilter(u.get('filter'));
+    }
+
   };
 
 })();
