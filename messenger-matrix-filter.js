@@ -36,8 +36,10 @@
       .forEach(r => toggle(r, idx));
 
     const count = document.querySelectorAll('input:checked').length;
-    Array.from(document.querySelectorAll('td[colspan]'))
+    Array.from(document.querySelectorAll('tbody td[colspan]'))
       .forEach(td => td.setAttribute('colspan', count));
+
+    document.querySelector('tfoot td').setAttribute('colspan', count + 1);
 
     if (evt.detail === 'dontpush') {
       return;
