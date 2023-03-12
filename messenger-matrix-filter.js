@@ -1,8 +1,6 @@
 (() => {
   'use strict';
 
-  const table = document.querySelector('table');
-
   const dce = type => document.createElement(type);
 
   const toggle = (row, idx) => {
@@ -28,6 +26,7 @@
 
   const onChange = evt => {
     const idx = parseInt(evt.target.dataset.idx, 10);
+    const table = document.querySelector('table');
     if (isNaN(idx)) {
       return;
     }
@@ -36,8 +35,10 @@
       .forEach(r => toggle(r, idx));
 
     const count = document.querySelectorAll('input:checked').length;
-    Array.from(document.querySelectorAll('td[colspan]'))
+    Array.from(document.querySelectorAll('tbody td[colspan]'))
       .forEach(td => td.setAttribute('colspan', count));
+
+    document.querySelector('tfoot td').setAttribute('colspan', count + 1);
 
     if (evt.detail === 'dontpush') {
       return;
@@ -61,35 +62,36 @@
     return label;
   };
 
-  const onClick = (evt, fieldset) => {
-    fieldset.classList.toggle('hide');
-  };
-
-  const filterform = () => {
+  const filterform = (opts) => {
     const button = dce('button');
     const form = dce('form');
-    const fieldset = dce('fieldset');  
+    const fieldset = dce('fieldset');
+    const onClick = (fieldset) => {
+      fieldset.classList.toggle('hide');
+    };
     fieldset.classList.add('hide');
-    button.addEventListener('click', evt => onClick(evt, fieldset));
-    button.textContent = 'Tabelle filtern';
+    Array.from(document.querySelector('thead').rows[0].cells)
+      .filter(c => c.cellIndex > 0)
+      .map(c => checkbox(c))
+      .forEach(cb => fieldset.appendChild(cb));
+    button.addEventListener('click', () => onClick(fieldset));
+    button.textContent = opts.buttonLabel;
     button.setAttribute('type', 'button');
     form.appendChild(button);
     form.appendChild(fieldset);
-    return [form, fieldset];
+    return form;
   };
 
-  const [form, fieldset] = filterform();
+  const presetFilterFromUrl = () => {
+    const u = new URLSearchParams(window.location.search);
+    if (u.get('filter')) {
+      setFilter(u.get('filter'));
+    }
+  };
 
-  Array.from(document.querySelector('thead').rows[0].cells)
-    .filter(c => c.cellIndex > 0)
-    .map(c => checkbox(c))
-    .forEach(cb => fieldset.appendChild(cb));
-
-  document.body.prepend(form);
-
-  const u = new URLSearchParams(window.location.search);
-  if (u.get('filter')) {
-    setFilter(u.get('filter'));
-  }
+  window.addFilter = opts => {
+    opts.formContainer.prepend(filterform(opts));
+    presetFilterFromUrl();
+  };
 
 })();
