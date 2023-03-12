@@ -90,7 +90,7 @@
   };
 
   window.addFilter = opts => {
-    document.body.prepend(filterform(opts));
+    opts.formContainer.prepend(filterform(opts));
     presetFilterFromUrl();
   };
 
