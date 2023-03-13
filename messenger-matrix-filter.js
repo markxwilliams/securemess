@@ -30,7 +30,10 @@
     if (isNaN(idx)) {
       return;
     }
-    Array.from(table.rows)
+    Array.from(document.querySelectorAll('thead tr'))
+      .forEach(r => toggle(r, idx));
+
+    Array.from(document.querySelectorAll('tbody tr'))
       .filter(r => r.cells.length > 2)
       .forEach(r => toggle(r, idx));
 
@@ -38,7 +41,7 @@
     Array.from(document.querySelectorAll('tbody td[colspan]'))
       .forEach(td => td.setAttribute('colspan', count));
 
-    document.querySelector('tfoot td').setAttribute('colspan', count + 1);
+    document.querySelector('tfoot td:nth-child(2)').setAttribute('colspan', count - 1);
 
     if (evt.detail === 'dontpush') {
       return;
