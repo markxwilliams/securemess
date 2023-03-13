@@ -46,4 +46,4 @@ Wenn du Verbesserungsvorschläge, Korrekturen oder Anmerkungen hast, dann reiche
 
 # Copyright und Lizenz
 
-Die Messenger-Matrix steht unter der <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0-Lizenz</a>. Der <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Quellcode</a> ist für jeden frei einsehbar. 
+Die Messenger-Matrix ist ein Projekt von <a href="https://www.kuketz-blog.de/">Kuketz-Blog</a> und steht unter der <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0-Lizenz</a>. Der <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Quellcode</a> ist für jeden frei einsehbar. 
