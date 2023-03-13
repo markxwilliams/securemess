@@ -1,5 +1,13 @@
+'use strict';
+
+// (() => {
+//   document.querySelector('.wrapper').addEventListener('scroll', ({ target }) => {
+//     const n = `${target.scrollLeft}px`;
+//     document.body.style.setProperty('--scrollOffset', n);
+//   });
+// })();
+
 (() => {
-  'use strict';
 
   const dce = type => document.createElement(type);
 
@@ -93,6 +101,7 @@
   };
 
   window.addFilter = opts => {
+    document.body.classList.add('filter');
     opts.formContainer.prepend(filterform(opts));
     presetFilterFromUrl();
   };
