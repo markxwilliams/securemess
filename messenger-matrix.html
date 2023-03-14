@@ -15,8 +15,11 @@
 		/* 	--scrollOffset: 10px; */
 		/* } */
 		/* DEFAULTS */
+		:root {
+			--fontSize: 16px;
+		}
 		html {
-			font-size: 16px;
+			font-size: var(--fontSize);
 		}
 		body {
 			font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
@@ -139,7 +142,7 @@
 			font-weight: bold;
 			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 			cursor: pointer;
-			font-size: 1.1rem;
+			font-size: 16px;
 			padding-left: 20px;
 			padding-right: 20px;
 		}
@@ -170,6 +173,20 @@
 				font-size: 1.3rem;
 			}
 		}
+
+    /* fontsize */
+    .fontsizecontrol {
+      position: absolute;
+      left: 200px;
+      top: 15px;
+      display: inline-block;
+    }
+
+    .fontsizecontrol button {
+			font-size: 16px;
+      display: inline-block;
+      margin: 0 10px;
+    }
 	</style>
 </head>
 
@@ -884,10 +901,20 @@
 		</table>
 	</div>
 	<script src="messenger-matrix-filter.js"></script>
+	<script src="fontsize.js"></script>
 	<script>
 		addFilter({
 			formContainer: document.body,
 			buttonLabel: 'Tabelle filtern',
+		});
+		addFontSizeButtons({
+      step: 1,
+			min: 4,
+			max: 32,
+			property: '--fontSize',
+			container: document.body,
+			increaseButtonLabel: '+',
+			decreaseButtonLabel: '-',
 		});
 	</script>
 </body>
