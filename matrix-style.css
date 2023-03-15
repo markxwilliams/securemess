@@ -156,6 +156,7 @@ label {
 fieldset {
 	border: none;
 	margin-top: 20px;
+	padding: 5px;
 }
 .hide {
 	display: none;
