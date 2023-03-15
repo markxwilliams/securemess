@@ -27,7 +27,7 @@ a {
 	font-size: 16px;
 	display: inline-block;
 	margin: 0 10px;
-}		
+}
 /* WRAPPER */
 body.filter .wrapper {
 	height: calc(100vh - 70px);
@@ -85,7 +85,7 @@ tfoot {
 }
 .small {
 	font-size: 0.7rem;
-}	
+}
 /* COLORS */
 .darkgrey {
 	background-color: #2F363D;
@@ -173,6 +173,6 @@ fieldset {
 	}
 	label {
 		height: 32px;
-		font-size: 1.3rem;
+		font-size: 16px;
 	}
 }
