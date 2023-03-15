@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>Messenger-Matrix • Kuketz IT-Security Blog</title>
+	<meta name="description" content="Comparison of security- and data protection-relevant features of messengers">
+	<meta name="robots" content="index, follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="referrer" content="no-referrer">
+	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix-en.html">
+
+	<link href="matrix-style.css" type="text/css" rel="stylesheet">	
+</head>
+
+<body>
+	<div class="wrapper">
+		<table>
+			<thead>
+				<tr>
+					<th>Mes&shy;sen&shy;ger<br>As of: 12.01.2023</th>
+					<th>Briar</th>
+					<th>Conversations <br>(XMPP)</th>
+					<th>Delta Chat</th>
+					<th>Discord</th>
+					<th>Element<br>(Matrix)</th>
+					<th>iMessage</th>
+					<th>yesmi</th>
+					<th>Signal</th>
+					<th>SimpleX</th>
+					<th>Siskin<br>(XMPP)</th>
+					<th>Skype</th>
+					<th>Telegram</th>
+					<th>Threema</th>
+					<th>aTox <br>(Tox)</th>
+					<th>WhatsApp</th>
+					<th>Wire</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th class="darkgrey sticky">Environment</th>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Android</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">no (see Conversations)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>iOS</th>
+					<td class="red">no</td>
+					<td class="yellow">no (see Siskin)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Web/Desk&shy;top</th>
+					<td class="yellow">only Linux</td>
+					<td class="green">yes (<a href="https://de.wikipedia.org/wiki/Liste_von_XMPP-Clients">various clients</a>)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes (<a href="https://matrix.org/clients/">various clients</a>)</td>
+					<td class="yellow">only macOS</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">yes (only Terminal)</td>
+					<td class="green">yes (<a href="https://de.wikipedia.org/wiki/Liste_von_XMPP-Clients">various clients</a>)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes (<a href="https://tox.chat/download.html">various clients</a>)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th class="darkgrey sticky">Security & Privacy</th>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Open Source</th>
+					<td class="green">GPLv3</td>
+					<td class="green">GPLv3</td>
+					<td class="green">GPL</td>
+					<td class="red">no</td>
+					<td class="green">Apache 2.0</td>
+					<td class="red">no</td>
+					<td class="green">GPLv3</td>
+					<td class="green">GPLv3</td>
+					<td class="green">AGPLv3</td>
+					<td class="green">GPLv3</td>
+					<td class="red">no</td>
+					<td class="yellow">GPLv2 (only client)</td>
+					<td class="yellow">AGPLv3 (only client)</td>
+					<td class="green">GPLv3</td>
+					<td class="red">no</td>
+					<td class="green">GPL</td>
+				</tr>
+				<tr>
+					<th>Comes without proprietary libraries</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="yellow">yes (only F-Droid version)</td>
+					<td class="yellow">yes (only F-Droid version)</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+				</tr>
+				<tr>
+					<th>Encryption protocol / library</th>
+					<td class="green">Bramble</td>
+					<td class="green"><a href="https://de.m.wikipedia.org/wiki/Omemo">OMEMO</a> (<a	href="https://de.wikipedia.org/wiki/Signal Protocol">Signal Protocol</a>)</td>
+					<td class="yellow">OpenPGP with Autocrypt</td>
+					<td class="red">—</td>
+					<td class="yellow">Olm / Megolm (Signal Protocol, partly <a	href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">PFS</a>)</td>
+					<td class="red">proprietary, unknown</td>
+					<td class="yellow">RSA-Keys (4096-Bit)</td>
+					<td class="green"><a href="https://de.wikipedia.org/wiki/Signal Protocol">Signal Protocol</a></td>
+					<td class="green">NaCl and more Encryption primitives (<a href="https://de.wikipedia.org/wiki/Signal Protocol">Signal Protocol</a>)</td>
+					<td class="green"><a href="https://de.m.wikipedia.org/wiki/Omemo">OMEMO</a> (<a	href="https://de.wikipedia.org/wiki/Signal Protocol">Signal Protocol</a>)</td>
+					<td class="orange">proprietary / Signal Protocol</td>
+					<td class="yellow"><a href="https://core.telegram.org/mtproto">MTProto 2.0</a></td>
+					<td class="yellow">NaCI / Ibex (no protocol audit)</td>
+					<td class="yellow">NaCI (no <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">PFS</a>)</td>
+					<td class="yellow">Signal Protocol (unverifable)</td>
+					<td class="green">Proteus (<a href="https://de.wikipedia.org/wiki/Signal Protocol">Signal Protocol</a>)</td>
+				</tr>
+				<tr>
+					<th>End-to-end encryption</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">clients with Autocrypt support</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">only individual chats (optional)</td>
+					<td class="yellow">only individual chats (optional)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Local message encryption</th>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Contact verification possible</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="yellow">only in secret chats</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Notification if contact's fingerprint changes</th>
+					<td class="green">yes</td>
+					<td class="yellow">yes (if previously verified)</td>
+					<td class="yellow">only in verified group chats</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="white"></td>
+					<td class="green">yes</td>
+					<td class="white"></td>
+					<td class="yellow">yes (if previously verified)</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="yellow">must be enabled</td>
+					<td class="yellow">yes (if previously verified)</td>
+				</tr>
+				<tr>
+					<th>Last security audit</th>
+					<td class="yellow">2017</td>
+					<td class="yellow">2016</td>
+					<td class="red">—</td>
+					<td class="red">—</td>
+					<td class="green">2022</td>
+					<td class="yellow">2016</td>
+					<td class="red">—</td>
+					<td class="green"><a href="https://community.signalusers.org/t/overview-of-third-party-security-audits/13243">2022</a></td>
+					<td class="green">2022</td>
+					<td class="red">—</td>
+					<td class="red">—</td>
+					<td class="yellow">2017</td>
+					<td class="green">2020</td>
+					<td class="red">—</td>
+					<td class="red">—</td>
+					<td class="yellow">2018</td>
+				</tr>
+				<tr>
+					<th>Tracker integration</th>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="yellow">Opt-in</td>
+					<td class="red">yes</td>
+					<td class="yellow">Opt-in</td>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="red">yes</td>
+					<td class="red">yes</td>
+					<td class="green">no</td>
+					<td class="green">no</td>
+					<td class="red">yes</td>
+					<td class="green">no</td>
+				</tr>
+				<tr>
+					<th>Use without phone number possible</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">partly for anti-abuse necessary</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">required for registration</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no, forwarding to Facebook</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Avoids / Protects metadata during use</th>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="yellow">partially</td>
+					<td class="yellow">partially</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="yellow">partially</td>
+					<td class="yellow">partially</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+				</tr>
+				<tr>
+					<th>Reasonably useful without sharing the contact list</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Advertising-free</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th class="darkgrey sticky">Sustainability</th>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Centralized / Federated / Decentralized</th>
+					<td class="green">decentralized, Peer-to-peer</td>
+					<td class="yellow">federated</td>
+					<td class="yellow">federated</td>
+					<td class="red">centralized</td>
+					<td class="yellow">federated</td>
+					<td class="red">centralized</td>
+					<td class="green">decentralized, Peer-to-peer</td>
+					<td class="red">centralized</td>
+					<td class="green">anonymous, decentralized routing</td>
+					<td class="yellow">federated</td>
+					<td class="red">centralized</td>
+					<td class="red">centralized</td>
+					<td class="red">centralized</td>
+					<td class="green">decentralized, Peer-to-peer</td>
+					<td class="red">centralized</td>
+					<td class="red">centralized</td>
+				</tr>
+				<tr>
+					<th>Infrastructure hosting</th>
+					<td class="green">-</td>
+					<td class="yellow">distributed server</td>
+					<td class="yellow">distributed server</td>
+					<td class="red">Google and Cloudflare</td>
+					<td class="orange">distributed server / Google (Opt-In)</td>
+					<td class="red">Apple</td>
+					<td class="green">-</td>
+					<td class="red">Amazon, Microsoft, Google &amp; Cloudflare</td>
+					<td class="yellow">distributed server</td>
+					<td class="yellow">distributed server</td>
+					<td class="red">Microsoft</td>
+					<td class="red">Amazon, Google and others</td>
+					<td class="yellow">Server in Switzerland</td>
+					<td class="green">-</td>
+					<td class="red">Facebook</td>
+					<td class="red">Amazon</td>
+				</tr>
+				<tr>
+					<th>Client available since</th>
+					<td class="green">2017</td>
+					<td class="green">2014</td>
+					<td class="green">2017</td>
+					<td class="green">2015</td>
+					<td class="green">2016</td>
+					<td class="green">2011</td>
+					<td class="green">2018</td>
+					<td class="green">2014</td>
+					<td class="red">2022</td>
+					<td class="green">2016</td>
+					<td class="green">2003</td>
+					<td class="green">2013</td>
+					<td class="green">2012</td>
+					<td class="yellow">2020</td>
+					<td class="green">2009</td>
+					<td class="green">2014</td>
+				</tr>
+				<tr>
+					<th>Transparency / Financing (Including donations)</th>
+					<td class="green">transparent</td>
+					<td class="green">clear fanding</td>
+					<td class="green">transparent</td>
+					<td class="green">fee-based offers</td>
+					<td class="yellow">partially non-transparent</td>
+					<td class="red">non-transparent</td>
+					<td class="green">fee-based offers</td>
+					<td class="yellow">partially non-transparent</td>
+					<td class="yellow">donation-based</td>
+					<td class="green">clear fanding</td>
+					<td class="red">non-transparent</td>
+					<td class="yellow">premium subscription, but mostly non-transparent</td>
+					<td class="green">clear fanding</td>
+					<td class="green">community project</td>
+					<td class="red">non-transparent</td>
+					<td class="red">non-transparent, change of location</td>
+				</tr>
+				<tr>
+					<th>Availability</th>
+					<td class="green">Play Store, F-Droid</td>
+					<td class="green">Play Store, F-Droid</td>
+					<td class="green">Website, Play Store, F-Droid, App Store</td>
+					<td class="red">Play Store, App Store</td>
+					<td class="green">Play Store, F-Droid, App Store</td>
+					<td class="red">App Store</td>
+					<td class="green">Play Store, F-Droid, App Store</td>
+					<td class="yellow">Website, Play Store, App Store</td>
+					<td class="green">Play Store, F-Droid, App Store</td>
+					<td class="red">App Store</td>
+					<td class="red">Play Store, App Store</td>
+					<td class="green">Play Store, F-Droid, App Store</td>
+					<td class="green">Website, Play Store, F-Droid, App Store</td>
+					<td class="green">Website, F-Droid</td>
+					<td class="yellow">Website, Play Store, App Store</td>
+					<td class="green">Website, Play Store, F-Droid, App Store</td>
+				</tr>
+				<tr>
+					<th>Legal jurisdiction</th>
+					<td class="green">-</td>
+					<td class="yellow">depending on server location</td>
+					<td class="yellow">depending on server location</td>
+					<td class="red">USA</td>
+					<td class="yellow">depending on server location</td>
+					<td class="red">USA</td>
+					<td class="green">-</td>
+					<td class="red">USA</td>
+					<td class="green">-</td>
+					<td class="yellow">depending on server location</td>
+					<td class="red">USA</td>
+					<td class="red">Dubai (alternating)</td>
+					<td class="yellow">Schweiz</td>
+					<td class="green">-</td>
+					<td class="red">USA</td>
+					<td class="green">Deutschland</td>
+				</tr>
+				<tr>
+					<td class="darkgrey sticky">Functions</td>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Voice messages</th>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Audio-/Video-chats</th>
+					<td class="red">no</td>
+					<td class="yellow">yes (depending on server)</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">seperate app</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">yes (depending on server)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">only audio</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Group chats</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>File exchange</th>
+					<td class="yellow">yes (images only)</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Self-destructing messages</th>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="yellow">partially, depending on server</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+				</tr>
+				<tr>
+					<th>Synchronization between multiple devices</th>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="green">yes (with Swarms)</td>
+					<td class="yellow">solely desktop, smartphone or tablet</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">only unencrypted chats</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="yellow">up to eight</td>
+				</tr>
+				<tr>
+					<th class="darkgrey sticky">Backup</th>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Storage location</th>
+					<td class="red">no</td>
+					<td class="green">locally</td>
+					<td class="green">locally</td>
+					<td class="red">no</td>
+					<td class="green">locally and / or Cloud</td>
+					<td class="green">locally and / or Cloud</td>
+					<td class="green">locally</td>
+					<td class="yellow">locally (only Android)</td>
+					<td class="green">locally</td>
+					<td class="red">no</td>
+					<td class="green">locally</td>
+					<td class="red">Cloud (except secret chats)</td>
+					<td class="green">locally and / or (own) server</td>
+					<td class="red">no</td>
+					<td class="green">locally and Cloud</td>
+					<td class="green">locally</td>
+				</tr>
+				<tr>
+					<th>Automated</th>
+					<td class="red">—</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="red">—</td>
+					<td class="green">partially, after setup</td>
+					<td class="green">after setup (only Cloud)</td>
+					<td class="red">no</td>
+					<td class="green">after setup</td>
+					<td class="red">no</td>
+					<td class="red">—</td>
+					<td class="red">no</td>
+					<td class="yellow">yes</td>
+					<td class="green">partially, after setup</td>
+					<td class="red">—</td>
+					<td class="green">after setup</td>
+					<td class="red">no</td>
+				</tr>
+				<tr>
+					<th>Encrypted</th>
+					<td class="red">—</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">—</td>
+					<td class="green">yes</td>
+					<td class="green">yes (locally)</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="red">—</td>
+					<td class="red">no</td>
+					<td class="yellow">key with the provider</td>
+					<td class="green">yes</td>
+					<td class="red">—</td>
+					<td class="yellow">key with the provider</td>
+					<td class="yellow">only iOS</td>
+				</tr>
+				<tr>
+					<td class="white"></td>
+					<td class="white" colspan="16"></td>
+				</tr>
+				<tr>
+					<th class="darkgrey sticky"><a href="https://www.kuketz-blog.de/">Kuketz-Blog</a></th>
+					<td class="darkgrey" colspan="16"></td>
+				</tr>
+				<tr>
+					<th>Link to review</th>
+					<td class="blue"><a href="https://www.kuketz-blog.de/briar-anonymitaet-and-sicherheit-gehen-vor-messenger-teil8/">Link</a></td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/conversations-messaging-ueber-das-xmpp-protokoll-messenger-teil6/">Link</a></td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/delta-chat-messaging-ueber-die-e-mail-infrastruktur-messenger-teil5/">Link</a></td>
+					<td class="blue">—</td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/element-messaging-ueber-die-matrix-messenger-teil7/">Link</a></td>
+					<td class="blue">—</td>
+					<td class="blue">—</td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/signal-hohe-sicherheit-and-zero-knowledge-prinzip-messenger-teil9/">Link</a></td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/simplex-eindruecke-vom-messenger-ohne-identifier/">Link</a></td>
+					<td class="blue">—</td>
+					<td class="blue">—</td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/telegram-sicherheit-gibt-es-nur-auf-anfrage-messenger-teil3/">Link</a></td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/threema-instant-messaging-dienst-aus-der-schweiz-messenger-teil2/">Link</a></td>
+					<td class="blue">—</td>
+					<td class="blue">—</td>
+					<td class="blue"><a href="https://www.kuketz-blog.de/wire-vertrauen-verspielt-messenger-teil4/">Link</a></td>
+				</tr>
+				<tr>
+					<th>Operability / Target group</th>
+					<td class="blue">Nerd, Activist, Journalist</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Advanced</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Nerd, Developer</td>
+					<td class="blue">Beginner</td>
+					<td class="blue">Advanced</td>
+				</tr>
+				<tr>
+					<th>Recommendation</th>
+					<td class="green">yes</td>
+					<td class="green">yes</td>
+					<td class="yellow">limited</td>
+					<td class="red">no</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="yellow">limited</td>
+					<td class="green">yes</td>
+					<td class="yellow">limited</td>
+					<td class="green">yes</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="yellow">limited</td>
+					<td class="red">no</td>
+					<td class="red">no</td>
+					<td class="yellow">limited</td>
+				</tr>
+
+			</tbody>
+			<tfoot>
+				<tr>
+					<td class="darkgrey sticky">➡ <a href="https://www.messenger-matrix.de/#faq">FAQ Matrix</a></td>
+					<td class="darkgrey" colspan="15"></td>
+					<td class="darkgrey">License<br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a></td>
+				</tr>
+				<tr>					
+					<td class="darkgrey sticky small">© Mike Kuketz<br><a href="https://www.kuketz-blog.de">Kuketz-Blog</a></td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+	<script src="filter.js"></script>
+	<script src="fontsize.js"></script>
+	<script>
+		addFilter({
+			formContainer: document.body,
+			buttonLabel: 'Filter table',
+		});
+		addFontSizeButtons({
+			step: 1,
+			min: 4,
+			max: 32,
+			property: '--fontSize',
+			container: document.body,
+			increaseButtonLabel: '+',
+			decreaseButtonLabel: '-',
+		});
+	</script>
+</body>
+
+</html>
