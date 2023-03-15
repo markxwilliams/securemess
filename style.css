@@ -1,0 +1,417 @@
+/******************
+	FONTS   
+******************/
+/* FONT */ 
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url(./fonts/Roboto-Regular.woff2)format("woff2"),url(./fonts/Roboto-Regular.woff)format("woff"),url(./fonts/Roboto-Regular.ttf)format("truetype")
+}
+/* DEFAULTS */ 
+* {
+    font-family: Roboto,"Open Sans",FreeSans,"Segoe UI",Geneva,sans-serif;
+    padding: 0;
+    margin: 0
+}
+/************/
+/* DEFAULTS */
+/************/
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: #e3e6e9
+}
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 100%;
+    font-size: 17px;
+    color: #2d333a
+}
+a {
+    color: #467aa3;
+    font-weight: 700;
+    text-decoration: none;
+    background: 0 0
+}
+a:hover {
+    color: #2d333a;
+    background: rgba(0,0,0,.1)
+}
+h1,h2,h3,h4 {
+    margin: 0;
+    font-weight: 500
+}
+h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center
+}
+h2 {
+    font-size: 22px;
+    margin-bottom: 20px
+}
+h3 {
+    font-size: 20px;
+    margin-bottom: 20px
+}
+p {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+img {
+    border: 0
+}
+strong {
+    font-weight: 700
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right,transparent,rgba(0,0,0,.5),transparent);
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 45px
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 15px;
+    padding: 0;
+    padding-left: 10px
+}
+li {
+    background-image: url(/images/bullet.png);
+    background-repeat: no-repeat;
+    background-position: 0 8px;
+    padding-left: 15px
+}
+/**********/
+/* LAYOUT */
+/**********/
+#container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 920px
+}
+#navigation {
+    height: 60px;
+    background: #37474f
+}
+.button-wrapper-header {
+    max-width: 920px;
+    margin: 0 auto;
+    display: block;
+    padding-right: 8px
+}
+.button ul {
+    list-style: none;
+    display: inline
+}
+.button li {
+    list-style: none;
+    background-image: none;
+    display: inline
+}
+.button a {
+    float: right;
+    width: 32px;
+    height: 32px;
+    margin-top: 15px;
+    margin-right: 10px;
+    background: url(/icons/spende.png)no-repeat
+}
+.button a:hover {
+    transform: scale(.92);
+    transition: all .15s ease-in-out
+}
+.button span {
+    display: none
+}
+#content-container {
+    width: 892px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-left: 1px solid #b6b8ba;
+    border-right: 1px solid #b6b8ba;
+    padding-bottom: 25px
+}
+#content {
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    line-height: 1.4em
+}
+#footer-container {
+    background: #37474f;
+    height: 150px
+}
+#footer {
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #fff;
+    width: 920px;
+    text-align: center;
+    font-size: 14px
+}
+#footer a {
+    font-weight: 700;
+    letter-spacing: -.3px;
+    color: #fff;
+    background: 0 0;
+    padding: 6px 10px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    display: inline-block
+}
+#footer a:link {
+    color: #fff
+}
+#footer a:hover {
+    background: #bad463;
+    color: #000
+}
+#footer img {
+    vertical-align: middle;
+    padding-right: 5px
+}				
+/***********/
+/* CLASSES */
+/***********/	
+.bot {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: left
+}
+.centertext {
+    text-align: center
+}
+.grey-back {
+    width: 892px;
+    height: auto;
+    background-color: #f6f6f6;
+    margin-left: -121px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    text-align: justify
+}
+.position {
+    width: 650px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 16px solid #f6f6f6;
+    margin-left: 10px;
+    margin-bottom: 20px
+}
+.badge {
+    width: 220px;
+    height: 40px;
+    display: inline-block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    border: 0;
+    background: #628098;
+    border-radius: 4px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 3px solid rgba(0,0,0,.2);
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+    vertical-align: middle;
+    font-weight: 700
+}
+.badge:hover {
+    background: #277096;
+    color: #fff
+}
+.space {
+    margin-top: 15px
+}
+/* List */
+.list {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    border-bottom: 3px solid rgba(0,0,0,.2)
+}
+.list ul:not(.default) {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    background-color: #b6b8ba
+}
+.list li:not(.default) {
+    position: relative;
+    padding: 18px 42px 21px 20px;
+    margin-top: 2px;
+    line-height: 1.3em;
+    background: #e3e6e9
+}
+.list li:first-child {
+    margin-top: 0
+}
+.list-first {
+    height: 68px;
+    line-height: 68px;
+    position: relative;
+    padding-left: 25px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: #628098 url(/icons/finger.png)95% 50%no-repeat
+}
+.list-icon {
+    float: left;
+    padding: 40px 50px 0 0
+}
+.list-entry {
+    padding-top: 1px;
+    overflow: hidden;
+    line-height: 1.35em
+}
+.list-name {
+    margin: 1px 0 6px;
+    font-size: 18px
+}
+.list .text {
+    text-align: center;
+    max-width: 350px;
+    margin-left: auto;
+    margin-right: auto
+}
+.list-icon.kriterien {
+    background-image: url(/icons/kriterien.png);
+    background-size: 40px,40px;
+    background-repeat: no-repeat
+}
+.list-icon.messenger {
+    background-image: url(/icons/messenger-xy.png);
+    background-size: 40px,40px;
+    background-repeat: no-repeat
+}
+.list-icon.bewertung {
+    background-image: url(/icons/bewertung.png);
+    background-size: 40px,40px;
+    background-repeat: no-repeat
+}
+.list-icon.subjektiv {
+    background-image: url(/icons/subjektiv.png);
+    background-size: 40px,40px;
+    background-repeat: no-repeat
+}
+.list-icon.mitarbeit {
+    background-image: url(/icons/mitarbeit.png);
+    background-size: 40px,40px;
+    background-repeat: no-repeat
+}
+.ad {
+    position: absolute
+}
+.ad a {
+    display: block;
+    background-image: url(/images/kuketz-blog.png);
+    background-size: 130px,154px;
+    background-repeat: no-repeat;
+    width: 130px;
+    height: 154px;
+    margin-left: 580px;
+    margin-top: -95px
+}
+.ad a:hover {
+    background: 0 0;
+    background-image: url(/images/kuketz-blog.png);
+    -webkit-transform: scale(.95);
+    -ms-transform: scale(.95);
+    transform: scale(.95)
+}
+/**********/
+/* MOBILE */
+/**********/
+@media all and (max-width: 920px) {
+	/************/
+	/* DEFAULTS */
+	/************/
+	body {
+        font-size: 16px
+    }
+    img {
+        max-width: 100%;
+        height: auto
+    }			
+	/**********/
+	/* LAYOUT */
+	/**********/
+	#container {
+        width: auto;
+        min-width: 300px
+    }
+    #content-container {
+        width: auto
+    }
+    #content {
+        width: auto;
+        max-width: 650px;
+        padding: 15px
+    }
+    #footer-container {
+        height: auto;
+        padding-bottom: 30px
+    }
+    #footer {
+        width: auto;
+        height: auto;
+        min-width: 300px
+    }
+	/***********/
+	/* CLASSES */
+	/***********/
+	.grey-back {
+        width: auto;
+        background-color: #fff;
+        margin: 0
+    }
+    .position {
+        width: auto;
+        max-width: 650px
+    }
+    .arrow-down {
+        display: none
+    }
+    .badge {
+        width: 180px;
+        font-size: 15px
+    }
+    .list {
+        width: auto;
+        max-width: 650px
+    }
+    .list-first {
+        font-size: 17px
+    }
+    .list li:not(.default) {
+        padding: 18px 42px 21px 10px
+    }
+    .list-name {
+        font-size: 17px
+    }
+    .ad {
+        display: none
+    }
+}
