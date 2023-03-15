@@ -42,7 +42,7 @@ Eines sollte allerdings klar sein: Eine solche Matrix dient lediglich der Orient
 
 ## Mitarbeit
 
-Wenn du Verbesserungsvorschläge, Korrekturen oder Anmerkungen hast, dann reiche diese bitte über <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Codeberg</a> ein. Dort sind alle Änderungen an der Matrix transparent nachvollziehbar.
+Wenn du Verbesserungsvorschläge, Korrekturen oder Anmerkungen hast, dann reiche diese bitte per Issue über <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Codeberg</a> ein. Dort sind alle Änderungen an der Matrix transparent nachvollziehbar.
 
 # Copyright und Lizenz
 
