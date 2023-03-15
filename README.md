@@ -4,6 +4,8 @@ Die Messenger-Matrix bietet einen Überblick über die verschiedenen (technische
 
 Die Matrix wird auf <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a> gehostet.
 
+Read this in other languages: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de/src/branch/main/README-en.md">English</a>
+
 # Wissenswertes zur Matrix [FAQ] 
 
 ## Schwerpunkte
