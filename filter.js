@@ -1,12 +1,5 @@
 'use strict';
 
-// (() => {
-//   document.querySelector('.wrapper').addEventListener('scroll', ({ target }) => {
-//     const n = `${target.scrollLeft}px`;
-//     document.body.style.setProperty('--scrollOffset', n);
-//   });
-// })();
-
 (() => {
 
   const dce = type => document.createElement(type);
