@@ -2,7 +2,9 @@
 
 The messenger matrix provides an overview of the various (technical) features of diverse messengers.
 
-The matrix is hosted on <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a>.
+The matrix is hosted on <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a>:
+* <a href="https://www.messenger-matrix.de/messenger-matrix.html">German version</a>
+* <a href="https://www.messenger-matrix.de/messenger-matrix-en.html">English version</a>
 
 ### Read this in other languages: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">German</a>
 
