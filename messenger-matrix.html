@@ -10,184 +10,7 @@
 	<meta name="referrer" content="no-referrer">
 	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html">
 
-	<style>
-		/* :root { */
-		/* 	--scrollOffset: 10px; */
-		/* } */
-		/* DEFAULTS */
-		:root {
-			--fontSize: 16px;
-		}
-		html {
-			font-size: var(--fontSize);
-		}
-		body {
-			font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
-			font-size: 0.9rem;
-			padding: 0;
-			margin: 0;
-			background-color: #2F363D;
-		}
-		a {
-			color: #467AA3;
-			text-decoration: underline;
-		}
-		/* WRAPPER */
-		body.filter .wrapper {
-			height: calc(100vh - 70px);
-			margin-top: 70px;
-		}
-		.wrapper{
-			position: relative;
-			overflow: auto;
-			width: 100%;
-			height: 100vh;
-			margin-top: 0;
-		}
-
-		/* TABLE */
-		table {
-			border-spacing: 0;
-			vertical-align: top;
-			text-align: center;
-		}
-		th, td {
-			padding: 0.7rem 0.5rem;
-		}
-		th, .sticky {
-			position: -webkit-sticky;
-			position: sticky;
-		}
-		thead {
-			position: relative;
-			z-index: 10;
-			height: 5rem;
-		}
-		th {
-			top: 0;
-			background-color: #37474f;
-			color: #FFF;
-			font-weight: bold;
-			min-height: 3rem;
-		}
-		th:first-child {
-			max-width: 200px;
-			left: 0;
-			z-index: 2;
-		}
-		.sticky {
-			left: 0;
-			z-index: 1;
-		}
-		tbody th {
-			background-color: #37474f;
-			color: #FFF;
-			font-weight: bold;
-		}
-		tfoot {
-			height: 5rem;
-		}
-
-		/* COLORS */
-		.darkgrey {
-			background-color: #2F363D;
-			color: #FFF;
-			font-weight: bold;
-			height: 2rem;
-		}
-		.darkgrey a {
-			color: #FFF;
-		}
-		.green {
-			background-color: #DBEBA4;
-		}
-		.yellow {
-			background-color: #FFF17E;
-		}
-		.red {
-			background-color: #FDB4B4;
-		}
-		.orange {
-			background-color: #FFCB75;
-		}
-		.white {
-			background-color: #FFF;
-		}
-		.blue {
-			background-color: #628098;
-		}
-		.blue a {
-			color: #FFF;
-		}
-
-		/* SORT JAVASCRIPT */
-		form {
-			z-index: 20;
-			color: #FFF;
-			background-color: #2F363D;
-			padding: 15px;
-			position: absolute;
-			top: 0;
-			left: 0;
-		}
-
-		button {
-			width: auto;
-			height: 40px;
-			display: block;
-			border: none;
-			background: #628098;
-			border-radius: 4px;
-			color: #FFF;
-			font-weight: bold;
-			border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-			cursor: pointer;
-			font-size: 16px;
-			padding-left: 20px;
-			padding-right: 20px;
-		}
-		input {
-			width: 15px;
-			height: 15px;
-			margin-right: 10px;
-		}
-		label {
-			display: block;
-			user-select: none;
-			height: 25px;
-		}
-		fieldset {
-			border: none;
-			margin-top: 20px;
-		}
-		.hide {
-			display: none;
-		}
-		@media all and (max-width: 600px) {
-			input {
-				width: 20px;
-				height: 20px;
-			}
-			label {
-				height: 32px;
-				font-size: 1.3rem;
-			}
-		}
-
-    /* fontsize */
-    .fontsizecontrol {
-      position: absolute;
-      left: 200px;
-      top: 15px;
-      display: inline-block;
-    }
-
-    .fontsizecontrol button {
-			font-size: 16px;
-      display: inline-block;
-      margin: 0 10px;
-    }
-	</style>
+	<link href="matrix-style.css" type="text/css" rel="stylesheet">	
 </head>
 
 <body>
@@ -893,9 +716,12 @@
 			</tbody>
 			<tfoot>
 				<tr>
-					<td class="darkgrey sticky">➡ <a href="https://www.messenger-matrix.de/#faq">FAQ zur Matrix</a></td>
+					<td class="darkgrey sticky">➡ <a href="https://www.messenger-matrix.de/#faq">FAQ Matrix</a></td>
 					<td class="darkgrey" colspan="15"></td>
-					<td class="darkgrey">© Mike Kuketz<br><a href="https://www.kuketz-blog.de">Kuketz-Blog</a><br><br>Lizenz<br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a></td>
+					<td class="darkgrey">Lizenz<br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a></td>
+				</tr>
+				<tr>					
+					<td class="darkgrey sticky small">© Mike Kuketz<br><a href="https://www.kuketz-blog.de">Kuketz-Blog</a></td>
 				</tr>
 			</tfoot>
 		</table>
@@ -908,7 +734,7 @@
 			buttonLabel: 'Tabelle filtern',
 		});
 		addFontSizeButtons({
-      step: 1,
+			step: 1,
 			min: 4,
 			max: 32,
 			property: '--fontSize',
