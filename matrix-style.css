@@ -151,6 +151,7 @@ label {
 	display: block;
 	user-select: none;
 	height: 25px;
+	font-size: 16px;
 }
 fieldset {
 	border: none;
