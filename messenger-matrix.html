@@ -10,7 +10,7 @@
 	<meta name="referrer" content="no-referrer">
 	<link rel="canonical" href="https://www.messenger-matrix.de/messenger-matrix.html">
 
-	<link href="matrix-style.css" type="text/css" rel="stylesheet">	
+	<link href="matrix-style.css" type="text/css" rel="stylesheet">
 </head>
 
 <body>
@@ -720,7 +720,7 @@
 					<td class="darkgrey" colspan="15"></td>
 					<td class="darkgrey">Lizenz<br><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0</a></td>
 				</tr>
-				<tr>					
+				<tr>
 					<td class="darkgrey sticky small">© Mike Kuketz<br><a href="https://www.kuketz-blog.de">Kuketz-Blog</a></td>
 				</tr>
 			</tfoot>
@@ -732,6 +732,10 @@
 		addFilter({
 			formContainer: document.body,
 			buttonLabel: 'Tabelle filtern',
+			toggleAllButton: {
+				offLabel: '--',
+				onLabel: '++',
+			},
 		});
 		addFontSizeButtons({
 			step: 1,

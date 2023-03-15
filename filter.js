@@ -1,18 +1,14 @@
 'use strict';
 
-// (() => {
-//   document.querySelector('.wrapper').addEventListener('scroll', ({ target }) => {
-//     const n = `${target.scrollLeft}px`;
-//     document.body.style.setProperty('--scrollOffset', n);
-//   });
-// })();
-
 (() => {
 
   const dce = type => document.createElement(type);
 
-  const toggle = (row, idx) => {
-    row.cells[idx].classList.toggle('hide');
+  // state der checkboxen
+  let state = true;
+
+  const toggle = (row, idx, on) => {
+    row.cells[idx].classList.toggle('hide', !on);
   };
 
   window.onpopstate = evt => {
@@ -33,17 +29,17 @@
   };
 
   const onChange = evt => {
-    const idx = parseInt(evt.target.dataset.idx, 10);
-    const table = document.querySelector('table');
+    const checkbox = evt.target;
+    const idx = parseInt(checkbox.dataset.idx, 10);
     if (isNaN(idx)) {
       return;
     }
     Array.from(document.querySelectorAll('thead tr'))
-      .forEach(r => toggle(r, idx));
+      .forEach(r => toggle(r, idx, checkbox.checked));
 
     Array.from(document.querySelectorAll('tbody tr'))
       .filter(r => r.cells.length > 2)
-      .forEach(r => toggle(r, idx));
+      .forEach(r => toggle(r, idx, checkbox.checked));
 
     const count = document.querySelectorAll('input:checked').length;
     Array.from(document.querySelectorAll('tbody td[colspan]'))
@@ -73,6 +69,18 @@
     return label;
   };
 
+  const toggleAll = (evt, fieldset, opts) => {
+    evt.stopPropagation();
+    state = !state;
+    for (const cb of fieldset.elements) {
+      cb.checked = state;
+      cb.dispatchEvent(new CustomEvent('change', { detail: 'dontpush' }));
+    }
+    evt.target.textContent = state
+      ? opts.toggleAllButton.offLabel
+      : opts.toggleAllButton.onLabel;
+  };
+
   const filterform = (opts) => {
     const button = dce('button');
     const form = dce('form');
@@ -81,6 +89,13 @@
       fieldset.classList.toggle('hide');
     };
     fieldset.classList.add('hide');
+
+    const toggleAllButton = dce('button');
+    toggleAllButton.setAttribute('type', 'button');
+    toggleAllButton.textContent = opts.toggleAllButton.offLabel;
+    toggleAllButton.addEventListener('click', (evt) => toggleAll(evt, fieldset, opts));
+
+    fieldset.appendChild(toggleAllButton);
     Array.from(document.querySelector('thead').rows[0].cells)
       .filter(c => c.cellIndex > 0)
       .map(c => checkbox(c))
