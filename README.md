@@ -2,7 +2,9 @@
 
 Die Messenger-Matrix bietet einen Überblick über die verschiedenen (technischen) Merkmale diverser Messenger. 
 
-Die Matrix wird auf <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a> gehostet.
+Die Matrix wird auf <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a> gehostet:
+* <a href="https://www.messenger-matrix.de/messenger-matrix.html">Deutsche Version</a>
+* <a href="https://www.messenger-matrix.de/messenger-matrix-en.html">English Version</a>
 
 ### Read this in other languages: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de/src/branch/main/README-en.md">English</a>
 
