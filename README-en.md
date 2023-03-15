@@ -1,6 +1,6 @@
 # www.messenger-matrix.de
 
-Die Messenger-Matrix bietet einen Überblick über die verschiedenen (technischen) Merkmale diverser Messenger.
+The messenger matrix provides an overview of the various (technical) features of diverse messengers.
 
 The matrix is hosted on <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a>.
 
