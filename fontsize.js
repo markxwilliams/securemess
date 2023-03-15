@@ -6,7 +6,7 @@
   const changeFontSize = (dir, opts) => {
     const style = getComputedStyle(document.documentElement, null);
     const fontSize = style.getPropertyValue(opts.property);
-    const unit = fontSize.replace(/\d+/, '');
+    const unit = fontSize.replace(/\d/g, '').trim();
     let value = parseFloat(fontSize) + dir * opts.step;
     if (value < opts.min) {
       value = opts.min;
