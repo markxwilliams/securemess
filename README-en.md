@@ -4,7 +4,7 @@ The messenger matrix provides an overview of the various (technical) features of
 
 The matrix is hosted on <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a>.
 
-Read this in other languages: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">German</a>
+### Read this in other languages: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">German</a>
 
 # Things to know about the Matrix [FAQ]
 
