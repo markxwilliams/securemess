@@ -180,6 +180,7 @@ label:first-of-type {
 	}
 }
 @media all and (max-height: 667px) {
+	/* FORM/FILTER BUTTON */
 	label {
 		height: 25px;
 		font-size: 16px;
