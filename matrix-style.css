@@ -16,18 +16,6 @@ a {
 	color: #467AA3;
 	text-decoration: underline;
 }
-/* FONTSIZE */
-.fontsizecontrol {
-	position: absolute;
-	left: 200px;
-	top: 15px;
-	display: inline-block;
-}
-.fontsizecontrol button {
-	font-size: 16px;
-	display: inline-block;
-	margin: 0 10px;
-}
 /* WRAPPER */
 body.filter .wrapper {
 	height: calc(100vh - 70px);
@@ -117,7 +105,8 @@ tfoot {
 .blue a {
 	color: #FFF;
 }
-/* JAVASCRIPT FORM/BUTTONS */
+/* JAVASCRIPT */
+/* FORM/BUTTON */
 form {
 	z-index: 20;
 	color: #FFF;
@@ -147,19 +136,34 @@ input {
 	height: 15px;
 	margin-right: 10px;
 }
+fieldset {
+	border: none;
+	margin-top: 15px;
+	padding: 0;
+}
 label {
 	display: block;
 	user-select: none;
 	height: 25px;
 	font-size: 16px;
 }
-fieldset {
-	border: none;
-	margin-top: 20px;
-	padding: 5px;
+label:first-of-type {
+	margin-top: 15px;
 }
 .hide {
 	display: none;
+}
+/* FONTSIZE */
+.fontsizecontrol {
+	position: absolute;
+	left: 200px;
+	top: 15px;
+	display: inline-block;
+}
+.fontsizecontrol button {
+	font-size: 16px;
+	display: inline-block;
+	margin: 0 5px;
 }
 @media all and (max-width: 600px) {
 	/* TABLE */
@@ -176,3 +180,9 @@ fieldset {
 		font-size: 16px;
 	}
 }
+@media all and (max-height: 667px) {
+	label {
+		height: 25px;
+		font-size: 16px;
+	}
+}	
