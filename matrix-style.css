@@ -105,8 +105,7 @@ tfoot {
 .blue a {
 	color: #FFF;
 }
-/* JAVASCRIPT */
-/* FORM/BUTTON */
+/* FORM/FILTER BUTTON */
 form {
 	z-index: 20;
 	color: #FFF;
@@ -153,7 +152,7 @@ label:first-of-type {
 .hide {
 	display: none;
 }
-/* FONTSIZE */
+/* FONTSIZE BUTTONS */
 .fontsizecontrol {
 	position: absolute;
 	left: 200px;
@@ -170,7 +169,7 @@ label:first-of-type {
 	th:first-child {
 		min-width: 130px;
 	}
-	/* JAVASCRIPT FORM/BUTTONS */
+	/* FORM/FILTER BUTTON */
 	input {
 		width: 20px;
 		height: 20px;
