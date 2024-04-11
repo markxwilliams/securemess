@@ -50,6 +50,12 @@ However, one thing should be clear: Such a matrix only serves as an orientation.
 
 If you have suggestions for improvements, corrections or comments, please submit them via issue/pull request via <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Codeberg</a>. There, all changes to the matrix can be tracked transparently.
 
+## Similar projects
+
+* <a href="https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients">Comparison of cross-platform instant messaging clients</a> - wikipedia.de
+* <a href="https://eylenburg.github.io/im_comparison.htm">Comparison of Instant Messengers</a> - eylenburg.github.io
+* <a href="https://www.securemessagingapps.com/">Secure Messaging Apps Comparison</a> - securemessagingapps.com
+
 # Copyright and license
 
 The Messenger Matrix is a project of <a href="https://www.kuketz-blog.de/">Kuketz-Blog</a> and is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.de">CC BY-SA 4.0-Lizenz</a>. The <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">source code</a> is free for everyone to see.
