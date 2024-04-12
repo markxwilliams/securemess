@@ -14,6 +14,8 @@
       value = opts.max;
     }
     const newSize = `${value}${unit}`;
+    const iconSize = Math.min(1, value / opts.default);
+    document.documentElement.style.setProperty(opts.iconProperty, iconSize);
     document.documentElement.style.setProperty(opts.property, newSize);
   };
 
