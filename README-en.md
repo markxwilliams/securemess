@@ -55,6 +55,7 @@ If you have suggestions for improvements, corrections or comments, please submit
 * <a href="https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients">Comparison of cross-platform instant messaging clients</a> - wikipedia.de
 * <a href="https://eylenburg.github.io/im_comparison.htm">Comparison of Instant Messengers</a> - eylenburg.github.io
 * <a href="https://www.securemessagingapps.com/">Secure Messaging Apps Comparison</a> - securemessagingapps.com
+* <a href="https://www.freie-messenger.de/systemvergleich/externe_vergleiche/">List with further projects</a> - freie-messenger.de
 
 # Copyright and license
 
