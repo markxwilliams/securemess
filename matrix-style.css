@@ -46,6 +46,9 @@ thead {
 	z-index: 10;
 	height: 4rem;
 }
+thead img {
+  transform: scale(var(--iconSize));
+}
 th {
 	top: 0;
 	background-color: #37474f;
