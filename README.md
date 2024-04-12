@@ -55,6 +55,7 @@ Wenn du Verbesserungsvorschläge, Korrekturen oder Anmerkungen hast, dann reiche
 * <a href="https://de.wikipedia.org/wiki/Liste_von_Multi-Protokoll-Messengern">Liste von Multi-Protokoll-Messengern</a> - wikipedia.de
 * <a href="https://eylenburg.github.io/im_comparison.htm">Comparison of Instant Messengers</a> - eylenburg.github.io
 * <a href="https://www.securemessagingapps.com/">Secure Messaging Apps Comparison</a> - securemessagingapps.com
+* <a href="https://www.freie-messenger.de/systemvergleich/externe_vergleiche/">Liste mit weiteren Projekten</a> - freie-messenger.de
 
 # Copyright und Lizenz
 
