@@ -47,7 +47,7 @@ thead {
 	height: 4rem;
 }
 thead img {
-  transform: scale(var(--iconSize));
+	transform: scale(var(--iconSize));
 }
 th {
 	top: 0;
