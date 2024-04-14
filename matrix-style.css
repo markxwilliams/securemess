@@ -78,6 +78,10 @@ tfoot {
 	font-size: 0.7rem;
 }
 /* COLORS */
+.grey {
+	background-color: #37474f;
+	color: #FFF;
+}
 .darkgrey {
 	background-color: #2F363D;
 	color: #FFF;
