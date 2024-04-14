@@ -82,6 +82,9 @@ tfoot {
 	background-color: #37474f;
 	color: #FFF;
 }
+.grey a {
+	color: #FFF;
+}
 .darkgrey {
 	background-color: #2F363D;
 	color: #FFF;
@@ -105,12 +108,6 @@ tfoot {
 }
 .white {
 	background-color: #FFF;
-}
-.blue {
-	background-color: #628098;
-}
-.blue a {
-	color: #FFF;
 }
 /* FORM/FILTER BUTTON */
 form {
