@@ -21,7 +21,7 @@ The matrix is divided into different focal points. These are:
 
 ## Why is Messenger XY not included?
 
-The messenger matrix takes into account some messengers - but by far not all. Before the existing matrix is expanded, the following criteria, among others, are checked:
+The messenger matrix takes messengers into account, but not collaboration/communication platforms such as <a href="https://de.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, Rocket.Chat or similar. Before the existing matrix is expanded, the following criteria, among others, are checked:
 
 * **Distribution**: A messenger should have a certain level of users or penetration before it is included in the matrix.
 * **Fork**: Is this a new Messenger or a <a href="https://de.wikipedia.org/wiki/Fork">fork</a>? Forks are not considered in the Messenger matrix. Otherwise, the matrix simply becomes confusing and cluttered.
