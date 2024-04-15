@@ -29,7 +29,7 @@ The messenger matrix takes messengers into account, but not collaboration/commun
 
 After an assessment of these criteria, a decision is then made whether to include a messenger in the matrix.
 
-The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also changed the encryption protocol and removed <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS), among other things. 
+The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also weakened the encryption protocol and removed <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS), among other things.
 
 ## Evaluation / Assessment
 
