@@ -21,7 +21,7 @@ Die Matrix unterteilt sich in verschiedene Schwerpunkte. Diese sind:
 
 ## Warum ist Messenger XY nicht dabei?
 
-Die Messenger-Matrix berücksichtigt einige Messenger – aber bei weitem nicht alle. Vor der Erweiterung der bestehenden Matrix werden unter anderem die nachfolgenden Kriterien geprüft:
+Die Messenger-Matrix berücksichtigt Messenger, aber keine Kollaborations-/Kommunikationsplattformen wie Microsoft Teams, Rocket.Chat oder ähnliche. Vor der Erweiterung der bestehenden Matrix werden unter anderem die nachfolgenden Kriterien geprüft:
 
 * **Verbreitung**: Ein gewisses Maß an Nutzern bzw. Verbreitungsgrad sollte ein Messenger haben, bevor er in die Matrix aufgenommen wird.
 * **Fork**: Handelt es sich um einen neuen Messenger oder um einen <a href="https://de.wikipedia.org/wiki/Fork">Fork</a>? Forks werden in der Messenger-Matrix nicht berücksichtigt. Ansonsten wird die Matrix schlichtweg unübersichtlich und überladen.
