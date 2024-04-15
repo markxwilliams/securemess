@@ -29,7 +29,7 @@ Die Messenger-Matrix berücksichtigt Messenger, aber keine Kollaborations-/Kommu
 
 Nach einer Beurteilung dieser Kriterien wird dann entschieden, ob ein Messenger in die Matrix aufgenommen wird.
 
-Der Messenger <a href="https://getsession.org/">Session</a> wird bspw. aus mehreren Gründen nicht in der Matrix berücksichtigt: Es ist ein Fork von Signal, der dazu auch noch das Verschlüsselungsprotokoll verändert und unter anderem <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS) entfernt hat. 
+Der Messenger <a href="https://getsession.org/">Session</a> wird bspw. aus mehreren Gründen nicht in der Matrix berücksichtigt: Es ist ein Fork von Signal, der dazu auch noch das Verschlüsselungsprotokoll abschwächt und unter anderem <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS) entfernt hat.
 
 ## Bewertung / Beurteilung
 
