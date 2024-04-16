@@ -30,7 +30,9 @@ Die Messenger-Matrix berücksichtigt Messenger, aber keine Kollaborations-/Kommu
 
 Nach einer Beurteilung dieser Kriterien wird dann entschieden, ob ein Messenger in die Matrix aufgenommen wird.
 
-Der Messenger <a href="https://getsession.org/">Session</a> wird bspw. aus mehreren Gründen nicht in der Matrix berücksichtigt: Es ist ein Fork von Signal, der dazu auch noch das Verschlüsselungsprotokoll abschwächt und unter anderem <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS) entfernt hat. Konzept-Messenger wie <a href="https://cwtch.im/">Cwtch</a> oder <a href="https://berty.tech/">Berty</a> sind ebenfalls nicht in der Matrix enthalten. Obwohl sie bereits seit einigen Jahren existieren, gelingt es ihnen bisher nicht, vom Entwicklungsstadium zu einer praktisch nutzbaren Anwendung überzugehen.
+Der Messenger <a href="https://getsession.org/">Session</a> wird bspw. aus mehreren Gründen nicht in der Matrix berücksichtigt: Es ist ein Fork von Signal, der dazu auch noch das Verschlüsselungsprotokoll abschwächt und unter anderem <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS) entfernt hat. 
+
+Konzept-Messenger wie <a href="https://cwtch.im/">Cwtch</a> oder <a href="https://berty.tech/">Berty</a> sind ebenfalls nicht in der Matrix enthalten. Obwohl sie bereits seit einigen Jahren existieren, gelingt es ihnen bisher nicht, vom Entwicklungsstadium zu einer praktisch nutzbaren Anwendung überzugehen.
 
 ## Bewertung / Beurteilung
 
