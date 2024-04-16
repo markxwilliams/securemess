@@ -21,15 +21,18 @@ The matrix is divided into different focal points. These are:
 
 ## Why is Messenger XY not included?
 
-The messenger matrix takes messengers into account, but not collaboration/communication platforms such as <a href="https://de.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, Rocket.Chat or similar. Before the existing matrix is expanded, the following criteria, among others, are checked:
+The messenger matrix takes messengers into account, but not collaboration/communication platforms such as <a href="https://de.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, <a href="https://de.wikipedia.org/wiki/Slack_(Software)">Slack</a>, <a href="https://de.wikipedia.org/wiki/Mattermost">Mattermost</a> or Rocket.Chat. Before the existing matrix is expanded, the following criteria, among others, are checked:
 
-* **Distribution**: A messenger should have a certain level of users or penetration before it is included in the matrix.
+* **Distribution**: A messenger should have a certain level of users (100 thousand) or penetration before it is included in the matrix.
 * **Fork**: Is this a new Messenger or a <a href="https://de.wikipedia.org/wiki/Fork">fork</a>? Forks are not considered in the Messenger matrix. Otherwise, the matrix simply becomes confusing and cluttered.
 * **Open source**: Is the messenger open source or can the source code be viewed by anyone? It makes little sense to include another »unknown« messenger in the matrix that doesn't even meet the minimum requirements for transparency and IT security. There are already plenty of negative examples.
+* **Development stage**: A messenger should at least have basic functions such as functioning encryption, reliable receipt of messages in individual and group chats and a user-friendly interface.
 
 After an assessment of these criteria, a decision is then made whether to include a messenger in the matrix.
 
 The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also weakened the encryption protocol and removed <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS), among other things.
+
+Concept messengers such as <a href="https://cwtch.im/">Cwtch</a> or <a href="https://berty.tech/">Berty</a> are also not included in the matrix. Although they have been around for several years, they have not yet managed to move from the development stage to a practically usable application.
 
 ## Evaluation / Assessment
 
