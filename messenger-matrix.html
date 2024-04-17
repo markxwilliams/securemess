@@ -18,7 +18,7 @@
 		<table>
 			<thead>
 				<tr>
-					<th><font size="5rem">Mes&shy;sen&shy;ger</font><br><br>Letzte Aktualisierung:<br>15. April 2024</th>
+					<th><font size="5rem">Mes&shy;sen&shy;ger</font><br><br>Letzte Aktualisierung:<br>17. April 2024</th>
 					<th>Briar<br><br><a href="https://briarproject.org/"><img src="/logos/briar.png" alt="Briar" width="64" height="64"></a></th>
 					<th>Conversations<br>(XMPP)<br><a href="https://conversations.im/"><img src="/logos/conversations.png" alt="Conversations" width="64" height="64"></a></th>
 					<th>Delta Chat<br><br><a href="https://delta.chat/"><img src="/logos/delta-chat.png" alt="Delta-Chat" width="64" height="64"></a></th>
@@ -279,7 +279,7 @@
 					<td class="grey">Jabber-ID</td>
 					<td class="grey">E-Mail</td>
 					<td class="grey">Benutzername</td>
-					<td class="grey">Matrix-ID, E-Mail und Telefonnummer</td>
+					<td class="grey">Matrix-ID, Telefonnummer und E-Mail</td>
 					<td class="grey">Facebook Kontakte, Adressbuch</td>
 					<td class="grey">Adressbuch, Telefonnummer und E-Mail</td>
 					<td class="grey">Telefonnummer und E-Mail</td>
@@ -520,7 +520,7 @@
 					<td class="red">ja</td>
 					<td class="green">nein</td>
 					<td class="red">ja</td>
-					<td class="red">ja</td>
+					<td class="green">nein</td>
 					<td class="green">nein</td>
 				</tr>
 				<tr>
@@ -592,7 +592,7 @@
 				<tr>
 					<th>Unterstützte Push-Benachrichtigungsdienste</th>
 					<td class="yellow">Polling (Energiehungrig)</td>
-					<td class="green">Google (FCM), WebSocket</td>
+					<td class="green">Google (FCM), Direktverbindung</td>
 					<td class="yellow">Push-IMAP (verzögert)</td>
 					<td class="red">Google (FCM), Apple (APN)</td>
 					<td class="green">Google (FCM), Apple (APN), Polling, UnifiedPush</td>
@@ -601,15 +601,15 @@
 					<td class="red">Apple (APN)</td>
 					<td class="green">Google (FCM), Apple (APN), UnifiedPush</td>
 					<td class="red">Google (FCM), Apple (APN)</td>
-					<td class="green">Google (FCM), Apple (APN), WebSocket (Android)</td>
-					<td class="green">Apple (APN), WebSocket (Android)</td>
+					<td class="green">Google (FCM), Apple (APN), Direktverbindung (Android)</td>
+					<td class="green">Apple (APN), Direktverbindung (Android)</td>
 					<td class="red">Apple (APN)</td>
 					<td class="red">Google (FCM), Apple (APN)</td>
-					<td class="green">Google (FCM), Apple (APN), WebSocket (Android)</td>
-					<td class="green">Google (FCM), Apple (APN), WebSocket (Android)</td>
+					<td class="green">Google (FCM), Apple (APN), Direktverbindung (Android)</td>
+					<td class="green">Google (FCM), Apple (APN), Direktverbindung (Android)</td>
 					<td class="red">Google (FCM), Apple (APN)</td>
-					<td class="green">Google (FCM), Apple (APN), WebSocket (Android)</td>
-					<td class="green">Google (FCM), Apple (APN), WebSocket (Android)</td>
+					<td class="green">Google (FCM), Apple (APN), Direktverbindung (Android)</td>
+					<td class="green">Google (FCM), Apple (APN), Direktverbindung (Android)</td>
 				</tr>
 				<tr>
 					<th>Werbe&shy;frei</th>
@@ -871,20 +871,20 @@
 					<td class="green">lokal</td>
 					<td class="green">lokal</td>
 					<td class="red">nein</td>
-					<td class="green">lokal und / oder Cloud</td>
-					<td class="green">lokal und / oder Cloud</td>
+					<td class="green">lokal und / oder Cloud (iCloud)</td>
+					<td class="green">lokal und / oder Cloud (iCloud/Google Drive)</td>
 					<td class="green">Cloud (Google Drive)</td>
-					<td class="green">lokal und / oder Cloud</td>
+					<td class="green">lokal und / oder Cloud (iCloud)</td>
 					<td class="green">lokal</td>
 					<td class="yellow">Cloud (iCloud/Google Drive)</td>
 					<td class="yellow">lokal (nur Android)</td>
 					<td class="green">lokal</td>
 					<td class="red">nein</td>
 					<td class="green">lokal</td>
-					<td class="yellow">Cloud (außer geheime Chats)</td>
+					<td class="yellow">Telegram-Cloud (außer geheime Chats)</td>
 					<td class="green">lokal und / oder (eigener) Server</td>
 					<td class="yellow">Cloud (iCloud/Google Drive)</td>
-					<td class="green">lokal und Cloud</td>
+					<td class="green">lokal und Cloud (iCloud/Google Drive)</td>
 					<td class="green">lokal</td>
 				</tr>
 				<tr>
@@ -898,7 +898,7 @@
 					<td class="yellow">ja</td>
 					<td class="green">nach Einrichtung (nur Cloud)</td>
 					<td class="red">nein</td>
-					<td class="yellow">wenn iCloud/Google Drive verfügbar</td>
+					<td class="yellow">ja</td>
 					<td class="green">nach Einrichtung</td>
 					<td class="red">nein</td>
 					<td class="red">—</td>
@@ -915,21 +915,21 @@
 					<td class="green">ja</td>
 					<td class="red">nein</td>
 					<td class="red">—</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
 					<td class="green">ja</td>
-					<td class="green">ja</td>
-					<td class="red">nein, Zugriff möglich</td>
-					<td class="green">ja (lokal)</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
 					<td class="red">nein</td>
-					<td class="red">nein</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
 					<td class="green">ja</td>
 					<td class="green">ja</td>
 					<td class="red">—</td>
 					<td class="red">nein</td>
 					<td class="yellow">Schlüssel beim Anbieter</td>
 					<td class="green">ja</td>
-					<td class="red">nein</td>
-					<td class="yellow">Schlüssel beim Anbieter</td>
-					<td class="yellow">nur iOS</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
+					<td class="yellow">bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
+					<td class="yellow">nur iOS, bei iOS Schlüssel beim Anbieter (außer wenn <a href="https://support.apple.com/en-us/108756">ADP</a> aktiv)</td>
 				</tr>
 				<tr>
 					<td class="white"></td>
