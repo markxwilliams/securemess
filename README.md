@@ -24,7 +24,7 @@ Die Matrix unterteilt sich in verschiedene Schwerpunkte. Diese sind:
 Die Messenger-Matrix berücksichtigt Messenger, aber keine Kollaborations-/Kommunikationsplattformen wie <a href="https://de.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, <a href="https://de.wikipedia.org/wiki/Slack_(Software)">Slack</a>, <a href="https://de.wikipedia.org/wiki/Mattermost">Mattermost</a> oder Rocket.Chat. Vor der Erweiterung der bestehenden Matrix werden unter anderem die nachfolgenden Kriterien geprüft:
 
 * **Verbreitung**: Ein gewisses Maß an Nutzern (100 Tausend) bzw. Verbreitungsgrad sollte ein Messenger haben, bevor er in die Matrix aufgenommen wird.
-* **Fork**: Handelt es sich um einen neuen Messenger oder um einen <a href="https://de.wikipedia.org/wiki/Fork">Fork</a>? Forks werden in der Messenger-Matrix nicht berücksichtigt. Ansonsten wird die Matrix schlichtweg unübersichtlich und überladen.
+* **Fork**: Handelt es sich um einen neuen Messenger oder um einen <a href="https://de.wikipedia.org/wiki/Abspaltung_(Softwareentwicklung)">Fork</a>? Forks werden in der Messenger-Matrix nicht berücksichtigt. Ansonsten wird die Matrix schlichtweg unübersichtlich und überladen.
 * **Quelloffen**: Ist der Messenger quelloffen bzw. kann der Quellcode von jedem eingesehen werden? Es macht wenig Sinn einen weiteren »unbekannten« Messenger in die Matrix aufzunehmen, der nicht einmal die Mindestanforderungen an Transparenz und damit IT-Sicherheit erfüllt. Negativbeispiele gibt es bereits zur Genüge.
 * **Entwicklungsstadium**: Ein Messenger sollte zumindest über grundlegende Funktionen wie eine funktionierende Verschlüsselung, den zuverlässigen Empfang von Nachrichten in Einzel- und Gruppenchats und eine benutzerfreundliche Oberfläche verfügen. 
 
