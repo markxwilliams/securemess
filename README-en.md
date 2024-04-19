@@ -21,16 +21,16 @@ The matrix is divided into different focal points. These are:
 
 ## Why is Messenger XY not included?
 
-The messenger matrix takes messengers into account, but not collaboration/communication platforms such as <a href="https://de.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, <a href="https://de.wikipedia.org/wiki/Slack_(Software)">Slack</a>, <a href="https://de.wikipedia.org/wiki/Mattermost">Mattermost</a> or Rocket.Chat. Before the existing matrix is expanded, the following criteria, among others, are checked:
+The messenger matrix takes messengers into account, but not collaboration/communication platforms such as <a href="https://en.wikipedia.org/wiki/Microsoft_Teams">Microsoft Teams</a>, <a href="https://en.wikipedia.org/wiki/Slack_(software)">Slack</a>, <a href="https://en.wikipedia.org/wiki/Mattermost">Mattermost</a> or Rocket.Chat. Before the existing matrix is expanded, the following criteria, among others, are checked:
 
 * **Distribution**: A messenger should have a certain level of users (100 thousand) or penetration before it is included in the matrix.
-* **Fork**: Is this a new Messenger or a <a href="https://de.wikipedia.org/wiki/Fork">fork</a>? Forks are not considered in the Messenger matrix. Otherwise, the matrix simply becomes confusing and cluttered.
+* **Fork**: Is this a new Messenger or a <a href="https://en.wikipedia.org/wiki/Fork_(software_development)">fork</a>? Forks are not considered in the Messenger matrix. Otherwise, the matrix simply becomes confusing and cluttered.
 * **Open source**: Is the messenger open source or can the source code be viewed by anyone? It makes little sense to include another »unknown« messenger in the matrix that doesn't even meet the minimum requirements for transparency and IT security. There are already plenty of negative examples.
 * **Development stage**: A messenger should at least have basic functions such as functioning encryption, reliable receipt of messages in individual and group chats and a user-friendly interface.
 
 After an assessment of these criteria, a decision is then made whether to include a messenger in the matrix.
 
-The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also weakened the encryption protocol and removed <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a> (PFS), among other things.
+The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also weakened the encryption protocol and removed <a href="https://en.wikipedia.org/wiki/Forward_secrecy">Perfect Forward Secrecy</a> (PFS), among other things.
 
 Concept messengers such as <a href="https://cwtch.im/">Cwtch</a> or <a href="https://berty.tech/">Berty</a> are also not included in the matrix. Although they have been around for several years, they have not yet managed to move from the development stage to a practically usable application.
 
@@ -38,7 +38,7 @@ Concept messengers such as <a href="https://cwtch.im/">Cwtch</a> or <a href="htt
 
 The evaluation or assessment of individual cells can be argued or discussed. A few examples:
 
-* **Encryption protocol / library**: The <a href="https://de.wikipedia.org/wiki/Signal-Protokoll">Signal protocol</a> is considered the »gold standard« for message encryption/exchange. Some developers therefore implement the protocol in their messengers, but make adjustments to the original protocol (e.g. removal of <a href="https://de.wikipedia.org/wiki/Perfect_Forward_Secrecy">Perfect Forward Secrecy</a>) that have a negative impact on security, among other things. This leads to devaluation or display in yellow color for the affected messengers.
+* **Encryption protocol / library**: The <a href="https://en.wikipedia.org/wiki/Signal_Protocol">Signal protocol</a> is considered the »gold standard« for message encryption/exchange. Some developers therefore implement the protocol in their messengers, but make adjustments to the original protocol (e.g. removal of <a href="https://en.wikipedia.org/wiki/Forward_secrecy">Perfect Forward Secrecy</a>) that have a negative impact on security, among other things. This leads to devaluation or display in yellow color for the affected messengers.
 * **Backup (Encrypted) -> WhatsApp**: The controversial messenger WhatsApp stores backups encrypted in the Google cloud (Google Drive). Critical users are calling for the cell to be colored in red to warn that this undermines end-to-end encryption. This is true, as you can read in the <a href="https://faq.whatsapp.com/android/chats/about-google-drive-backups/?lang=de">WhatsApp-FAQ</a>. However, this circumstance does not play a role in the evaluation of this cell. What matters is whether a backup is encrypted (green) or unencrypted (red). In WhatsApp's case, the backup is encrypted - but it is questionable who has control over the keys in the end. The yellow signal color is a compromise at this point.
 
 **Note**: The evaluation of the individual criteria refers exclusively to messengers installed on mobile devices. As soon as multi-device use is added, e.g., a desktop client, the results differ depending on the messenger. Under certain circumstances, multi-device use can weaken security and/or data protection.
