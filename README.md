@@ -1,6 +1,6 @@
 # www.messenger-matrix.de
 
-Die Messenger-Matrix bietet einen Überblick über die verschiedenen (technischen) Merkmale diverser Messenger. 
+Die Messenger-Matrix bietet einen Vergleich/Überblick über die verschiedenen (technischen) Merkmale diverser Messenger. 
 
 Die Matrix wird auf <a href="https://www.messenger-matrix.de/">www.messenger-matrix.de</a> gehostet:
 * <a href="https://www.messenger-matrix.de/messenger-matrix.html">Deutsche Version</a>
@@ -32,7 +32,7 @@ Nach einer Beurteilung dieser Kriterien wird dann entschieden, ob ein Messenger 
 
 Konzept-Messenger wie <a href="https://cwtch.im/">Cwtch</a> oder <a href="https://berty.tech/">Berty</a> sind ebenfalls nicht in der Matrix enthalten. Obwohl sie bereits seit einigen Jahren existieren, gelingt es ihnen bisher nicht, vom Entwicklungsstadium zu einer praktisch nutzbaren Anwendung überzugehen.
 
-## Bewertung / Beurteilung
+## Bewertung / Beurteilung / Vergleich
 
 Über die Bewertung bzw. Beurteilung einzelner Zellen kann man sich trefflich streiten bzw. diskutieren. Ein paar Beispiele:
 
