@@ -30,8 +30,6 @@ The messenger matrix takes messengers into account, but not collaboration/commun
 
 After an assessment of these criteria, a decision is then made whether to include a messenger in the matrix.
 
-The Messenger <a href="https://getsession.org/">Session</a>, for example, is not included in the matrix for several reasons: It is a fork of Signal, which has also weakened the encryption protocol and removed <a href="https://en.wikipedia.org/wiki/Forward_secrecy">Perfect Forward Secrecy</a> (PFS), among other things.
-
 Concept messengers such as <a href="https://cwtch.im/">Cwtch</a> or <a href="https://berty.tech/">Berty</a> are also not included in the matrix. Although they have been around for several years, they have not yet managed to move from the development stage to a practically usable application.
 
 ## Evaluation / Assessment
