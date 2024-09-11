@@ -47,7 +47,7 @@ form textarea:focus,
 form [type="text"],
 form [type="email"],
 .StripeElement {
-  width: 100%;
+  width: 80%;
 }
 form [type="button"],
 form [type="submit"],
