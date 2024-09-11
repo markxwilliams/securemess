@@ -7,12 +7,12 @@ form optgroup,
 form label,
 .StripeElement {
   font-family: inherit;
-  font-size: 80%;
+  font-size: 100%;
   color: inherit;
   border: none;
   border-radius: 0;
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
