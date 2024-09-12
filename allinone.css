@@ -91,7 +91,7 @@ form label,
   border: none;
   border-radius: 0;
   display: block;
-  width: 80%;
+  width: 50%;
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -126,13 +126,13 @@ form textarea:focus,
 form [type="text"],
 form [type="email"],
 .StripeElement {
-  width: 80%;
+  width: 50%;
 }
 form [type="button"],
 form [type="submit"],
 .StripeElement {
 color: #000;
-width: 4%;
+width: 10%;
 }
 form [type="reset"] {
   width: auto;
