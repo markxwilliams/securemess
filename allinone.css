@@ -111,53 +111,7 @@ tfoot {
 .white {
 	background-color: #FFF;
 }
-/* FORM/FILTER BUTTON */
-form {
-	z-index: 20;
-	color: #FFF;
-	background-color: #2F363D;
-	padding: 15px;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-button {
-	width: auto;
-	height: 40px;
-	display: block;
-	border: none;
-	background: #628098;
-	border-radius: 4px;
-	color: #FFF;
-	font-weight: bold;
-	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-	font-size: 16px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-input {
-	width: 15px;
-	height: 15px;
-	margin-right: 10px;
-}
-fieldset {
-	border: none;
-	margin-top: 15px;
-	padding: 0;
-}
-label {
-	display: block;
-	user-select: none;
-	height: 25px;
-	font-size: 16px;
-}
-label:first-of-type {
-	margin-top: 15px;
-}
-.hide {
-	display: none;
-}
+
 
 
 
