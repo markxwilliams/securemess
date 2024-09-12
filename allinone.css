@@ -130,7 +130,6 @@ form [type="email"],
 form [type="button"],
 form [type="submit"],
 .StripeElement {
-  width: 20%
 color: #000
 }
 form [type="reset"] {
