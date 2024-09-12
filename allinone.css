@@ -18,18 +18,18 @@ a {
 	color: #467AA3;
 	text-decoration: underline;
 }
-/* WRAPPER */
-body.filter .wrapper {
-	height: calc(100vh - 70px);
-	margin-top: 70px;
-}
-.wrapper {
-	position: relative;
-	overflow: auto;
-	width: 100%;
-	height: 100vh;
-	margin-top: 0;
-}
+#/* WRAPPER */
+#body.filter .wrapper {
+#	height: calc(100vh - 70px);
+#	margin-top: 70px;
+#}
+#.wrapper {
+#	position: relative;
+#	overflow: auto;
+#	width: 100%;
+#	height: 100vh;
+#	margin-top: 0;
+#}
 /* TABLE */
 table {
 	border-spacing: 0;
@@ -111,11 +111,6 @@ tfoot {
 .white {
 	background-color: #FFF;
 }
-
-
-
-
-
 
 /* reset */
 form input,
