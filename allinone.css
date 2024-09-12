@@ -146,17 +146,10 @@ form [type="email"],
   width: 50%;
 }
 form [type="button"],
-	.StripeElement:focus {
-	width: 100%;
-    padding: 0.75rem; /* More padding for better tap targets */
-    font-size: 1rem; /* Increase button size for readability */
-    margin-top: 1rem;
-	}
-
 form [type="submit"],
 .StripeElement {
 color: #000;
-width: 5%;
+width: 20%;
 }
 form [type="reset"] {
   width: auto;
