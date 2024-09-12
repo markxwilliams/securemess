@@ -75,17 +75,11 @@ form {
 	#position: absolute;
 	top: 0;
 	left: 0;
-	  max-width: 600px;
+	  max-width: 800px;
   width: 100%;
   margin: 0 auto;
 }
 
-	form input, form button {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
 
 
 
