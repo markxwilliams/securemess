@@ -129,6 +129,9 @@ form [type="email"],
 }
 form [type="button"],
 form [type="submit"],
+.StripeElement {
+  color: #000
+}
 form [type="reset"] {
   width: auto;
   cursor: pointer;
