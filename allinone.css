@@ -127,6 +127,11 @@ form textarea:focus,
   outline-width: thin;
   outline-color: gray;
   outline-offset: -1px;
+	width: 100%; /* Full-width on small screens */
+    max-width: 100%; /* Ensures elements don't exceed the screen width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 1rem; /* Add spacing between elements */
+
 }
 form [type="text"],
 form [type="email"],
