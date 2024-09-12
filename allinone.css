@@ -66,10 +66,10 @@ a {
 
 
 form {
-	#z-index: 20;
+	z-index: 20;
 	color: #FFF;
 	background-color: #2F363D;
-	padding: 15px;
+	#padding: 15px;
 	position: absolute;
 	top: 0;
 	left: 0;
