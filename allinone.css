@@ -131,7 +131,7 @@ form [type="button"],
 form [type="submit"],
 .StripeElement {
 color: #000;
-width: 5%;
+width: 4%;
 }
 form [type="reset"] {
   width: auto;
