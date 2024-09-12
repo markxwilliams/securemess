@@ -30,55 +30,7 @@ a {
 #	height: 100vh;
 #	margin-top: 0;
 #}
-/* TABLE */
-table {
-	border-spacing: 0;
-	vertical-align: top;
-	text-align: center;
-}
-th, td {
-	padding: 0.7rem 0.5rem;
-}
-th, .sticky {
-	position: -webkit-sticky;
-	position: sticky;
-}
-thead {
-	position: relative;
-	z-index: 10;
-	height: 4rem;
-}
-thead img {
-	transform: scale(var(--iconSize));
-}
-th {
-	top: 0;
-	background-color: #37474f;
-	color: #FFF;
-	font-weight: bold;
-	min-height: 3rem;
-}
-th:first-child {
-	max-width: 200px;
-	min-width: 200px;
-	left: 0;
-	z-index: 2;
-}
-.sticky {
-	left: 0;
-	z-index: 1;
-}
-tbody th {
-	background-color: #37474f;
-	color: #FFF;
-	font-weight: bold;
-}
-tfoot {
-	height: auto;
-}
-.small {
-	font-size: 0.7rem;
-}
+
 /* COLORS */
 .grey {
 	background-color: #566166;
