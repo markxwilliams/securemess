@@ -1,5 +1,6 @@
 
 
+
 /* DEFAULTS */
 :root {
 	--fontSize: 16px;
@@ -13,7 +14,6 @@ body {
 	padding: 0;
 	margin: 0;
 	background-color: #2F363D;
-	
 	
 }
 a {
@@ -75,24 +75,13 @@ form {
 	#position: absolute;
 	top: 0;
 	left: 0;
-	  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
 }
-
-
 
 
 /* reset */
 form input,
 form select,
-form textarea {
-    width: 100%; /* Full-width on small screens */
-    max-width: 100%; /* Ensures elements don't exceed the screen width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    margin-bottom: 1rem; /* Add spacing between elements */
-}
-
+form textarea,
 form fieldset,
 form optgroup,
 form label,
@@ -103,12 +92,11 @@ form label,
   border: none;
   border-radius: 0;
   display: block;
-  width: 50%;
+  width: 80%;
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
-	
 }
 form label,
 form legend {
@@ -124,38 +112,28 @@ form textarea,
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
- 
-	width: 100%; /* Full-width on small screens */
-    max-width: 100%; /* Ensures elements don't exceed the screen width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    margin-bottom: 1rem; /* Add spacing between elements */
-
+  margin-bottom: 1.5rem;
 }
 form input:focus,
 form select:focus,
-form textarea:focus
+form textarea:focus,
 .StripeElement:focus {
   background-color: white;
   outline-style: solid;
   outline-width: thin;
   outline-color: gray;
   outline-offset: -1px;
-	width: 100%; /* Full-width on small screens */
-    max-width: 100%; /* Ensures elements don't exceed the screen width */
-    box-sizing: border-box; /* Ensure padding doesn't affect width */
-    margin-bottom: 1rem; /* Add spacing between elements */
-
 }
 form [type="text"],
 form [type="email"],
 .StripeElement {
-  width: 50%;
+  width: 80%;
 }
 form [type="button"],
 form [type="submit"],
 .StripeElement {
 color: #000;
-width: 20%;
+width: 4%;
 }
 form [type="reset"] {
   width: auto;
