@@ -111,7 +111,12 @@ form textarea,
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
-  margin-bottom: 1.5rem;
+ 
+	width: 100%; /* Full-width on small screens */
+    max-width: 100%; /* Ensures elements don't exceed the screen width */
+    box-sizing: border-box; /* Ensure padding doesn't affect width */
+    margin-bottom: 1rem; /* Add spacing between elements */
+
 }
 form input:focus,
 form select:focus,
