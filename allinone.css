@@ -64,6 +64,18 @@ a {
 	background-color: #FFF;
 }
 
+
+form {
+	z-index: 20;
+	color: #FFF;
+	background-color: #2F363D;
+	padding: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
 /* reset */
 form input,
 form select,
