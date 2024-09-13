@@ -36,7 +36,6 @@ table {
 }
 th, td {
 	padding: 0.7rem 0.5rem;
-	vertical-align: top; /* Aligns the text to the top of the cell */
 }
 th, .sticky {
 	position: -webkit-sticky;
@@ -110,6 +109,11 @@ tfoot {
 .white {
 	background-color: #FFF;
 }
+.menu {
+	color: white;
+	padding-left: 20px;
+	padding-top: 20px;
+}
 /* FORM/FILTER BUTTON */
 form {
 	z-index: 20;
@@ -117,7 +121,7 @@ form {
 	background-color: #2F363D;
 	padding: 15px;
 	position: absolute;
-	top: 0;
+	top: 56px;
 	left: 0;
 }
 button {
@@ -161,7 +165,7 @@ label:first-of-type {
 .fontsizecontrol {
 	position: absolute;
 	left: 200px;
-	top: 15px;
+	top: 70px;
 	display: inline-block;
 }
 .fontsizecontrol button {
