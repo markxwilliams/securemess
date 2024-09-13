@@ -85,10 +85,14 @@
 
   const filterform = (opts) => {
     const button = dce('button');
-    const form = dce('form');
+    //const form = dce('form');
+    const form = document.getElementById('filter-menu')
+    console.log(form)
+
     const fieldset = dce('fieldset');
     const onClick = (fieldset) => {
       fieldset.classList.toggle('hide');
+      console.log()
     };
     fieldset.classList.add('hide');
 
@@ -107,9 +111,38 @@
     button.textContent = opts.buttonLabel;
     button.setAttribute('type', 'button');
     button.setAttribute('class', 'matrix-button ');
-    form.appendChild(button);
+    //form.appendChild(button);
     form.appendChild(fieldset);
-    return form;
+    //form.setAttribute('class', 'matrix-form ');
+    //return form;
+    return null;
+  };
+
+  const addFilterItems = (opts) => {
+    const form = document.getElementById('filter-menu')
+    console.log(form)
+
+    const fieldset = dce('fieldset');
+    const onClick = (fieldset) => {
+      fieldset.classList.toggle('hide');
+      console.log()
+    };
+    //fieldset.classList.add('hide');
+
+    const toggleAllButton = dce('button');
+    toggleAllButton.setAttribute('type', 'button');
+    toggleAllButton.textContent = opts.toggleAllButton.offLabel;
+    toggleAllButton.addEventListener('click', (evt) => toggleAll(evt, fieldset, opts));
+    toggleAllButton.setAttribute('class', 'matrix-button');
+
+    fieldset.appendChild(toggleAllButton);
+    Array.from(document.querySelector('thead').rows[0].cells)
+      .filter(c => c.cellIndex > 0)
+      .map(c => checkbox(c))
+      .forEach(cb => fieldset.appendChild(cb));
+
+    form.appendChild(fieldset);
+    return null;
   };
 
   const presetFilterFromUrl = () => {
@@ -121,7 +154,8 @@
 
   window.addFilter = opts => {
     document.body.classList.add('filter');
-    opts.formContainer.prepend(filterform(opts));
+    //opts.formContainer.prepend(filterform(opts));
+    addFilterItems(opts);
     presetFilterFromUrl();
   };
 

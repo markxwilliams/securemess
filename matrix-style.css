@@ -19,7 +19,7 @@ a {
 /* WRAPPER */
 body.filter .wrapper {
 	height: calc(100vh - 70px);
-	margin-top: 70px;
+	/*margin-top: 70px;*/
 }
 .wrapper {
 	position: relative;
@@ -115,8 +115,8 @@ tfoot {
 	padding-top: 20px;
 }
 /* FORM/FILTER BUTTON */
-form {
-	z-index: 20;
+.matrix-form {
+	/* z-index: 20; */
 	color: #FFF;
 	background-color: #2F363D;
 	padding: 15px;
@@ -150,10 +150,11 @@ fieldset {
 	padding: 0;
 }
 .matrix-label {
-	display: block !important;
+	/*display: block !important;*/
 	user-select: none !important;
 	height: 25px !important;
 	font-size: 16px !important;
+	padding-right: 20px;
 }
 label:first-of-type {
 	margin-top: 15px;
