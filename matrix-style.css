@@ -36,6 +36,7 @@ table {
 }
 th, td {
 	padding: 0.7rem 0.5rem;
+	vertical-align: top; /* Aligns the text to the top of the cell */
 }
 th, .sticky {
 	position: -webkit-sticky;
