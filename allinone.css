@@ -156,6 +156,7 @@ form select {
 	th:first-child {
 		min-width: 130px;
 	}
+}
 	thead a img {
 		height: auto;
 		max-width: 45px;
