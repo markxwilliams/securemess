@@ -64,8 +64,10 @@
     input.dataset.idx = cell.cellIndex;
     input.checked = true;
     input.addEventListener('change', onChange);
+    input.setAttribute('class', 'matrix-input');
     label.appendChild(input);
     label.appendChild(document.createTextNode(cell.textContent.replace(/\(.*\)/, '').trim()));
+    label.setAttribute('class', 'matrix-label');
     return label;
   };
 
@@ -94,6 +96,7 @@
     toggleAllButton.setAttribute('type', 'button');
     toggleAllButton.textContent = opts.toggleAllButton.offLabel;
     toggleAllButton.addEventListener('click', (evt) => toggleAll(evt, fieldset, opts));
+    toggleAllButton.setAttribute('class', 'matrix-button');
 
     fieldset.appendChild(toggleAllButton);
     Array.from(document.querySelector('thead').rows[0].cells)
@@ -103,6 +106,7 @@
     button.addEventListener('click', () => onClick(fieldset));
     button.textContent = opts.buttonLabel;
     button.setAttribute('type', 'button');
+    button.setAttribute('class', 'matrix-button ');
     form.appendChild(button);
     form.appendChild(fieldset);
     return form;

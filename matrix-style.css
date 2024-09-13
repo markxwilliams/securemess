@@ -124,7 +124,7 @@ form {
 	top: 56px;
 	left: 0;
 }
-button {
+.matrix-button {
 	width: auto;
 	height: 40px;
 	display: block;
@@ -139,21 +139,21 @@ button {
 	padding-left: 20px;
 	padding-right: 20px;
 }
-input {
-	width: 15px;
-	height: 15px;
-	margin-right: 10px;
+.matrix-input {
+	width: 15px !important;
+	height: 15px !important;
+	margin-right: 10px !important;
 }
 fieldset {
 	border: none;
 	margin-top: 15px;
 	padding: 0;
 }
-label {
-	display: block;
-	user-select: none;
-	height: 25px;
-	font-size: 16px;
+.matrix-label {
+	display: block !important;
+	user-select: none !important;
+	height: 25px !important;
+	font-size: 16px !important;
 }
 label:first-of-type {
 	margin-top: 15px;
