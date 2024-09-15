@@ -94,9 +94,12 @@
 				<tr>
 					<th>
 						<font size="5rem">Messenger</font>
-						<p class="fs-6"></p>
-							<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Filter Table</a>
-						</p>
+						<!--<p class="fs-6"></p>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#filterModal">Filter Table</a>
+						</p>-->
+						<button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#filterModal">
+							Filter Table
+						</button>
 					</th>
 					<th>Google<br>Messages<br><a href="https://en.wikipedia.org/wiki/Google_Messages"><img src="/logos/google-messages.png" alt="Google Messages" width="64" height="64"></a></th>
 					<th>Apple<br>iMessage<br><a href="https://de.wikipedia.org/wiki/IMessage"><img src="/logos/imessage.png" alt="iMessage" width="64" height="64"></a></th>					
@@ -328,11 +331,11 @@
 		</table>
 	</div>
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 		  	<div class="modal-content">
 				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="exampleModalLabel">Filter Table</h1>
+					<h1 class="modal-title fs-5" id="filterModalLabel">Filter Table</h1>
 					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
