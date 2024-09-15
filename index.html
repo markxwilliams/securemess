@@ -72,20 +72,32 @@
 		</div>
 	</div>-->
 
-	<p class="d-inline-flex gap-1">
-		<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-		  	Filter Table
-		</a>
-	</p>
-	<div class="collapse" id="collapseExample">
+	<!--<div class="container" id="matrix-controls">
+		<p class="d-inline-flex gap-1">
+			<a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+				Filter Table
+			</a>
+		</p>
+		<div class="collapse" id="collapseExample">
+			<div class="card card-body" id="filter-menu"></div>
+		</div>
+	</div>-->
+	
+	<!--<div class="collapse" id="collapseExample">
 		<div class="card card-body" id="filter-menu"></div>
-	</div>
+	</div>-->
+
 
 	<div class="wrapper">
 		<table>
 			<thead>
 				<tr>
-					<th><font size="5rem">Messenger</font><br><br /><br /></th>
+					<th>
+						<font size="5rem">Messenger</font>
+						<p class="fs-6"></p>
+							<a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Filter Table</a>
+						</p>
+					</th>
 					<th>Google<br>Messages<br><a href="https://en.wikipedia.org/wiki/Google_Messages"><img src="/logos/google-messages.png" alt="Google Messages" width="64" height="64"></a></th>
 					<th>Apple<br>iMessage<br><a href="https://de.wikipedia.org/wiki/IMessage"><img src="/logos/imessage.png" alt="iMessage" width="64" height="64"></a></th>					
 					<th>Facebook<br>Messenger<br><a href="https://en.wikipedia.org/wiki/Messenger_(software)"><img src="/logos/facebook-messenger.png" alt="Facebook Messenger" width="64" height="64"></a></th>
@@ -315,6 +327,24 @@
 			</tfoot>
 		</table>
 	</div>
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		  	<div class="modal-content">
+				<div class="modal-header">
+					<h1 class="modal-title fs-5" id="exampleModalLabel">Filter Table</h1>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<div class="card card-body" id="filter-menu"></div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="filter.js"></script>
 	<script src="fontsize.js"></script>
 	<script>
@@ -322,11 +352,11 @@
 			formContainer: document.body,
 			buttonLabel: 'Filter table',
 			toggleAllButton: {
-				offLabel: '--',
-				onLabel: '++',
+				offLabel: 'Hide All',
+				onLabel: 'Show All',
 			},
 		});
-		addFontSizeButtons({
+		/*addFontSizeButtons({
 			step: 1,
 			min: 4,
 			max: 32,
@@ -336,9 +366,19 @@
 			container: document.body,
 			increaseButtonLabel: '+',
 			decreaseButtonLabel: '-',
-		});
+		});*/
 	</script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+		const myModal = document.getElementById('myModal')
+		const myInput = document.getElementById('myInput')
+
+		myModal.addEventListener('shown.bs.modal', () => {
+		myInput.focus()
+		})
+	</script>
 </body>
 
 

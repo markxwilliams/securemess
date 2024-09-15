@@ -24,12 +24,14 @@
     inc.setAttribute('type', 'button');
     inc.textContent = opts.increaseButtonLabel;
     inc.addEventListener('click', () => changeFontSize(1, opts));
-    inc.setAttribute('class', 'matrix-button');
+    //inc.setAttribute('class', 'matrix-button');
+    inc.setAttribute('class', 'btn btn-primary');
     const dec = dce('button');
     dec.setAttribute('type', 'button');
     dec.textContent = opts.decreaseButtonLabel;
     dec.addEventListener('click', () => changeFontSize(-1, opts));
-    dec.setAttribute('class', 'matrix-button');
+    //dec.setAttribute('class', 'matrix-button');
+    dec.setAttribute('class', 'btn btn-primary');
     const div = dce('div');
     div.appendChild(inc);
     div.appendChild(dec);
@@ -38,6 +40,9 @@
   };
 
   window.addFontSizeButtons = (opts) => {
-    opts.container.prepend(buttons(opts));
+    //opts.container.prepend(buttons(opts));
+    var x = document.getElementById('matrix-controls');
+    console.log(x)
+    x.appendChild(buttons(opts))
   };
 })();
