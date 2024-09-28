@@ -77,6 +77,15 @@ tfoot {
 .small {
 	font-size: 0.7rem;
 }
+
+tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border for contrast */
+}
+
+tbody td:first-child {
+    border-bottom: none; /* Remove bottom border for the first column */
+}
+
 /* COLORS */
 .grey {
 	background-color: #566166;
