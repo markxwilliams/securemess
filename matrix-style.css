@@ -37,7 +37,7 @@ table {
 th, td {
 	padding: 0.7rem 0.5rem;
 	vertical-align: top;
-            text-align: left;
+            text-align: center;
 
 }
 th, .sticky {
