@@ -1,205 +1,93 @@
-/* DEFAULTS */
-:root {
-	--fontSize: 16px;
-}
-html {
-	font-size: var(--fontSize);
-}
-body {
-	font-family: Roboto, 'Open Sans', FreeSans, 'Segoe UI', Geneva, sans-serif;
-	font-size: 0.9rem;
-	padding: 0;
-	margin: 0;
-	background-color: #2F363D;
-}
-a {
-	color: #467AA3;
-	text-decoration: underline;
-}
-/* WRAPPER */
-body.filter .wrapper {
-	height: calc(100vh - 70px);
-	/*margin-top: 70px;*/
-}
-.wrapper {
-	position: relative;
-	overflow: auto;
-	width: 100%;
-	height: 100vh;
-	margin-top: 0;
-}
 /* TABLE */
 table {
-	border-spacing: 0;
-	vertical-align: top;
-	text-align: center;
+    border-spacing: 0;
+    vertical-align: top;
+    text-align: center;
 }
 th, td {
-	padding: 0.7rem 0.5rem;
-	vertical-align: top;
-            text-align: center;
-
+    padding: 0.7rem 0.5rem;
+    vertical-align: top;
+    text-align: center;
 }
 th, .sticky {
-	position: -webkit-sticky;
-	position: sticky;
+    position: -webkit-sticky;
+    position: sticky;
 }
 thead {
-	position: relative;
-	z-index: 10;
-	height: 4rem;
+    position: relative;
+    z-index: 10;
+    height: 4rem;
 }
 thead img {
-	transform: scale(var(--iconSize));
+    transform: scale(var(--iconSize));
 }
 th {
-	top: 0;
-	background-color: #37474f;
-	color: #FFF;
-	font-weight: bold;
-	min-height: 3rem;
+    top: 0;
+    background-color: #37474f;
+    color: #FFF;
+    font-weight: bold;
+    min-height: 3rem;
 }
 th:first-child {
-	max-width: 200px;
-	min-width: 200px;
-	left: 0;
-	z-index: 2;
+    max-width: 200px;
+    min-width: 200px;
+    left: 0;
+    z-index: 2;
 }
 .sticky {
-	left: 0;
-	z-index: 1;
+    left: 0;
+    z-index: 1;
 }
 tbody th {
-	background-color: #37474f;
-	color: #FFF;
-	font-weight: bold;
+    background-color: #37474f;
+    color: #FFF;
+    font-weight: bold;
 }
 tfoot {
-	height: auto;
+    height: auto;
 }
 .small {
-	font-size: 0.7rem;
+    font-size: 0.7rem;
 }
+/* Add border between rows */
+tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Light border for contrast */
+}
+
 /* COLORS */
 .grey {
-	background-color: #566166;
-	color: #FFF;
+    background-color: #566166;
+    color: #FFF;
 }
 .grey a {
-	color: #FFF;
+    color: #FFF;
 }
 .darkgrey {
-	background-color: #2F363D;
-	color: #FFF;
-	font-weight: bold;
-	height: 2rem;
+    background-color: #2F363D;
+    color: #FFF;
+    font-weight: bold;
+    height: 2rem;
 }
 .darkgrey a {
-	color: #FFF;
+    color: #FFF;
 }
 .green {
-	background-color: #DBEBA4;
+    background-color: #DBEBA4;
 }
 .yellow {
-	background-color: #FFF17E;
+    background-color: #FFF17E;
 }
 .red {
-	background-color: #FDB4B4;
+    background-color: #FDB4B4;
 }
 .orange {
-	background-color: #FFCB75;
+    background-color: #FFCB75;
 }
 .white {
-	background-color: #FFF;
+    background-color: #FFF;
 }
 .menu {
-	color: white;
-	padding-left: 20px;
-	padding-top: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-top: 20px;
 }
-/* FORM/FILTER BUTTON */
-.matrix-form {
-	/* z-index: 20; */
-	color: #FFF;
-	background-color: #2F363D;
-	padding: 15px;
-	position: absolute;
-	top: 56px;
-	left: 0;
-}
-.matrix-button {
-	width: auto;
-	height: 40px;
-	display: block;
-	border: none;
-	background: #628098;
-	border-radius: 4px;
-	color: #FFF;
-	font-weight: bold;
-	border-bottom: 3px solid rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-	font-size: 16px;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-.matrix-input {
-	width: 15px !important;
-	height: 15px !important;
-	margin-right: 10px !important;
-}
-fieldset {
-	border: none;
-	margin-top: 15px;
-	padding: 0;
-}
-.matrix-label {
-	/*display: block !important;*/
-	user-select: none !important;
-	height: 25px !important;
-	font-size: 16px !important;
-	padding-right: 20px;
-}
-label:first-of-type {
-	margin-top: 15px;
-}
-.hide {
-	display: none;
-}
-/* FONTSIZE BUTTONS */
-.fontsizecontrol {
-	position: absolute;
-	left: 200px;
-	top: 70px;
-	display: inline-block;
-}
-.fontsizecontrol button {
-	font-size: 16px;
-	display: inline-block;
-	margin: 0 5px;
-}
-@media all and (max-width: 600px) {
-	/* TABLE */
-	th:first-child {
-		min-width: 130px;
-	}
-	thead a img {
-		height: auto;
-		max-width: 45px;
-	}
-	/* FORM/FILTER BUTTON */
-	input {
-		width: 20px;
-		height: 20px;
-	}
-	label {
-		height: 32px;
-		font-size: 16px;
-	}
-}
-@media all and (max-height: 667px) {
-	/* FORM/FILTER BUTTON */
-	label {
-		height: 25px;
-		font-size: 16px;
-	}
-}	
