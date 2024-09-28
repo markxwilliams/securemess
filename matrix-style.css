@@ -32,7 +32,7 @@ body.filter .wrapper {
 table {
 	border-spacing: 0;
 	vertical-align: top;
-	text-align: center;
+	text-align: left;
 }
 th, td {
 	padding: 0.7rem 0.5rem;
