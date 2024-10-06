@@ -181,7 +181,7 @@ label:first-of-type {
 /* More specific selector */
 .accordion .accordion-button {
     background-color: #2F363D; /* Desired color */
-    color: #fff; /* Text color */
+    color: #2F363D; /* Text color */
 }
 
 .accordion .accordion-button:not(.collapsed) {
