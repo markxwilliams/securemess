@@ -2,6 +2,9 @@
 :root {
 	--fontSize: 16px;
 }
+accordian {
+	accordion-color: #2F363D;
+}
 html {
 	font-size: var(--fontSize);
 }
