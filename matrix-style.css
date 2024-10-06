@@ -178,6 +178,17 @@ label:first-of-type {
 	display: inline-block;
 	margin: 0 5px;
 }
+.accordion {
+  --bs-accordion-btn-bg: #ffc0d3;
+  --bs-accordion-active-bg: #ff5c8d;
+  --bs-accordion-active-color: white;
+  --bs-accordion-bg: #524a4e;
+  --bs-accordion-color: white;
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
 @media all and (max-width: 600px) {
 	/* TABLE */
 	th:first-child {
@@ -204,15 +215,5 @@ label:first-of-type {
 		font-size: 16px;
 	}
 }	
-.accordion {
-  --bs-accordion-btn-bg: #ffc0d3;
-  --bs-accordion-active-bg: #ff5c8d;
-  --bs-accordion-active-color: white;
-  --bs-accordion-bg: #524a4e;
-  --bs-accordion-color: white;
-  --bs-accordion-btn-focus-box-shadow: none;
-}
-.accordion-button:not(.collapsed) {
-  box-shadow: none;
-}
+
 
