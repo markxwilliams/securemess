@@ -188,14 +188,17 @@ label:first-of-type {
     background-color: #2F363D; /* Desired open color */
 	color: #FFF; /* Text color */
 }
-
-.accordion accordion-icon-color {
-		color: white; /* Text color */
+/* Change the color of the collapsed arrow */
+.accordion .accordion-button::before {
+   color: white; /* Replace 'red' with your desired color */
 }
 
-.accordion accordion-icon-active-color {
-		color: white; /* Text color */
+/* Change the color of the expanded arrow */
+.accordion .accordion-button:not(.collapsed)::before {
+   color: white; /* Replace 'blue' with your desired color */
 }
+
+
 
 .accordion .accordion-body {
     background-color: #f8f9fa; /* Desired content background color */
