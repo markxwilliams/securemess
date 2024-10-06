@@ -189,8 +189,8 @@ label:first-of-type {
 	color: #FFF; /* Text color */
 }
 
-.accordion .accordion-button.collapsed {
-    color: #FFF;
+.accordion accordion-icon-color {
+		color: #FFF; /* Text color */
 }
 
 .accordion .accordion-body {
@@ -201,10 +201,6 @@ label:first-of-type {
     outline: none; /* Remove the focus outline */
     box-shadow: none; /* Remove any box-shadow */
 }
-
-	
-
-
 
 
 @media all and (max-width: 600px) {
