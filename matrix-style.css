@@ -209,3 +209,7 @@ input[type="text"], input[type="email"], input[type="message"], textarea {
     padding: 10px;
     font-size: 16px;
 }
+#fs-frm {
+    background-color: #2F363D; /* Light gray background */
+
+}
