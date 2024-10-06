@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Secure Messaging Apps Comparison | Privacy Matters</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This site compares secure messaging apps from a security &amp; privacy point of view. These include Facebook Messenger, iMessage, Skype, Signal, Google Allo, Threema, Riot, Wire, Telegram, and Wickr. The best secure messaging app?">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="referrer" content="no-referrer">
+
+    <link rel="canonical" href="https://www.securemessagingapps.com/">
+    <link rel="icon" href="/logos/shield.png" sizes="32x32"> 
+
+    <link href="matrix-style.css" type="text/css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Set entire page background to match the navigation bar */
+        body {
+            background-color: #343a40; /* Dark color used by Bootstrap's bg-body-tertiary */
+            color: white; /* Set text color to white for better contrast */
+        }
+
+        h2, label {
+            color: white; /* Ensure headings and labels are visible */
+        }
+
+        /* Custom style to set form container background to black */
+        .form-container {
+            background-color: #343a40; /* Black background for the form container */
+        }
+
+        .navbar {
+            background-color: #343a40; /* Dark color for the navbar */
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logos/shield.png" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ratings.html">Ratings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="changelog.html">Change Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About/FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+The objective of this site
+I created this site to enable people to compare many so-called “secure messaging apps”. Likewise, I hope to educate people as to which functionality is required for truly secure messaging.
+
+In 2016, I was frustrated with the EFF’s very out-of-date comparison, and hence I decided to create a comparison myself. Reaching out to various privacy organisations proved to be a complete waste of time, as no one was willing to collaborate on a comparison. This is a good lesson learnt: Don’t be beholden to other people/organisations, and produce your own useful work.
+
+This site is not meant to be comprehensive; security is difficult, and a full review of each app is simply not plausible due to time, a lack of access to source code in many cases, and a lack of knowledge of development practices, and general cyber security maturity.
+
+Who are you?
+My name is Mark Williams; I have over 15 years’ experience in cyber security. I’m originally from New Zealand, and I currently live in Melbourne, Australia. I have a BSc in computer science and the CISSP & SABSA Foundations certifications. I’m currently employed as a cyber security architect.
+
+Shouldn’t you stay impartial?
+In my experience, normal people (read: non-security/privacy people) want a simple yes/no answer or a recommendation. I believe that my comparison is fair, and that is why I have included my criteria by which I rated each of the apps.
+
+I am not connected to any of the companies or people behind the apps, nor do I receive any money with relation to this website.
+
+Why should I trust you?
+You shouldn’t. Feel free to do your own research, and let me know if I’m wrong.
+
+Assumptions
+I’ve assumed with iMessage and Skype that both the sender and receiver are also using iMessage and Skype. They both fall back to unencrypted communication if the other party doesn’t support encryption.
+
+So… which app(s) should I use and avoid?
+Please see my Ratings page.
+
+A word on trust
+In order to consider any of the apps “secure”, you must trust the people behind their creation/maintenance. Each of the apps has one weakness in common: you must trust a third party (them) in order for it to work. Namely you must
+
+trust that they have no incentives not to protect your data,
+trust that they have designed and implemented a secure solution,
+trust that they won’t/can’t hand over your data to the authorities,
+trust that the source (e.g., Apple/Google stores) from which you downloaded the app hasn’t modified it,
+trust that the source code they publish, if they do, is solely what was used to compile the app, and
+trust that there are no backdoors or security vulnerabilities.
+Specifically, with every single app that I’ve assessed, you must trust their directory servers. These are the servers that ensure that Person A is really sending a message to Person B, and that Person C cannot intercept the message or impersonate either Person A or Person B.
+
+You’re wrong! I must have my say about xyz
+Please browse to the Contact page.
+
+A word on threat models
+It’s said that security/privacy without a threat model is an undefined problem. (Well, that’s what I say, at least.)
+
+Each of our own personal threat models vary. If you’re sending messages to your mum about dinner, then the privacy of your data and metadata probably isn’t of that much concern. However, if you’re a medical professional, journalist, lawyer, political dissident, or even a politician, there are many reasons why you would want to protect your, or your clients’, information. 
+
+A note on message delivery
+Even though apps may have their infrastructure outside Five Eyes/Fourteen Eyes countries, they may still rely on USA-based infrastructure in order to deliver notifications to devices. Both Google and Apple provide such notification services — for Android and iOS respectively — that run on infrastructure in the USA.
+
+I have to admit that message notification is outside my area of expertise. However, according to the FAQ for Signal, using these services is necessary in order to provide a good user experience.
+
+This is my understanding:
+
+Neither Google nor Apple can read the message or message metadata.
+However, Apple or Google can read the message notification data. This means that if you’re using iOS, Apple do know the frequency with which you’re sent messages, and they also know when you’re sent messages. It’s the same for Google and Android.
+Apple and Google need to know to which device to send the notifications. Both Apple and Google use unique IDs (hardly surprising) in order for this to function correctly. It’s therefore possible that those IDs could be tracked.
+According to the Threema FAQ, it’s possible to use Threema on Android without Google Cloud Messaging (Google’s message notification service).
+
+Wire can also be used without Google Cloud Messaging on Android. Update: Signal can now be used without Google Cloud Messaging.
+
+Do Five Eyes and Fourteen Eyes matter?
+Yes. Even if messages and attachments are end-to-end encrypted — and hence app companies, ISPs, governments etc. cannot see the content — the location of developers and infrastructure (e.g., servers) still matter.
+
+Can developers be coerced by a government to create a backdoor? Servers don’t exist in a vacuum; someone or something needs to connect to servers in order to update code. Can this mechanism be manipulated?
+
+Who has physical access to these servers? Are they in a cage whose biometric authentication allows only the company access? Can datacentre staff access the servers? Are the servers encrypted? Are these servers in the cloud? Can the cloud vendor access the servers?
+
+All these questions are important, because if the servers aren’t secure, governments may be able to gain access to message content. And these servers are under someone’s legal jurisdiction, which means that they could be seized or manipulated.
+
+Five Eyes and Fourteen Eye countries are more susceptible to pressure from the US given their relationships.
+
+Gaps
+The most important gap is that this site is not meant to be comprehensive. I have not reviewed the security of each app; rather, I have compared security/privacy functionality.
+Many apps require that an account be created in order to use them. I have not assessed the security of accounts themselves. For example, two-factor authentication, password resets, key recovery, etc.
+Many apps offer a web interface through which you can send and receive messages. I have not assessed the security of web interfaces.
+I have not assessed the design of each app.
+I have not sought out to find vulnerabilities in each app.
+I’m not a programmer. I have not assessed the quality of the code for any of the apps.
+FAQ
+What do you mean by “Have there been a recent code audit and an independent security analysis?”?
+
+As I mentioned above, trust is a very important aspect to secure messaging apps. A means by which trust can be achieved is by independent security analyses. This is important because no one can mark his own homework. In the cryptography world, this is known as Schneier’s Law:
+
+Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can’t break.
+
+Independent security analyses can help confirm the security of the following:
+
+The encryption design.
+The implementation of the encryption.
+The quality of the code (i.e., possible vulnerabilities).
+Secure development standards.
+The infrastructure design (e.g., directory services, registration flow).
+The infrastructure implementation (e.g., secure datacentres, secure systems such as EC2 instances or physical systems).
+The CI/CD pipeline that puts developers’ code into the finished product.
+I’m only confirming the following:
+
+The encryption design has been assessed.
+The code of the encryption, apps, and backend, directory service, etc. has been assessed.
+I’m not assessing the following:
+
+The infrastructure design (e.g., directory services, registration flow).
+The infrastructure implementation (e.g., secure datacentres, secure
+Secure development standards.
+The CI/CD pipeline.
+No Independent security analysis is perfect. In the real world, these engagements are often restricted by time, money, availability of staff, and many other reasons. They’re also a point in time assessment, sometimes repeated annually or when major changes occur.
+
+Do you make any money from this site?
+
+No. The domain name and hosting cost me a small amount of money per month. However, it does take quite a bit of my free time to research, keep up to date, and maintain the website.
+
+How have you assessed each app?
+
+For each app, I have done the following:
+
+Installed the app (and asked one friend of mine to install them all too) & tested the functionality that can be verified (two-factor authentication, verifying keys, etc.).
+Read the publicly available information provided by each of the companies.
+Read information written by reputable sources about each app (e.g., Matthew Green from Johns Hopkins University).
+In some cases (Threema, Wire, and Wickr), someone from the company has reached out to me to confirm or correct certain ratings.
+Yes, it’s possible that the information on the apps’ sites could be [purposely] incorrect. Yes, it’s possible that I’ve been given incorrect information. Hence why open source software, independent audits, funding, etc. is so important to consider, too.
+
+Why don’t you assess Tox?
+
+Tox doesn’t support push notifications on iOS. I don’t believe it will become a mainstream messaging app until it does.
+
+Telegram is GDPR compliant. It must be secure! 
+
+No, Telegram is not secure, and GDPR — as with all privacy legislation — is mostly not worth the paper on which it’s written, as the EU continues to attack secure messaging apps despite EU politicians and bureaucrats using Signal for privacy. Apparently “privacy by design” — a key GDPR requirement — could mean granting governments and intelligence agencies the ability to read messages.
+
+The ability to build secure messaging apps doesn’t happen because politicians and bureaucrats write regulations; secure messaging apps are created by building upon decades of work by private individuals and private companies/organisations, including cryptography, coding standards, messaging protocols, infrastructure design, identity services, etc.
+
+The only helpful aspect of GDPR is incentivising companies to create secure services by forcing companies to inform users of a data breach.
+
+Indeed, messaging apps are secure not because of governments but despite governments.
+
+Why don’t you assess app xyz?
+
+I’ve decided to try to keep the table reasonably small. And I’m only aiming to assess the most popular messaging apps. That said, I will assess new apps if I think they offer a secure alternative to the apps that I’ve already assessed.
+
+Signal, Wire. etc. do allow anonymous user registration. What gives?
+
+No, they don’t. If you need to give away personal data — a phone number, an email address, etc. — then it’s not anonymous. It’s not necessary to require personal data to register users.
+
+App xyz has vulnerabilities. Surely it’s not secure?
+
+All software has bugs, some of which are vulnerabilities. I originally attempted to rate apps based on previous/known vulnerabilities; however, I felt it raised more questions than answers. Is an app less secure because it’s had vulnerabilities? Does a vulnerability necessarily mean the app is insecure? It depends is the answer, and this answer cannot be written in table form.
+
+You finally assessed Riot / Element!
+
+Yes, after 20+ requests, I finally got around to it. Please note I’ve assessed the default installation, not the option of running your own server. Element / Riot uses matrix.org’s standard and as a backend, which complicates the assessment.
+
+What about apps such as WeChat from companies in China?
+
+China is a Marxist-Leninist state under which there is no separation between the state and individuals and the state and private companies.
+
+There is only the state, only one’s subservience to the state, and hence assessing any messaging app from China is a complete waste of time. Assume China’s government can read every single word sent over these apps. They are in no way secure.
+
+This
+
+
+
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
