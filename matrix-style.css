@@ -190,11 +190,11 @@ label:first-of-type {
 }
 
 .accordion accordion-icon-color {
-		color: #FFF; /* Text color */
+		color: white; /* Text color */
 }
 
 .accordion accordion-icon-active-color {
-		color: #FFF; /* Text color */
+		color: white; /* Text color */
 }
 
 .accordion .accordion-body {
