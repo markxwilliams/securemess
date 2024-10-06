@@ -178,17 +178,22 @@ label:first-of-type {
 	display: inline-block;
 	margin: 0 5px;
 }
-.accordion {
-  --bs-accordion-btn-bg: #ffc0d3;
-  --bs-accordion-active-bg: #ff5c8d;
-  --bs-accordion-active-color: white;
-  --bs-accordion-bg: #524a4e;
-  --bs-accordion-color: white;
-  --bs-accordion-btn-focus-box-shadow: none;
+/* Change background color of accordion header */
+.accordion-button {
+    background-color: #007bff; /* Change this to your desired color */
+    color: #fff; /* Change text color if needed */
 }
+
+/* Change background color when the accordion is open */
 .accordion-button:not(.collapsed) {
-  box-shadow: none;
+    background-color: #0056b3; /* Change this to your desired open color */
 }
+
+/* Change background color of the body (content) */
+.accordion-body {
+    background-color: #f8f9fa; /* Change this to your desired content background color */
+}
+
 @media all and (max-width: 600px) {
 	/* TABLE */
 	th:first-child {
