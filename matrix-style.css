@@ -179,10 +179,7 @@ label:first-of-type {
 	margin: 0 5px;
 }
 /* More specific selector */
-.accordion .accordion-button {
-    background-color: #2F363D; /* Desired color */
-    color: #FFF; /* Text color */
-}
+
 
 .accordion .accordion-button:not(.collapsed) {
     background-color: #2F363D; /* Desired open color */
@@ -197,8 +194,6 @@ label:first-of-type {
 .accordion .accordion-button:not(.collapsed)::before {
    color: white; /* Replace 'blue' with your desired color */
 }
-
-
 
 .accordion .accordion-body {
     background-color: #f8f9fa; /* Desired content background color */
