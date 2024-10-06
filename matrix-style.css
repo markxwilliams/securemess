@@ -182,6 +182,8 @@ label:first-of-type {
 .accordion .accordion-button {
     background-color: #2F363D; /* Desired color */
     color: #FFF; /* Text color */
+	    outline: none; /* Remove the focus outline */
+    box-shadow: none; /* Remove any box-shadow */
 }
 
 .accordion .accordion-button:not(.collapsed) {
@@ -192,6 +194,7 @@ label:first-of-type {
 .accordion .accordion-body {
     background-color: #f8f9fa; /* Desired content background color */
 }
+
 
 
 
