@@ -2,7 +2,6 @@
 :root {
 	--fontSize: 16px;
 }
-
 html {
 	font-size: var(--fontSize);
 }
