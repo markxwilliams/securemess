@@ -190,28 +190,7 @@ label:first-of-type {
   box-shadow: var(--bs-box-shadow);
 }
 
-.accordion .accordion-button:not(.collapsed) {
-    background-color: #2F363D; /* Desired open color */
-	color: #FFF; /* Text color */
-}
-/* Change the color of the collapsed arrow */
-.accordion .accordion-button::before {
-  	color: #FFF; /* Text color */
-}
 
-/* Change the color of the expanded arrow */
-.accordion .accordion-button:not(.collapsed)::before {
-   	color: #FFF; /* Text color */
-}
-
-.accordion .accordion-body {
-    background-color: #f8f9fa; /* Desired content background color */
-}
-
-.accordion .accordion-button:focus {
-    outline: none; /* Remove the focus outline */
-    box-shadow: none; /* Remove any box-shadow */
-}
 
 
 @media all and (max-width: 600px) {
