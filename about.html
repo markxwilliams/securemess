@@ -13,30 +13,10 @@
 
     <link href="matrix-style.css" type="text/css" rel="stylesheet">    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        /* Set entire page background to match the navigation bar */
-        body {
-            background-color: #343a40; /* Dark color used by Bootstrap's bg-body-tertiary */
-            color: white; /* Set text color to white for better contrast */
-        }
-
-        h2, label {
-            color: white; /* Ensure headings and labels are visible */
-        }
-
-        /* Custom style to set form container background to black */
-        .form-container {
-            background-color: #343a40; /* Black background for the form container */
-        }
-
-      
-	.custom-width {
-		width: 90%;
-		margin: 0 auto
-	}
+    
 
 
-    </style>
+
 </head>
 
 <body>
@@ -70,126 +50,48 @@
             </div>
         </div>
     </nav>
-	
-	<div class="container custom-width">
-<h2 class="mt-5">The objective of this site</h2>
-		
-<p>I created this site to enable people to compare many so-called &#8220;secure messaging apps&#8221;. Likewise, I hope to educate people as to which functionality is required for truly secure messaging.</p>
-<p>In 2016, I was frustrated with the EFF&#8217;s very out-of-date <a href="https://www.eff.org/pages/secure-messaging-scorecard">comparison</a>, and hence I decided to create a comparison myself. Reaching out to various privacy organisations proved to be a complete waste of time, as no one was willing to collaborate on a comparison. This is a good lesson learnt: Don&#8217;t be beholden to other people/organisations, and produce your own useful work.</p>
-<p>This site is&nbsp;not meant to be comprehensive; security is <em>difficult</em>, and a full review of each app is simply not plausible due to time, a lack of access to source code in many cases, and a lack of knowledge of development practices, and general cyber security maturity.</p>
-<h2>Who are you?</h2>
-<p>My name is Mark Williams; I have over 15 years&#8217; experience in cyber security. I&#8217;m originally from New Zealand, and I currently live in Melbourne, Australia. I have a BSc in computer science and the CISSP &amp; SABSA Foundations certifications. I&#8217;m currently employed as a cyber security architect.</p>
-<h2>Shouldn&#8217;t you stay impartial?</h2>
-<p>In my experience, normal people (read: non-security/privacy people) want a simple yes/no answer or a recommendation. I believe that my comparison is fair, and that is why I have included my criteria by which I rated each of the apps.</p>
-<p>I am not connected to any of the companies or people behind the apps, nor do I receive any money with relation to this website.</p>
-<h2>Why should I trust you?</h2>
-<p>You shouldn&#8217;t. Feel free to do your own research, and <a href="https://www.securemessagingapps.com/contact/">let me know</a> if I&#8217;m wrong.</p>
-<h2>Assumptions</h2>
-<p>I&#8217;ve assumed with iMessage and Skype that both the sender and receiver are also using iMessage and Skype. They both fall back to unencrypted communication if the other party doesn&#8217;t support encryption.</p>
-<h2>So&#8230; which app(s) should I use and avoid?</h2>
-<p>Please see my <a href="https://www.securemessagingapps.com/ratings/">Ratings</a> page.</p>
-<h2>A word on trust</h2>
-<p>In order to consider any of the apps &#8220;secure&#8221;, you must trust the people behind their creation/maintenance. Each of the apps has one weakness in common: you must trust a third party (them) in order for it to work. Namely you must</p>
-<ul>
-<li>trust that they have no incentives not to protect your data,</li>
-<li>trust that they have designed and implemented a secure solution,</li>
-<li>trust that they won&#8217;t/can&#8217;t hand over your data to the authorities,</li>
-<li>trust that the source (e.g., Apple/Google stores) from which you downloaded the app hasn&#8217;t modified it,</li>
-<li>trust that the source code they publish, if they do, is solely what was used to compile the app, and</li>
-<li>trust that there are no backdoors or security vulnerabilities.</li>
-</ul>
-<p>Specifically, with every single app that I&#8217;ve assessed, you must trust their directory servers. These are the servers that ensure that Person A is really sending a message to Person B, and that Person C cannot intercept the message or impersonate either Person A or Person B.</p>
-<h2>You&#8217;re wrong! I must have my say about xyz</h2>
-<p>Please browse to the <a href="https://www.securemessagingapps.com/contact/">Contact</a> page.</p>
-<h2>A word on threat models</h2>
-<p>It&#8217;s said that security/privacy without a threat model is an undefined problem. (Well, that&#8217;s what I say, at least.)</p>
-<p>Each of our own personal threat models vary. If you&#8217;re sending messages to your mum about dinner, then the privacy of your data and metadata probably isn&#8217;t of that much concern.&nbsp;<span style="font-size: 1rem;">However, if you&#8217;re a medical professional, journalist, lawyer, political dissident, or even a politician, there are many reasons why you would want to protect your, or your clients&#8217;, information.&nbsp;</span></p>
-<h2>A note on message delivery</h2>
-<p>Even though apps may have their infrastructure outside Five Eyes/Fourteen Eyes countries, they may still rely on USA-based infrastructure in order to deliver notifications to devices. Both Google and Apple provide such notification services &#8212; for Android and iOS respectively &#8212; that run on infrastructure in the USA.</p>
-<p>I have to admit that message notification&nbsp;is outside my area of expertise. However, according to the <a href="http://support.whispersystems.org/hc/en-us/articles/217524107-Can-Google-read-my-messages-Can-Apple-read-my-messages-">FAQ</a> for <a href="http://support.whispersystems.org/hc/en-us/articles/213190817-Why-do-I-need-Google-Play-installed-to-use-Signal-">Signal</a>, using these services is necessary in order to provide a good user experience.</p>
-<p>This is my understanding:</p>
-<ul>
-<li>Neither Google nor Apple can read the message or message metadata.</li>
-<li>However, Apple or Google can read the message notification data.&nbsp;This means that if you&#8217;re using iOS, Apple do know the frequency with which you&#8217;re sent messages, and they also know when you&#8217;re sent messages. It&#8217;s the same for Google and Android.</li>
-<li>Apple and Google need to know to which device to send the notifications. Both Apple and Google use unique IDs (hardly surprising) in order for this to function correctly. It&#8217;s therefore possible that those IDs could be tracked.</li>
-</ul>
-<p>According to the Threema <a href="https://threema.ch/en/faq">FAQ</a>, it&#8217;s possible to use Threema on Android without Google Cloud Messaging (Google&#8217;s message notification service).</p>
-<p>Wire can also be used without Google Cloud Messaging on Android. Update: <a href="https://github.com/WhisperSystems/Signal-Android/commit/1669731329bcc32c84e33035a67a2fc22444c24b">Signal</a> can now be used without Google Cloud Messaging.</p>
-<h2>Do Five Eyes and Fourteen Eyes matter?</h2>
-<p>Yes. Even if messages and attachments are end-to-end encrypted &#8212; and hence app companies, ISPs, governments etc. cannot see the content &#8212; the location of developers and infrastructure (e.g., servers) still matter.</p>
-<p>Can developers be coerced by a government to create a backdoor? Servers don&#8217;t exist in a vacuum; someone or something needs to connect to servers in order to update code. Can this mechanism be manipulated?</p>
-<p>Who has physical access to these servers? Are they in a cage whose biometric authentication allows only the company access? Can datacentre staff access the servers? Are the servers encrypted? Are these servers in the cloud? Can the cloud vendor access the servers?</p>
-<p>All these questions are important, because if the servers aren&#8217;t secure, governments <em>may</em> be able to gain access to message content. And these servers are under someone&#8217;s legal jurisdiction, which means that they could be seized or manipulated.</p>
-<p>Five Eyes and Fourteen Eye countries are more susceptible to pressure from the US given their relationships.</p>
-<h2>Gaps</h2>
-<ul>
-<li>The most important gap is that this site is not meant to be comprehensive. I have not reviewed the security of each app; rather, I have compared security/privacy functionality.</li>
-<li>Many apps require that an account be created in order to use them. I have not assessed the security of accounts themselves. For example, two-factor authentication, password resets, key recovery, etc.</li>
-<li>Many apps offer a web interface through which you can send and receive messages. I have not assessed the security of web interfaces.</li>
-<li>I have not assessed the design of each app.</li>
-<li>I have not sought out to find vulnerabilities in each app.</li>
-<li>I&#8217;m not a programmer. I have not assessed the quality of the code for any of the apps.</li>
-</ul>
-<h2>FAQ</h2>
-<p><strong>What do you mean by &#8220;Have there been a recent code audit and an independent security analysis?&#8221;?</strong></p>
-<p>As I mentioned above, trust is a very important aspect to secure messaging apps. A means by which trust can be achieved is by independent security analyses. This is important because no one can mark his own homework. In the cryptography world, this is known as Schneier&#8217;s Law:</p>
-<blockquote><p><em>Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can’t break.</em></p></blockquote>
-<p>Independent security analyses can help confirm the security of the following:</p>
-<ul>
-<li>The encryption design.</li>
-<li>The implementation of the encryption.</li>
-<li>The quality of the code (i.e., possible vulnerabilities).</li>
-<li>Secure development standards.</li>
-<li>The infrastructure design (e.g., directory services, registration flow).</li>
-<li>The infrastructure implementation (e.g., secure datacentres, secure systems such as EC2 instances or physical systems).</li>
-<li>The CI/CD pipeline that puts developers&#8217; code into the finished product.</li>
-</ul>
-<p>I&#8217;m only confirming the following:</p>
-<ul>
-<li>The encryption design has been assessed.</li>
-<li>The code of the encryption, apps, and backend, directory service, etc. has been assessed.</li>
-</ul>
-<p>I&#8217;m not assessing the following:</p>
-<ul>
-<li>The infrastructure design (e.g., directory services, registration flow).</li>
-<li>The infrastructure implementation (e.g., secure datacentres, secure</li>
-<li>Secure development standards.</li>
-<li>The CI/CD pipeline.</li>
-</ul>
-<p>No Independent security analysis is perfect. In the real world, these engagements are often restricted by time, money, availability of staff, and many other reasons. They&#8217;re also a point in time assessment, sometimes repeated annually or when major changes occur.</p>
-<p><strong>Do you make any money from this site?</strong></p>
-<p>No. The domain name and hosting cost me a small amount of money per month. However, it does take quite a bit of my free time to research, keep up to date, and maintain the website.</p>
-<p><strong>How have you assessed each app?</strong></p>
-<p>For each app, I have done the following:</p>
-<ul>
-<li>Installed the app (and asked one friend of mine to install them all too) &amp; tested the functionality that can be verified (two-factor authentication, verifying keys, etc.).</li>
-<li>Read the publicly available information provided by each of the companies.</li>
-<li>Read information written by reputable sources about each app (e.g., Matthew Green from Johns Hopkins University).</li>
-<li>In some cases (Threema, Wire, and Wickr), someone from the company has reached out to me to confirm or correct certain ratings.</li>
-</ul>
-<p>Yes, it&#8217;s possible that the information on the apps&#8217; sites could be [purposely] incorrect. Yes, it&#8217;s possible that I&#8217;ve been given incorrect information. Hence why open source software, independent audits, funding, etc. is so important to consider, too.</p>
-<p><strong>Why don&#8217;t you assess Tox? </strong></p>
-<p>Tox doesn&#8217;t support push notifications on iOS. I don&#8217;t believe it will become a mainstream messaging app until it does.</p>
-<p><strong>Telegram is GDPR compliant. It must be secure!&nbsp;</strong></p>
-<p>No, Telegram is not secure, and GDPR &#8212; as with all privacy legislation &#8212; is mostly not worth the paper on which it&#8217;s written, as the EU continues to <a href="https://techcrunch.com/2021/01/27/protonmail-threema-tresorit-and-tutanota-warn-eu-lawmakers-against-anti-encryption-push/">attack</a> secure messaging apps despite EU politicians and bureaucrats <a href="https://www.theverge.com/2020/2/24/21150918/european-commission-signal-encrypted-messaging">using</a> Signal for privacy. Apparently &#8220;privacy by design&#8221; &#8212; a key GDPR requirement &#8212; could mean granting governments and intelligence agencies the ability to read messages.</p>
-<p>The ability to build secure messaging apps doesn&#8217;t happen because politicians and bureaucrats write regulations; secure messaging apps are created by building upon decades of work by private individuals and private companies/organisations, including cryptography, coding standards, messaging protocols, infrastructure design, identity services, etc.</p>
-<p>The only helpful aspect of GDPR is incentivising companies to create secure services by forcing companies to inform users of a data breach.</p>
-<p>Indeed, messaging apps are secure not because of governments but <em>despite</em> governments.</p>
-<p><strong>Why don&#8217;t you assess app xyz?</strong></p>
-<p>I&#8217;ve decided to try to keep the table reasonably small. And I&#8217;m only aiming to assess the most popular messaging apps. That said, I will assess new apps if I think they offer a secure alternative to the apps that I&#8217;ve already assessed.</p>
-<p><strong>Signal, Wire. etc. do allow anonymous user registration. What gives? </strong></p>
-<p>No, they don&#8217;t. If you need to give away personal data &#8212; a phone number, an email address, etc. &#8212; then it&#8217;s not anonymous. It&#8217;s not necessary to require&nbsp;personal data to register users.</p>
-<p><strong>App xyz has vulnerabilities. Surely it&#8217;s not secure? </strong></p>
-<p>All software has bugs, some of which are vulnerabilities. I originally attempted to rate apps based on previous/known vulnerabilities; however, I felt it raised more questions than answers. Is an app less secure because it&#8217;s had vulnerabilities? Does a vulnerability necessarily mean the app is insecure? It depends is the answer, and this answer cannot be written in table form.</p>
-<p><b>You finally assessed Riot / Element!</b></p>
-<p>Yes, after 20+ requests, I finally got around to it. Please note I&#8217;ve assessed the default installation, not the option of running your own server. Element / Riot uses matrix.org&#8217;s standard and as a backend, which complicates the assessment.</p>
-<p><strong>What about apps such as WeChat from companies in China?</strong></p>
-<p>China is a Marxist-Leninist state under which there is no separation between the state and individuals and the state and private companies.</p>
-<p>There is only the state, only one&#8217;s subservience to the state, and hence assessing any messaging app from China is a complete waste of time. Assume China&#8217;s government can read every single word sent over these apps. They are in no way secure.</p>
- 
+
+
+	<div class="accordion" id="accordionPanelsStayOpenExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+        Accordion Item #1
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+        Accordion Item #2
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+        Accordion Item #3
+      </button>
+    </h2>
+    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
 </div>
-
-
+	
+	
   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
