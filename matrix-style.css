@@ -180,12 +180,12 @@ label:first-of-type {
 }
 /* More specific selector */
 .accordion .accordion-button {
-    background-color: #007bff; /* Desired color */
+    background-color: #2F363D; /* Desired color */
     color: #fff; /* Text color */
 }
 
 .accordion .accordion-button:not(.collapsed) {
-    background-color: #0056b3; /* Desired open color */
+    background-color: #2F363D; /* Desired open color */
 }
 
 .accordion .accordion-body {
