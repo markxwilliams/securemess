@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,91 +8,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="referrer" content="no-referrer">
 
-   <link rel="canonical" href="https://www.securemessagingapps.com/">
-	<link rel="icon" href="/logos/shield.png" sizes="32x32"> 
+    <link rel="canonical" href="https://www.securemessagingapps.com/">
+    <link rel="icon" href="/logos/shield.png" sizes="32x32"> 
 
-    <link href="matrix-style.css" type="text/css" rel="stylesheet">	
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-	<style>
-        /* Custom style for the message background */
-        #message {
-            background-color: #f0f0f0; /* Light gray background */
-         
+    <link href="matrix-style.css" type="text/css" rel="stylesheet">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        /* Set entire section background to black */
+        section.bg-light {
+            background-color: #000; /* Black background for the entire section */
+        }
+
+        /* Set the form container background to black and adjust other styles */
+        .bg-white {
+            background-color: #000; /* Black background for form container */
+            color: #fff;            /* White text color */
+            border: 1px solid #333; /* Optional: Darker border for contrast */
+        }
+
+        /* Adjust form input fields and labels */
+        .form-control {
+            background-color: #333; /* Darker input background */
+            color: #fff;            /* White input text */
+            border: 1px solid #444; /* Darker input border */
+        }
+
+        .form-label {
+            color: #fff; /* White labels */
+        }
+
+        /* Adjust the submit button */
+        .btn-primary {
+            background-color: #007bff; /* Keep primary color */
+            border-color: #007bff;
+        }
+
+        /* Optional: Change the form background on focus */
+        .form-control:focus {
+            background-color: #444; /* Lighter focus background */
+            border-color: #555;     /* Adjust border color */
         }
     </style>
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-		<div class="container-fluid">
-			<a class="navbar-brand" href="index.html">
-				<img src="logos/shield.png" width="30" height="30" alt="">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-		
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<li class="nav-item">
-						<a class="nav-link" href="index.html">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="ratings.html">Ratings</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="changelog.html">Change Log</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About/FAQ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link active" href="contact.html">Contact</a>
-					</li>
-	
-				</ul>
-			</div>
-		</div>
-	</nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="logos/shield.png" width="30" height="30" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ratings.html">Ratings</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="changelog.html">Change Log</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About/FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<section class="bg-light py-3 py-md-5">
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-6">
-					<h2>Contact</h2>
-				</div>
-			</div>
-		</div>
+    <section class="bg-light py-3 py-md-5">
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-6">
+                    <h2 style="color: white;">Contact</h2>
+                </div>
+            </div>
+        </div>
 
-		<div class="container">
-			<div class="row justify-content-lg-center">
-				<div class="col-12 col-lg-6">
-					<div class="bg-white border rounded shadow-sm overflow-hidden">
-						<div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-							<div class="container">
-								<form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjkbdvdn" method="post">
-									<div class="mb-3">
-										<label for="name" class="form-label">First Name</label>
-										<input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="First Name" required="">
-									</div>
-									<div class="mb-3">
-										<label for="email-address" class="form-label">Email address</label>
-										<input class="form-control form-control-lg" type="email" iname="_replyto" name="email-address" id="email-address" aria-describedby="emailHelp" placeholder="email@domain.tld" required="">
-									</div>
-									<div class="mb-3">
-										<label for="message" class="form-label">Message</label>
-										<textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
-									</div>
-									<button type="submit" class="btn btn-primary">Submit</button>
-								</form>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-6">
+                    <div class="bg-white border rounded shadow-sm overflow-hidden">
+                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                            <div class="container">
+                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjkbdvdn" method="post">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">First Name</label>
+                                        <input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="First Name" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email-address" class="form-label">Email address</label>
+                                        <input class="form-control form-control-lg" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
