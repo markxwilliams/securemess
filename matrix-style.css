@@ -2,8 +2,11 @@
 :root {
 	--fontSize: 16px;
 }
-accordian {
-	accordion-color: #2F363D;
+.accordion {
+	--bs-accordion-btn-color: ghostwhite;
+	--bs-accordion-btn-bg: pink;
+	--bs-accordion-active-color: maroon;
+	--bs-accordion-active-bg: lightpink;
 }
 html {
 	font-size: var(--fontSize);
