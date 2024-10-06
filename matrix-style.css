@@ -178,21 +178,20 @@ label:first-of-type {
 	display: inline-block;
 	margin: 0 5px;
 }
-/* Change background color of accordion header */
-.accordion-button {
-    background-color: #007bff; /* Change this to your desired color */
-    color: #fff; /* Change text color if needed */
+/* More specific selector */
+.accordion .accordion-button {
+    background-color: #007bff; /* Desired color */
+    color: #fff; /* Text color */
 }
 
-/* Change background color when the accordion is open */
-.accordion-button:not(.collapsed) {
-    background-color: #0056b3; /* Change this to your desired open color */
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #0056b3; /* Desired open color */
 }
 
-/* Change background color of the body (content) */
-.accordion-body {
-    background-color: #f8f9fa; /* Change this to your desired content background color */
+.accordion .accordion-body {
+    background-color: #f8f9fa; /* Desired content background color */
 }
+
 
 @media all and (max-width: 600px) {
 	/* TABLE */
