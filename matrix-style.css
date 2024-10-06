@@ -193,6 +193,10 @@ label:first-of-type {
 		color: #FFF; /* Text color */
 }
 
+.accordion accordion-icon-active-color {
+		color: #FFF; /* Text color */
+}
+
 .accordion .accordion-body {
     background-color: #f8f9fa; /* Desired content background color */
 }
