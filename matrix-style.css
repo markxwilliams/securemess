@@ -2,12 +2,7 @@
 :root {
 	--fontSize: 16px;
 }
-.accordion {
-	--bs-accordion-btn-color: ghostwhite;
-	--bs-accordion-btn-bg: pink;
-	--bs-accordion-active-color: maroon;
-	--bs-accordion-active-bg: lightpink;
-}
+
 html {
 	font-size: var(--fontSize);
 }
@@ -209,3 +204,11 @@ label:first-of-type {
 		font-size: 16px;
 	}
 }	
+.accordion {
+  --bs-accordion-btn-bg: #ffc0d3;
+	  --bs-accordion-active-bg: #ff5c8d;
+  --bs-accordion-active-color: white;
+	.accordion {
+  --bs-accordion-btn-focus-box-shadow: none;
+}
+}
