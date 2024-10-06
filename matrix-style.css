@@ -209,17 +209,3 @@ input[type="text"], input[type="email"], input[type="message"], textarea {
     padding: 10px;
     font-size: 16px;
 }
-#fs-frm {
-    background-color: #2F363D;
-    background-size: cover;   /* Cover the entire form */
-    padding: 30px;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light box shadow */
-}	
-
-section {
-    background-color: #2F363D; /* Light gray for the entire section */
-    padding: 40px;
-    border-radius: 8px;
-}
