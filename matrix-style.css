@@ -179,7 +179,10 @@ label:first-of-type {
 	margin: 0 5px;
 }
 /* More specific selector */
-
+.accordion .accordion-button {
+    background-color: #2F363D; /* Desired color */
+    color: #FFF; /* Text color */
+}
 
 .accordion .accordion-button:not(.collapsed) {
     background-color: #2F363D; /* Desired open color */
@@ -187,12 +190,12 @@ label:first-of-type {
 }
 /* Change the color of the collapsed arrow */
 .accordion .accordion-button::before {
-   color: white; /* Replace 'red' with your desired color */
+  	color: #FFF; /* Text color */
 }
 
 /* Change the color of the expanded arrow */
 .accordion .accordion-button:not(.collapsed)::before {
-   color: white; /* Replace 'blue' with your desired color */
+   	color: #FFF; /* Text color */
 }
 
 .accordion .accordion-body {
