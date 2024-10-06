@@ -74,22 +74,22 @@
     </nav>
 	<div class="container custom-width">
 
-	<h1>The objective of this site</h1>
+	<h2>The objective of this site</h2>
 <p>I created this site to enable people to compare many so-called &#8220;secure messaging apps&#8221;. Likewise, I hope to educate people as to which functionality is required for truly secure messaging.</p>
 <p>In 2016, I was frustrated with the EFF&#8217;s very out-of-date <a href="https://www.eff.org/pages/secure-messaging-scorecard">comparison</a>, and hence I decided to create a comparison myself. Reaching out to various privacy organisations proved to be a complete waste of time, as no one was willing to collaborate on a comparison. This is a good lesson learnt: Don&#8217;t be beholden to other people/organisations, and produce your own useful work.</p>
 <p>This site is&nbsp;not meant to be comprehensive; security is <em>difficult</em>, and a full review of each app is simply not plausible due to time, a lack of access to source code in many cases, and a lack of knowledge of development practices, and general cyber security maturity.</p>
-<h1>Who are you?</h1>
+<h2>Who are you?</h2>
 <p>My name is Mark Williams; I have over 15 years&#8217; experience in cyber security. I&#8217;m originally from New Zealand, and I currently live in Melbourne, Australia. I have a BSc in computer science and the CISSP &amp; SABSA Foundations certifications. I&#8217;m currently employed as a cyber security architect.</p>
-<h1>Shouldn&#8217;t you stay impartial?</h1>
+<h2>Shouldn&#8217;t you stay impartial?</h2>
 <p>In my experience, normal people (read: non-security/privacy people) want a simple yes/no answer or a recommendation. I believe that my comparison is fair, and that is why I have included my criteria by which I rated each of the apps.</p>
 <p>I am not connected to any of the companies or people behind the apps, nor do I receive any money with relation to this website.</p>
-<h1>Why should I trust you?</h1>
+<h2>Why should I trust you?</h2>
 <p>You shouldn&#8217;t. Feel free to do your own research, and <a href="https://www.securemessagingapps.com/contact/">let me know</a> if I&#8217;m wrong.</p>
-<h1>Assumptions</h1>
+<h2>Assumptions</h2>
 <p>I&#8217;ve assumed with iMessage and Skype that both the sender and receiver are also using iMessage and Skype. They both fall back to unencrypted communication if the other party doesn&#8217;t support encryption.</p>
-<h1>So&#8230; which app(s) should I use and avoid?</h1>
+<h2>So&#8230; which app(s) should I use and avoid?</h2>
 <p>Please see my <a href="https://www.securemessagingapps.com/ratings/">Ratings</a> page.</p>
-<h1>A word on trust</h1>
+<h2>A word on trust</h2>
 <p>In order to consider any of the apps &#8220;secure&#8221;, you must trust the people behind their creation/maintenance. Each of the apps has one weakness in common: you must trust a third party (them) in order for it to work. Namely you must</p>
 <ul>
 <li>trust that they have no incentives not to protect your data,</li>
@@ -100,12 +100,12 @@
 <li>trust that there are no backdoors or security vulnerabilities.</li>
 </ul>
 <p>Specifically, with every single app that I&#8217;ve assessed, you must trust their directory servers. These are the servers that ensure that Person A is really sending a message to Person B, and that Person C cannot intercept the message or impersonate either Person A or Person B.</p>
-<h1>You&#8217;re wrong! I must have my say about xyz</h1>
+<h2>You&#8217;re wrong! I must have my say about xyz</h2>
 <p>Please browse to the <a href="https://www.securemessagingapps.com/contact/">Contact</a> page.</p>
-<h1>A word on threat models</h1>
+<h2>A word on threat models</h2>
 <p>It&#8217;s said that security/privacy without a threat model is an undefined problem. (Well, that&#8217;s what I say, at least.)</p>
 <p>Each of our own personal threat models vary. If you&#8217;re sending messages to your mum about dinner, then the privacy of your data and metadata probably isn&#8217;t of that much concern.&nbsp;<span style="font-size: 1rem;">However, if you&#8217;re a medical professional, journalist, lawyer, political dissident, or even a politician, there are many reasons why you would want to protect your, or your clients&#8217;, information.&nbsp;</span></p>
-<h1>A note on message delivery</h1>
+<h2>A note on message delivery</h2>
 <p>Even though apps may have their infrastructure outside Five Eyes/Fourteen Eyes countries, they may still rely on USA-based infrastructure in order to deliver notifications to devices. Both Google and Apple provide such notification services &#8212; for Android and iOS respectively &#8212; that run on infrastructure in the USA.</p>
 <p>I have to admit that message notification&nbsp;is outside my area of expertise. However, according to the <a href="http://support.whispersystems.org/hc/en-us/articles/217524107-Can-Google-read-my-messages-Can-Apple-read-my-messages-">FAQ</a> for <a href="http://support.whispersystems.org/hc/en-us/articles/213190817-Why-do-I-need-Google-Play-installed-to-use-Signal-">Signal</a>, using these services is necessary in order to provide a good user experience.</p>
 <p>This is my understanding:</p>
@@ -116,13 +116,13 @@
 </ul>
 <p>According to the Threema <a href="https://threema.ch/en/faq">FAQ</a>, it&#8217;s possible to use Threema on Android without Google Cloud Messaging (Google&#8217;s message notification service).</p>
 <p>Wire can also be used without Google Cloud Messaging on Android. Update: <a href="https://github.com/WhisperSystems/Signal-Android/commit/1669731329bcc32c84e33035a67a2fc22444c24b">Signal</a> can now be used without Google Cloud Messaging.</p>
-<h1>Do Five Eyes and Fourteen Eyes matter?</h1>
+<h2>Do Five Eyes and Fourteen Eyes matter?</h2>
 <p>Yes. Even if messages and attachments are end-to-end encrypted &#8212; and hence app companies, ISPs, governments etc. cannot see the content &#8212; the location of developers and infrastructure (e.g., servers) still matter.</p>
 <p>Can developers be coerced by a government to create a backdoor? Servers don&#8217;t exist in a vacuum; someone or something needs to connect to servers in order to update code. Can this mechanism be manipulated?</p>
 <p>Who has physical access to these servers? Are they in a cage whose biometric authentication allows only the company access? Can datacentre staff access the servers? Are the servers encrypted? Are these servers in the cloud? Can the cloud vendor access the servers?</p>
 <p>All these questions are important, because if the servers aren&#8217;t secure, governments <em>may</em> be able to gain access to message content. And these servers are under someone&#8217;s legal jurisdiction, which means that they could be seized or manipulated.</p>
 <p>Five Eyes and Fourteen Eye countries are more susceptible to pressure from the US given their relationships.</p>
-<h1>Gaps</h1>
+<h2>Gaps</h2>
 <ul>
 <li>The most important gap is that this site is not meant to be comprehensive. I have not reviewed the security of each app; rather, I have compared security/privacy functionality.</li>
 <li>Many apps require that an account be created in order to use them. I have not assessed the security of accounts themselves. For example, two-factor authentication, password resets, key recovery, etc.</li>
@@ -131,7 +131,7 @@
 <li>I have not sought out to find vulnerabilities in each app.</li>
 <li>I&#8217;m not a programmer. I have not assessed the quality of the code for any of the apps.</li>
 </ul>
-<h1>FAQ</h1>
+<h2>FAQ</h2>
 <p><strong>What do you mean by &#8220;Have there been a recent code audit and an independent security analysis?&#8221;?</strong></p>
 <p>As I mentioned above, trust is a very important aspect to secure messaging apps. A means by which trust can be achieved is by independent security analyses. This is important because no one can mark his own homework. In the cryptography world, this is known as Schneier&#8217;s Law:</p>
 <blockquote><p><em>Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can’t break.</em></p></blockquote>
