@@ -185,9 +185,9 @@ label:first-of-type {
 }
 
 .accordion .accordion-body {
-    background-color: #f8f9fa; /* Desired content background color */
-	accordion-bg: #524a4e;
-	accordion-color: white;
+    background-color: #566166; /* Desired content background color */
+	 color: #FFF; /* Text color */
+	
 }
 
 .accordion .accordion-button:focus {
