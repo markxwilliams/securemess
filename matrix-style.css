@@ -197,7 +197,12 @@ label:first-of-type {
 .accordion .accordion-button {
     background-color: #2F363D; /* Desired color */
     color: #FFF; /* Text color */
-	 box-shadow: none;
+	border: none; /* Remove the border from accordion items */
+}
+
+/* Remove borders from accordion items */
+.accordion .accordion-item {
+    border: none; /* Remove the border from accordion items */
 }
 
 .accordion .accordion-button:not(.collapsed) {
