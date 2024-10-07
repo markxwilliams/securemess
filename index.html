@@ -766,14 +766,15 @@
 
 <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content bg-body text-white"> <!-- Dark background for modal -->
+        <div class="modal-content bg-body text-dark"> <!-- Use bg-body for modal background and text-dark for better readability -->
             <div class="modal-header">
                 <h1 class="modal-title fs-5" id="filterModalLabel">Filter Table</h1>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body bg-body text-white"> <!-- Black background and white text for the modal body -->
-                <div class="card bg-body text-white" id="filter-menu"> <!-- Ensure the card also has black background -->
+            <div class="modal-body bg-body text-dark"> <!-- Use bg-body for modal body -->
+                <div class="card bg-body text-dark" id="filter-menu"> <!-- Use bg-body for the card -->
                     <!-- Your filter content goes here -->
+                    <p>Filter options will be displayed here.</p>
                 </div>
             </div>
             <div class="modal-footer">
@@ -782,6 +783,7 @@
         </div>
     </div>
 </div>
+
 
 
 
