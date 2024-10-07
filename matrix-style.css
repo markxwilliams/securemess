@@ -192,6 +192,16 @@ label:first-of-type {
     box-shadow: none; /* Remove any box-shadow */
 }
 
+.accordion .accordion-button {
+    background-color: #2F363D; /* Desired color */
+    color: #FFF; /* Text color */
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #2F363D; /* Desired open color */
+	color: #FFF; /* Text color */
+}
+
 
 
 @media all and (max-width: 600px) {
