@@ -186,6 +186,8 @@ label:first-of-type {
 
 .accordion .accordion-body {
     background-color: #f8f9fa; /* Desired content background color */
+	accordion-bg: #524a4e;
+	accordion-color: white;
 }
 
 .accordion .accordion-button:focus {
@@ -203,10 +205,6 @@ label:first-of-type {
 	color: #FFF; /* Text color */
 }
 
-.accordion {
-  --bs-accordion-bg: #524a4e;
-  --bs-accordion-color: white;
-}
 
 
 @media all and (max-width: 600px) {
