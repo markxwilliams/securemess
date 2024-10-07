@@ -187,6 +187,8 @@ label:first-of-type {
 .accordion .accordion-body {
     background-color: #566166; /* Desired content background color */
 	 color: #FFF; /* Text color */
+	border-bottom: 1px solid #566166;
+
 	
 }
 
