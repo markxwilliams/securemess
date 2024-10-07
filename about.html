@@ -150,6 +150,87 @@
 </div>
     </div>
   </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+        Gaps
+      </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><li>The most important gap is that this site is not meant to be comprehensive. I have not reviewed the security of each app; rather, I have compared security/privacy functionality.</li>
+<li>Many apps require that an account be created in order to use them. I have not assessed the security of accounts themselves. For example, two-factor authentication, password resets, key recovery, etc.</li>
+<li>Many apps offer a web interface through which you can send and receive messages. I have not assessed the security of web interfaces.</li>
+<li>I have not assessed the design of each app.</li>
+<li>I have not sought out to find vulnerabilities in each app.</li>
+<li>I&#8217;m not a programmer. I have not assessed the quality of the code for any of the apps.</li>
+</div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+        Who Am I? 
+      </button>
+    </h2>
+    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body"><strong>What do you mean by &#8220;Have there been a recent code audit and an independent security analysis?&#8221;?</strong></p>
+<p>As I mentioned above, trust is a very important aspect to secure messaging apps. A means by which trust can be achieved is by independent security analyses. This is important because no one can mark his own homework. In the cryptography world, this is known as Schneier&#8217;s Law:</p>
+<blockquote><p><em>Anyone, from the most clueless amateur to the best cryptographer, can create an algorithm that he himself can’t break.</em></p></blockquote>
+<p>Independent security analyses can help confirm the security of the following:</p>
+<ul>
+<li>The encryption design.</li>
+<li>The implementation of the encryption.</li>
+<li>The quality of the code (i.e., possible vulnerabilities).</li>
+<li>Secure development standards.</li>
+<li>The infrastructure design (e.g., directory services, registration flow).</li>
+<li>The infrastructure implementation (e.g., secure datacentres, secure systems such as EC2 instances or physical systems).</li>
+<li>The CI/CD pipeline that puts developers&#8217; code into the finished product.</li>
+</ul>
+<p>I&#8217;m only confirming the following:</p>
+<ul>
+<li>The encryption design has been assessed.</li>
+<li>The code of the encryption, apps, and backend, directory service, etc. has been assessed.</li>
+</ul>
+<p>I&#8217;m not assessing the following:</p>
+<ul>
+<li>The infrastructure design (e.g., directory services, registration flow).</li>
+<li>The infrastructure implementation (e.g., secure datacentres, secure</li>
+<li>Secure development standards.</li>
+<li>The CI/CD pipeline.</li>
+</ul>
+<p>No Independent security analysis is perfect. In the real world, these engagements are often restricted by time, money, availability of staff, and many other reasons. They&#8217;re also a point in time assessment, sometimes repeated annually or when major changes occur.</p>
+<p><strong>Do you make any money from this site?</strong></p>
+<p>No. The domain name and hosting cost me a small amount of money per month. However, it does take quite a bit of my free time to research, keep up to date, and maintain the website.</p>
+<p><strong>How have you assessed each app?</strong></p>
+<p>For each app, I have done the following:</p>
+<ul>
+<li>Installed the app (and asked one friend of mine to install them all too) &amp; tested the functionality that can be verified (two-factor authentication, verifying keys, etc.).</li>
+<li>Read the publicly available information provided by each of the companies.</li>
+<li>Read information written by reputable sources about each app (e.g., Matthew Green from Johns Hopkins University).</li>
+<li>In some cases (Threema, Wire, and Wickr), someone from the company has reached out to me to confirm or correct certain ratings.</li>
+</ul>
+<p>Yes, it&#8217;s possible that the information on the apps&#8217; sites could be [purposely] incorrect. Yes, it&#8217;s possible that I&#8217;ve been given incorrect information. Hence why open source software, independent audits, funding, etc. is so important to consider, too.</p>
+<p><strong>Why don&#8217;t you assess Tox? </strong></p>
+<p>Tox doesn&#8217;t support push notifications on iOS. I don&#8217;t believe it will become a mainstream messaging app until it does.</p>
+<p><strong>Telegram is GDPR compliant. It must be secure!&nbsp;</strong></p>
+<p>No, Telegram is not secure, and GDPR &#8212; as with all privacy legislation &#8212; is mostly not worth the paper on which it&#8217;s written, as the EU continues to <a href="https://techcrunch.com/2021/01/27/protonmail-threema-tresorit-and-tutanota-warn-eu-lawmakers-against-anti-encryption-push/">attack</a> secure messaging apps despite EU politicians and bureaucrats <a href="https://www.theverge.com/2020/2/24/21150918/european-commission-signal-encrypted-messaging">using</a> Signal for privacy. Apparently &#8220;privacy by design&#8221; &#8212; a key GDPR requirement &#8212; could mean granting governments and intelligence agencies the ability to read messages.</p>
+<p>The ability to build secure messaging apps doesn&#8217;t happen because politicians and bureaucrats write regulations; secure messaging apps are created by building upon decades of work by private individuals and private companies/organisations, including cryptography, coding standards, messaging protocols, infrastructure design, identity services, etc.</p>
+<p>The only helpful aspect of GDPR is incentivising companies to create secure services by forcing companies to inform users of a data breach.</p>
+<p>Indeed, messaging apps are secure not because of governments but <em>despite</em> governments.</p>
+<p><strong>Why don&#8217;t you assess app xyz?</strong></p>
+<p>I&#8217;ve decided to try to keep the table reasonably small. And I&#8217;m only aiming to assess the most popular messaging apps. That said, I will assess new apps if I think they offer a secure alternative to the apps that I&#8217;ve already assessed.</p>
+<p><strong>Signal, Wire. etc. do allow anonymous user registration. What gives? </strong></p>
+<p>No, they don&#8217;t. If you need to give away personal data &#8212; a phone number, an email address, etc. &#8212; then it&#8217;s not anonymous. It&#8217;s not necessary to require&nbsp;personal data to register users.</p>
+<p><strong>App xyz has vulnerabilities. Surely it&#8217;s not secure? </strong></p>
+<p>All software has bugs, some of which are vulnerabilities. I originally attempted to rate apps based on previous/known vulnerabilities; however, I felt it raised more questions than answers. Is an app less secure because it&#8217;s had vulnerabilities? Does a vulnerability necessarily mean the app is insecure? It depends is the answer, and this answer cannot be written in table form.</p>
+<p><b>You finally assessed Riot / Element!</b></p>
+<p>Yes, after 20+ requests, I finally got around to it. Please note I&#8217;ve assessed the default installation, not the option of running your own server. Element / Riot uses matrix.org&#8217;s standard and as a backend, which complicates the assessment.</p>
+<p><strong>What about apps such as WeChat from companies in China?</strong></p>
+<p>China is a Marxist-Leninist state under which there is no separation between the state and individuals and the state and private companies.</p>
+<p>There is only the state, only one&#8217;s subservience to the state, and hence assessing any messaging app from China is a complete waste of time. Assume China&#8217;s government can read every single word sent over these apps. They are in no way secure.
+</div>
+    </div>
+  </div>
 	
 </div>
 	
