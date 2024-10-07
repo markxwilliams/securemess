@@ -203,6 +203,10 @@ label:first-of-type {
 	color: #FFF; /* Text color */
 }
 
+.accordion {
+  --bs-accordion-bg: #524a4e;
+  --bs-accordion-color: white;
+}
 
 
 @media all and (max-width: 600px) {
