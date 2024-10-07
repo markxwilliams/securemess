@@ -21,6 +21,7 @@
             display: flex;
             flex-direction: column;
             min-height: 100vh; /* Ensures footer is at the bottom */
+            padding-bottom: 60px; /* Space for footer */
         }
 
         h2, label {
@@ -45,6 +46,7 @@
         /* Make sure the content area takes available space */
         .content {
             flex: 1; /* This allows the content area to grow */
+            padding: 20px 0; /* Add some padding for better spacing */
         }
 
         footer {
@@ -52,6 +54,7 @@
             color: white;
             padding: 10px;
             text-align: center;
+            position: relative; /* Ensures footer is positioned relative to content */
         }
     </style>
 </head>
