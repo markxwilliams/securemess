@@ -197,20 +197,12 @@ label:first-of-type {
 .accordion .accordion-button {
     background-color: #2F363D; /* Desired color */
     color: #FFF; /* Text color */
+	 box-shadow: none;
 }
 
 .accordion .accordion-button:not(.collapsed) {
     background-color: #2F363D; /* Desired open color */
 color: #FFF; /* Text color */
-}
-
-.accordion .accordion-flush .accordion-button {
-  border-top: 1px solid #566166;
-}
-
-.accordion .accordion-flush .accordion-item:last-child .accordion-button.collapsed,
-.accordion .accordion-flush .accordion-item:last-child .accordion-body {
-  border-bottom: 1px solid #566166;
 }
 
 
