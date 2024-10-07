@@ -79,7 +79,7 @@
       </button>
     </h2>
     <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body"><p>In my experience, normal people (read: non-security/privacy people) want a simple yes/no answer or a recommendation. I believe that my comparison is fair, and that is why I have included my criteria by which I rated each of the apps.</p>
+      <div class="accordion-body">In my experience, normal people (read: non-security/privacy people) want a simple yes/no answer or a recommendation. I believe that my comparison is fair, and that is why I have included my criteria by which I rated each of the apps.</p>
 <p>I am not connected to any of the companies or people behind the apps, nor do I receive any money with relation to this website.</p></div>
     </div>
   </div>
@@ -90,7 +90,7 @@
       </button>
     </h2>
     <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">p>In order to consider any of the apps &#8220;secure&#8221;, you must trust the people behind their creation/maintenance. Each of the apps has one weakness in common: you must trust a third party (them) in order for it to work. Namely you must</p>
+      <div class="accordion-body">In order to consider any of the apps &#8220;secure&#8221;, you must trust the people behind their creation/maintenance. Each of the apps has one weakness in common: you must trust a third party (them) in order for it to work. Namely you must</p>
 <ul>
 <li>trust that they have no incentives not to protect your data,</li>
 <li>trust that they have designed and implemented a secure solution,</li>
@@ -103,6 +103,39 @@
 </div>
     </div>
   </div>
+	 <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+       Threat Models
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">It&#8217;s said that security/privacy without a threat model is an undefined problem. (Well, that&#8217;s what I say, at least.)</p>
+<p>Each of our own personal threat models vary. If you&#8217;re sending messages to your mum about dinner, then the privacy of your data and metadata probably isn&#8217;t of that much concern.&nbsp;<span style="font-size: 1rem;">However, if you&#8217;re a medical professional, journalist, lawyer, political dissident, or even a politician, there are many reasons why you would want to protect your, or your clients&#8217;, information.&nbsp;</span></p>
+</div>
+    </div>
+  </div>
+ <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+       Message Delivery
+      </button>
+    </h2>
+    <div id="flush-collapseSux" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Even though apps may have their infrastructure outside Five Eyes/Fourteen Eyes countries, they may still rely on USA-based infrastructure in order to deliver notifications to devices. Both Google and Apple provide such notification services &#8212; for Android and iOS respectively &#8212; that run on infrastructure in the USA.</p>
+<p>I have to admit that message notification&nbsp;is outside my area of expertise. However, according to the <a href="http://support.whispersystems.org/hc/en-us/articles/217524107-Can-Google-read-my-messages-Can-Apple-read-my-messages-">FAQ</a> for <a href="http://support.whispersystems.org/hc/en-us/articles/213190817-Why-do-I-need-Google-Play-installed-to-use-Signal-">Signal</a>, using these services is necessary in order to provide a good user experience.</p>
+<p>This is my understanding:</p>
+<ul>
+<li>Neither Google nor Apple can read the message or message metadata.</li>
+<li>However, Apple or Google can read the message notification data.&nbsp;This means that if you&#8217;re using iOS, Apple do know the frequency with which you&#8217;re sent messages, and they also know when you&#8217;re sent messages. It&#8217;s the same for Google and Android.</li>
+<li>Apple and Google need to know to which device to send the notifications. Both Apple and Google use unique IDs (hardly surprising) in order for this to function correctly. It&#8217;s therefore possible that those IDs could be tracked.</li>
+</ul>
+<p>According to the Threema <a href="https://threema.ch/en/faq">FAQ</a>, it&#8217;s possible to use Threema on Android without Google Cloud Messaging (Google&#8217;s message notification service).</p>
+<p>Wire can also be used without Google Cloud Messaging on Android. Update: <a href="https://github.com/WhisperSystems/Signal-Android/commit/1669731329bcc32c84e33035a67a2fc22444c24b">Signal</a> can now be used without Google Cloud Messaging.</p>
+</div>
+    </div>
+  </div>
+	
 </div>
 	
 	
