@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,25 +37,6 @@
             color: #000; /* Black text inside input fields */
         }
 
-       
-    .custom-input {
-        background-color: #566166; /* Set background color */
-        color: white; /* Set text color to white */
-    }
-    
-    /* Ensure placeholder text is visible */
-    ::placeholder {
-        color: #dcdcdc;
-    }
-
-    /* Placeholder color for other browsers */
-    :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color: #dcdcdc;
-    }
-    
-    ::-ms-input-placeholder { /* Microsoft Edge */
-        color: #dcdcdc;
-    }
        
     </style>
 </head>
@@ -100,36 +82,33 @@
             </div>
         </div>
 
- <div class="container">
-    <div class="row justify-content-lg-center">
-        <div class="col-12 col-lg-6">
-            <div class="form-container shadow-sm overflow-hidden">
-                <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                    <div class="container">
-                        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjkbdvdn" method="post">
-                            <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input class="form-control form-control-lg custom-input" type="text" name="name" id="name" placeholder="Name" required="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="email-address" class="form-label">Email address</label>
-                                <input class="form-control form-control-lg custom-input" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
-                            </div>
-                            <div class="mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control custom-input" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-                        </form>
+        <div class="container">
+            <div class="row justify-content-lg-center">
+                <div class="col-12 col-lg-6">
+                    <div class="form-container shadow-sm overflow-hidden">
+                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                            <div class="container">
+                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjkbdvdn" method="post">
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email-address" class="form-label">Email address</label>
+                                        <input class="form-control form-control-lg" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                                </form>
+                            </div>  
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-
-
     </section>
 
  
