@@ -253,7 +253,7 @@
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-        Cryptographic primitives (key exchange, symmetric encryption, authentication and integrity)
+        Cryptographic primitives
       </button>
     </h2>
     <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -268,8 +268,134 @@
   </div>
 </div>
 
+<div class="accordion accordion-flush" id="accordionFlushExample">
+  <!-- Are the app and server completely open source? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Are the app and server completely open source?
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because a fully open source app can be audited by the industry. Open source code leads to near full transparency: we can tell if a company’s claims meet reality. Likewise, we can find any vulnerabilities in the software, weaknesses in the implementation, or design deficiencies. The server code must also be open source; this is because all apps use a central directory service to match users. Vulnerabilities and backdoors could exist in these directory services.</p>
+        <p>Red = No.</p>
+        <p>Green = Yes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Are reproducible builds used to verify apps against source code? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Are reproducible builds used to verify apps against source code?
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Are you sure that the app you downloaded from Google and/or Apple is using the exact code source that the developers published? Reproducible builds are a method by which installed apps can be compared to published source code, thereby ensuring that no malicious changes have been made to the apps.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Can you sign up to the app "anonymously"? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Can you sign up to the app “anonymously”?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because many people have good reasons for needing to remain anonymous. Having to provide a unique ID of some kind — a cellphone number, email address, etc. — means giving away something that could be used to track you.</p>
+        <p>Red = No, users must provide some kind of contact details such as an email address or cellphone number. (I’m aware that you could get an anonymous email address or even cellphone numbers. However, I’m not considering workarounds. Even these <em>could</em> be traced.)</p>
+        <p>Yellow = You must provide an email address or a cellphone number. However, these are provably hashed, and hence they are unreadable by the company.</p>
+        <p>Green = Yes, you do not need to give away any details in order to use the app. (I’ve accepted here that you must be uniquely identifiable by the directory server, and hence that some kind of random ID <em>must</em> be assigned to each user in order for the app to work.)</p>
+        <p>(Hashes are irreversible, one-way encryption functions that can give each cellphone number or email address a unique value that is essentially gibberish. Your cellphone number or email address is hashed on your device, then uploaded to the directory server. In turn, everybody who uses the app has hashes of all of their contacts calculated on their device and then uploaded to the directory server. If two hashes match, then the directory server knows that your contact has the app installed without knowing your (or their) email address or cellphone number.)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Can you manually add contacts without needing to trust a directory server? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Can you manually add contacts without needing to trust a directory server?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Some apps require that you register yourself with a cellphone number or email address. This data is stored on the company’s servers (with one-way encryption [a hash] hopefully). It matches phone numbers and/or email addresses in your contact list (assuming that you allow the app access to it) so that you know who else uses the same app.</p>
+        <p>However, how do you know that you have been “matched” with the correct person? That the company hasn’t matched you with someone else (e.g., an intelligence agent)? This is especially important the <em>first</em> time that you are “matched”.</p>
+        <p>Some apps allow you to manually add a contact without needing to trust that a third party correctly matches you. This happens by two people scanning each other’s QR code. Threema does this very well.</p>
+        <p>This also has the advantage that you don’t need to give your phone number or email address to the company. You can add people anonymously, thereby increasing your privacy.</p>
+        <p>Red = No.</p>
+        <p>Green = Yes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Can you manually verify contacts' fingerprints? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Can you manually verify contacts’ fingerprints?
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>In order to ensure that you’re talking to whom you believe you are, it’s important that apps support the verification of users’ fingerprints. A fingerprint is a representation of your identity that’s bound to your encryption keys. If you cannot manually verify fingerprints within the app — by scanning a QR code, or by publishing your fingerprint, or by sending your fingerprint via another medium, or simply reading it over the phone — then your messages could be intercepted by what is called a “man in the middle (MITM)” attack.</p>
+        <p>Alice is sending messages to Bob. Well, she thinks she is sending messages to Bob; but actually, she is sending messages to Eve, who reads them, and then passes them on to Bob. Neither Alice nor Bob realize this is happening.</p>
+        <p>Verifying fingerprints ensures that this cannot occur.</p>
+        <p>Red = No.</p>
+        <p>Green = Yes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Could the directory service be modified to enable a MITM attack (especially when first adding a contact)? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Could the directory service be modified to enable a MITM attack (especially when first adding a contact)?
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>When using most messaging apps, you must/can provide a phone number, username, or email address. If a friend of yours has that phone number or email address in their contacts list, the app can automatically add your friend to your contacts in the app itself. (Or perhaps you must add their username manually.) That’s how these messaging apps know which of your friends is using it, too.</p>
+        <p>When first adding a contact, it’s possible that a directory service could “match” you with the incorrect person, either maliciously or by mistake. This could mean that while you believe that you are talking to a friend of yours, you are in fact talking to an intelligence agency. Manually verifying each other’s fingerprint wouldn’t raise any concerns since the intelligence agency would be using a valid fingerprint.</p>
+        <p>This is one way in which Threema has absolutely nailed mutual identification without a directory service. Each person can scan a QR code in the app — either by being physically in the same place, or by each person publishing their QR code somewhere on the Internet. Each person can then manually add the other without the need of the directory service.</p>
+        <p>Likewise, a directory service means that a third party’s device could be trusted. The same functionality that enables iMessage to send all of your messages to all of your authorized devices could be used to send all of your messages to an untrusted device without you knowing.</p>
+        <p>Note: This is arguably the biggest weakness in all messaging apps. Even if you’ve manually added a contact, you still must trust that the directory service isn’t doing anything malicious. This could include adding an unauthorized device to your account, giving another user access to your account (the same way in which you can use multiple devices), or temporarily matching you with another user. This is why being alerted when a user’s fingerprint changes is so important. Likewise, it’s important that the server side of the system is open source, too.</p>
+        <p>Red = Yes, directory services could be used to MITM a conversation.</p>
+        <p>There are no other options; all apps must trust a centralized directory service.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Do you get notified if a contact’s fingerprint changes? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Do you get notified if a contact’s fingerprint changes?
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>A contact’s fingerprint changes when they reinstall the app/their phone without having backed up (if it’s possible) their ID and encryption key. If the ID and encryption key were not backed up, or the entire phone was not reinstalled, then the app will regenerate a new ID and encryption key, which is represented by a fingerprint. Hence a new fingerprint will be generated.</p>
+        <p>However, a contact’s new fingerprint could also be a sign of a man in the middle attack. Hence you should re-verify your contacts if their fingerprint changes.</p>
+        <p>Red = No.</p>
+        <p>Yellow = Sometimes, under specific circumstances. (Wire does this if you’ve previously verified a contact’s fingerprint.)</p>
+        <p>Green = Yes.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-MV9Uq1EAsCksnQiG4J1FpD3U1X5D+Je5DflGvH6bXy1W+UsX9x/8j+Ll1k14N5A7" crossorigin="anonymous"></script>
+
+
 
 
 </div>
