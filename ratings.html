@@ -68,7 +68,7 @@
         <div class="container">
             <div class="row justify-content-lg-left">
                 <div class="col-12 col-lg-6">
-                    <h2>About/FAQs</h2>
+                    <h2>Ratings</h2>
                 </div>
             </div>
         </div>
@@ -93,16 +93,184 @@
   </div>
 </div>
 
+ <div class="accordion accordion-flush" id="accordionFlushExample">
+  <!-- Infrastructure jurisdiction -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Infrastructure jurisdiction
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>See above. In order to operate a truly global service, companies may have infrastructure in different regions of the world in order to, for example, provide lower network latency.</p>
+        <p>Red = Infrastructure is under the jurisdiction of a known Five Eyes partner. Or the company is under the jurisdiction of a country that is well known for surveillance.</p>
+        <p>Yellow = Infrastructure is under a jurisdiction that is not known for [mass] surveillance, or forcing companies to hand over or decrypt data. Or country is known to cooperate with Five Eyes countries.</p>
+        <p><span style="font-size: 1rem;">Green = Infrastructure is under a jurisdiction that is not known for [mass] surveillance, or forcing companies to hand over or decrypt data. </span>No known ties to Five Eyes etc.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Implicated in giving customers' data to intelligence agencies -->
   <div class="accordion-item">
     <h2 class="accordion-header">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-        Who Am I? 
+        Implicated in giving customers’ data to intelligence agencies
       </button>
     </h2>
     <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-      <div class="accordion-body">My name is Mark Williams; I have over 20 years&#8217; experience in cyber security. I&#8217;m originally from New Zealand, and I currently live in Melbourne, Australia. I have a BSc in computer science and the CISSP &amp; SABSA Foundations certifications. I&#8217;m currently employed as a cyber security architect.</div>
+      <div class="accordion-body">
+        <p>This matters because companies can be forced by law to give customers’ data to intelligence agencies. Other known methods by which these agencies can get customers’ data include coercion, hacking, planting an employee, or simply asking nicely. I’ve used the term “intelligence agencies” to refer to any government agency.</p>
+        <p>Note: I have considered “customers’ data” here to mean customers’ content/messages (data, not metadata). Wickr, for example, does cooperate with law enforcement agencies — as all companies must — but they can only hand over metadata because the content is encrypted (and they don’t have the keys).</p>
+        <p>Red = The company has been implicated in giving customers’ data to intelligence agencies. This is proven by evidence.</p>
+        <p>Yellow = The company has been implicated in giving customers’ data to intelligence agencies. There is no direct evidence, but the source is reputable.</p>
+        <p>Green = The company has not been implicated in giving customers’ data to intelligence agencies.</p>
+      </div>
     </div>
   </div>
+
+  <!-- Surveillance capability built into the app? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Surveillance capability built into the app?
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because some jurisdictions mandate that certain systems must have surveillance access for governments.</p>
+        <p>Note: While many American companies were implicated in the Snowden leaks — the PRISM program specifically — I’ve considered this for the app only. If they are part of PRISM, this is considered under “Implicated in giving customers’ data to intelligence agencies”.</p>
+        <p>However, in saying that, I assume that Facebook, Google, Apple, and Microsoft have all granted government backdoors to their apps for intelligence agencies. But apart from Microsoft, there is no proof that I could find.</p>
+        <p>Red = Confirmed. The app was specifically designed to enable surveillance.</p>
+        <p>Yellow = It’s widely accepted that the app was designed to enable surveillance based on evidence from a reputable source.</p>
+        <p>Green = No… not that we know…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Does the company provide a transparency report? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+        Does the company provide a transparency report?
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Many companies periodically publish a transparency report. This details what type of requests have been received from governments, how many requests were made, how many customers were affected, etc.</p>
+        <p>Red = Company does not provide a periodic transparency report. (Or it’s not particularly useful.)</p>
+        <p>Green = Company provides a meaningful transparency report periodically.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company's general stance on customers' privacy -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+        Company's general stance on customers' privacy
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because companies often talk a big game when it comes to customers’ privacy. How often have you heard this after a data breach? “We care deeply about our customers’ security/privacy and have industry-leading security in place”.</p>
+        <p>Red = Company does not design its systems to collect minimal customer information, or does not have strong encryption/security controls; or does not have a simple, readable privacy policy and terms & conditions. Or the company is known to cooperate with legal (or informal) requests for customer information. Or the company’s business model relies upon users’ data.</p>
+        <p>Yellow = I’m not sure that there is a middle ground. I’ll write this if I ever think that it’s appropriate for an app company.</p>
+        <p>Green = Company designs its systems to collect minimal customer information; has strong encryption/security controls; a simple, readable privacy policy and terms & conditions. The company is unable to hand over user data to governments even if asked. Likewise, the company is known to fight legal challenges to decrypt or otherwise hand over customer data. The company’s business model does not rely upon users’ data.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Funding -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+        Funding
+      </button>
+    </h2>
+    <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because “money talks”, as the saying goes. If the company or person behind the money is likely to have reason not to protect customers’ privacy, it’s important to know. This could be indicative of the company not doing as they say (Google, WhatsApp, for example) or changing their mind once they’ve onboarded enough customers from whom they can make money.</p>
+        <p>Red = Funded by a company/person that/who is well-connected to, or well-known for, collecting customers’ data. Or they are known for collecting customers’ data or cooperating with the authorities when it comes to requesting customers’ data.</p>
+        <p>Yellow = I don’t know if there is a middle ground. If there is, I’ll write about it when it happens.</p>
+        <p>Green = Funded by companies/people that/who either have a vested interest in, or no obvious reason against, encrypting/securing customers’ data. They mustn’t be known for collecting customers’ data or cooperating with the authorities when it comes to requesting customers’ data.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Company collects customers' data -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+        Company collects customers’ data
+      </button>
+    </h2>
+    <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because many companies use customers’ data for advertising, for improving their services, or simply to sell to other companies. Do you truly believe such companies want to protect your messages if they normally make money from your personal data?</p>
+        <p>Red – Yes, they collect more than is required for the functioning of the secure messaging app. Indeed, they collect other customer data for other parts of their business.</p>
+        <p>Yellow = They collect only the minimal amount (cellphone number or email address, for example) of customer data to provide a secure messaging app.</p>
+        <p>Green = They collect no user data. (I’m assuming here that you can buy the app, if required, in an anonymous fashion.)</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- App collects customers' data -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+        App collects customers’ data
+      </button>
+    </h2>
+    <div id="flush-collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>This matters because many companies use customers’ data for advertising, for improving their services, or simply to sell to other companies. Do you truly believe such companies want to protect your messages if they normally make money from your personal data?</p>
+        <p>Red – Yes, they collect more than is required for the functioning of the secure messaging app. Indeed, they collect unprotected customer data or the messages sent themselves.</p>
+        <p>Yellow = They collect only the minimal amount (cellphone number or email address, for example) of customer data to provide a secure messaging app.</p>
+        <p>Green = They collect no user data.</p>
+        <p>This requirement is based on the permissions according to Apple’s app store.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Is encryption turned on by default? -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+        Is encryption turned on by default?
+      </button>
+    </h2>
+    <div id="flush-collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Self-explanatory.</p>
+        <p>Red = No.</p>
+        <p>Green = Yes.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cryptographic primitives -->
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+        Cryptographic primitives (key exchange, symmetric encryption, authentication and integrity)
+      </button>
+    </h2>
+    <div id="flush-collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">
+        <p>Specific key exchange, encryption, and hashing algorithms are considered secure by cryptographers. It's important that algorithms without known weaknesses are used. These are the building blocks upon which secure encryption is built.</p>
+        <p>Note that I have not considered if the implementation of these building blocks is sound.</p>
+        <p>Red = App uses cryptographic primitives that have been broken. Practical attacks against them exist.</p>
+        <p>Yellow = App uses cryptographic primitives that are considered weak. However, there are no known practical attacks against them yet.</p>
+        <p>Green = App uses well-known, secure cryptographic primitives that provide post-quantum protection.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-MV9Uq1EAsCksnQiG4J1FpD3U1X5D+Je5DflGvH6bXy1W+UsX9x/8j+Ll1k14N5A7" crossorigin="anonymous"></script>
+
 
 </div>
     </div>
