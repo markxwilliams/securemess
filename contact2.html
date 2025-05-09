@@ -92,17 +92,23 @@
                     <div class="form-container shadow-sm overflow-hidden">
                         <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                             <div class="container">
-                               <form action="https://usebasin.com/f/YOUR-FORM-ID" method="POST" enctype="multipart/form-data" data-basin-form data-basin-success-action='render' data-basin-spam-protection='recaptcha'>
-    <label for="email">Email</label>
-    <input type="text" id="email" name="email" placeholder="email.." required>
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-    <label for="theFile">file data:</label>
-    <input id="theFile" name="myFile" type="file">
-    <input type="submit" value="Submit">
-  </form>
+                               <form action="https://usebasin.com/f/YOUR-FORM-ID" method="POST" enctype="multipart/form-data" data-basin-form data-basin-success-action='render' data-basin-spam-protection='turnstile'>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Name</label>
+                                        <input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="Name" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email-address" class="form-label">Email address</label>
+                                        <input class="form-control form-control-lg" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Message</label>
+                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+                                </form>
 				    <div class="w-form-done" style="display: none;">Thank you for your submission! 🚀🚀🚀</div>
-  <div class="w-form-fail" style="display: none;">Oops, something went wrong 🚨🚨🚨</div>
+ 					 <div class="w-form-fail" style="display: none;">Oops, something went wrong 🚨🚨🚨</div>
                             </div>  
                         </div>
                     </div>
