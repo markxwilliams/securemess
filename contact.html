@@ -39,6 +39,7 @@
     </style>
 	
 	<script src="/public/js/script.js" data-api="/public/api/event" data-domain="securemessagingapps.com"></script>
+	<script src="https://js.usebasin.com/v2.6.0.min.js" defer></script>
 </head>
 
 <body>
@@ -91,21 +92,23 @@
                     <div class="form-container shadow-sm overflow-hidden">
                         <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                             <div class="container">
-                                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xjkbdvdn" method="post">
-                                    <div class="mb-3">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="Name" required="">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email-address" class="form-label">Email address</label>
-                                        <input class="form-control form-control-lg" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required="">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="message" class="form-label">Message</label>
-                                        <textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required=""></textarea>
-                                    </div>
-                                    <button type="submit" class="btn btn-secondary btn-sm">Submit</button>
-                                </form>
+				<form action="https://usebasin.com/f/2ae132c221ed" method="POST" data-basin-form data-basin-success-action="render" data-basin-spam-protection="turnstile" data-basin-turnstile-sitekey="0x4AAAAAABb3V4yuwswo_E3o">
+    					<div class="mb-3">
+      						<label for="name" class="form-label">Name</label>
+      						<input class="form-control form-control-lg" type="text" name="name" id="name" placeholder="Name" required>
+    					</div>
+
+    					<div class="mb-3">
+      						<label for="email-address" class="form-label">Email address</label>
+      						<input class="form-control form-control-lg" type="email" name="email-address" id="email-address" placeholder="email@domain.tld" required>
+    					</div>
+
+    					<div class="mb-3">
+      						<label for="message" class="form-label">Message</label>
+      						<textarea class="form-control" name="message" id="message" rows="3" placeholder="Your message" required></textarea>
+    					</div>
+    					<button type="submit" class="btn btn-secondary btn-sm">Submit</button>
+  				</form>
                             </div>  
                         </div>
                     </div>
