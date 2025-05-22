@@ -5,6 +5,10 @@
       "destination": "https://plausible.io/js/script.js"
     },
     {
+      "source": "/send/script.js",
+      "destination": "https://cloud.umami.is/"
+    },
+    {
       "source": "/public/api/event",
       "destination": "https://plausible.io/api/event"
     }
