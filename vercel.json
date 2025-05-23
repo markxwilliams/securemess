@@ -15,6 +15,6 @@
      {
       "source": "/send/api/send",
       "destination": "https://cloud.umami.is/api/send"
-    },
+    }
   ]
 }
