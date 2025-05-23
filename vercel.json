@@ -7,7 +7,7 @@
     {
       "source": "/public/api/event",
       "destination": "https://plausible.io/api/event"
-    }
+    },
      {
       "source": "/send/js/script.js",
       "destination": "https://cloud.umami.is/script.js"
