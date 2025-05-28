@@ -1,13 +1,5 @@
 {
   "rewrites": [
-    {
-      "source": "/public/js/script.js",
-      "destination": "https://plausible.io/js/script.js"
-    },
-    {
-      "source": "/public/api/event",
-      "destination": "https://plausible.io/api/event"
-    },
      {
       "source": "/send/js/script.js",
       "destination": "https://cloud.umami.is/script.js"
