@@ -54,719 +54,655 @@
 	</nav>
 
 	<div class="wrapper">
-		<table>
-			<thead>
-				<tr>
-					<th style="text-align: center;">
-    <p>
-        <font size="5rem">Messenger</font>
-    </p>
-    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#filterModal">
-        Filter Table
-    </button>
-</th>
-<th style="text-align: center;">Google<br>Messages<br><a href="https://www.android.com/google-messages/"><img src="/logos/google-messages.png" alt="Google Messages" width="64" height="64"></a></th>
-<th style="text-align: center;">Apple<br>iMessage<br><a href="https://support.apple.com/messages"><img src="/logos/imessage.png" alt="iMessage" width="64" height="64"></a></th>
-<th style="text-align: center;">Facebook<br>Messenger<br><a href="https://www.messenger.com/"><img src="/logos/facebook-messenger.png" alt="Facebook Messenger" width="64" height="64"></a></th>
-<th style="text-align: center;">Element<br>(Matrix)<br><a href="https://element.io/"><img src="/logos/element.png" alt="Element" width="64" height="64"></a></th>
-<th style="text-align: center;">Signal<br><br><a href="https://signal.org/"><img src="/logos/signal.png" alt="Signal" width="64" height="64"></a></th>
-<th style="text-align: center;">Microsoft<br>Skype<br><a href="https://www.skype.com/"><img src="/logos/skype.png" alt="Skype" width="64" height="64"></a></th>
-<th style="text-align: center;">Telegram<br><br><a href="https://telegram.org/"><img src="/logos/telegram.png" alt="Telegram" width="64" height="64"></a></th>
-<th style="text-align: center;">Threema<br><br><a href="https://threema.ch/"><img src="/logos/threema.png" alt="Threema" width="64" height="64"></a></th>
-<th style="text-align: center;">Viber<br><br><a href="https://www.viber.com/"><img src="/logos/viber.png" alt="Viber" width="64" height="64"></a></th>
-<th style="text-align: center;">Facebook<br>WhatsApp<br><a href="https://www.whatsapp.com/"><img src="/logos/whatsapp.png" alt="WhatsApp" width="64" height="64"></a></th>
-<th style="text-align: center;">Amazon<br>Wickr Me<br><a href="https://wickr.com/me/"><img src="/logos/wickr.png" alt="Wickr" width="64" height="64"></a></th>
-<th style="text-align: center;">Wire<br><br><a href="https://wire.com/"><img src="/logos/wire.png" alt="Wire" width="64" height="64"></a></th>
-<th style="text-align: center;">Session<br><br><a href="https://getsession.org/"><img src="/logos/session.png" alt="Session" width="64" height="64"></a></th>
-<th style="text-align: center;">SimpleX<br><br><a href="https://simplex.chat/"><img src="/logos/simplex.png" alt="SimpleX" width="64" height="64"></a></th>
-<th style="text-align: center;">Twitter<br><br><a href="https://twitter.com/"><img src="/logos/twitter.png" alt="Twitter" width="64" height="64"></a></th>
-
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th class="darkgrey sticky">Overview</th>
-					<td class="darkgrey" colspan="22"></td>
-				</tr>
-				<tr>
-					<th>Is the app recommended to secure my messages and attachments?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-				</tr>
-				<tr>
-					<th>Main reasons why the app isn't recommended<br /><br /> / <br /><br />Improvements to apps that are recommended</th>
-					<td class="red">Named as NSA partner in Snowden revelations<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent, recent code audit and security analysis</td>
-					<td class="red">Named as NSA partner in Snowden revelations<br /><br />Data not protected, not all data protected<br /><br />No independent, recent code audit and security analysis<br /></td>
-					<td class="red">Named as NSA partner in Snowden revelations<br /><br />Encryption not enabled by default<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent &amp; recent code audit and security analysis</td>
-					<td class="red">No independent, recent code audit and security analysis</td>
-					<td class="green">Remove the mandatory requirement for users to sign up with a mobile number</td>
-					<td class="red">Named as NSA partner in Snowden revelations<br /><br />Encryption not enabled by default<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />Closed source</td>
-					<td class="red">Bespoke cryptography<br /><br />Encryption not enabled by default<br /><br />Data not protected, not all data protected</td>
-					<td class="green">Make APIs and server code open source<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
-					<td class="red">Data not protected, not all data protected<br /><br />No independent & recent code audit and security analysis<br /><br />Closed source</td>
-					<td class="red">Named as NSA partner in Snowden revelations<br /><br />Messages can be read by Facebook if marked as "abusive"<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent & recent code audit and security analysis<br /><br />Closed source</td>
-					<td class="red">Former NSA chief Keith Alexander is on Amazon’s board of directors<br /><br />Funded by the CIA<br /><br />Recent security audits are not public<br /><br />Has contracts with the US government<br /><br />Closed source</td>
-					<td class="green">Further limit metadata storage and logging<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
-					<td class="green">Implement perfect forward secrecy at the end-to-end encryption layer<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
-					<td class="green">Provide more comprehensive independent assessments of security/privacy</td>
-					<td class="red">End-to-end encryption not implemented for all users and group chats<br /><br />No implementation details<br /><br />No comprehensive independent assessments of security/privacy<br /><br />Closed source</td>
-					
-				</tr>
-			
-				<tr>
-					<th class="darkgrey sticky">Details</th>
-					<td class="darkgrey" colspan="22"></td>
-				</tr>
-				<tr>
-					<th>Company jurisdiction</th>
-					<td class="red">USA</td>
-					<td class="red">USA</td>
-					<td class="red">USA</td>
-					<td class="red">UK</td>
-					<td class="red">USA</td>
-					<td class="red">USA</td>
-					<td class="red">USA / UK / Belize / UAE</td>
-					<td class="yellow">Switzerland</td>
-					<td class="yellow">Luxembourg / Japan</td>
-					<td class="red">USA</td>
-					<td class="red">USA</td>
-					<td class="red">USA / Switzerland</td>
-					<td class="yellow">Switzerland</td>
-					<td class="red">UK</td>
-					<td class="red">USA</td>
-				</tr>
-				<tr>
-					<th>Infrastructure jurisdiction	</th>
-					<td class="red">Worldwide (rollout on-going, unsure of exact locations, most likely Google Cloud regions)</td>
-					<td class="red">USA (Ireland and Denmark planned); iMessage runs on AWS and Google Cloud	</td>
-					<td class="red">USA, Sweden (Ireland planned)	</td>
-					<td class="red">UK (and potentially all jurisdictions, given it's a decentralised messaging platform)	</td>
-					<td class="red">USA</td>
-					<td class="red">USA, the Netherlands, Australia, Brazil, China, Ireland, Hong Kong, and Japan</td>
-					<td class="red">UK, Singapore, USA, and Finland	</td>
-					<td class="yellow">Switzerland</td>
-					<td class="red">USA</td>
-					<td class="red">USA (unsure of other locations)	</td>
-					<td class="red">USA (unsure of other locations)	</td>
-					<td class="red">Messages: Worldwide (uses de-centralised servers)<br /><br />Attachments: Centralised server in Canada</td>
-					<td class="red">Worldwide (uses de-centralised servers)	</td>
-					<td class="red">Worldwide (uses de-centralised servers)</td>
-					<td class="red">USA, worldwide (unsure of other locations)</td>
-				</tr>
-				<tr>
-					<th>Implicated in giving customers' data to intelligence agencies?</th>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-				</tr>
-				<tr>
-					<th>Surveillance capability built into the app?</th>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-				</tr>
-				<tr>
-					<th>Does the company provide a transparency report?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-				</tr>
-				<tr>
-					<th>Company's general stance on customers' privacy</th>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-				</tr>
-				<tr>
-					<th>Company collects customers' data?	</th>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="red">Poor</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="green">Good</td>
-					<td class="red">Poor</td>
-				</tr>
-				<tr>
-					<th>Funding</th>
-					<td class="red">Google</td>
-					<td class="red">Apple</td>
-					<td class="red">Facebook</td>
-					<td class="green">New Vector Limited</td>
-					<td class="green">Freedom of the Press Foundation <br /><br> The Knight Foundation <br /><br> The Shuttleworth Foundation <br /><br> The Open Technology Fund <br /><br> Signal Foundation (Brian Acton)</td>
-					<td class="red">Microsoft</td>
-					<td class="green">Pavel Durov	</td>
-					<td class="green">User pays / Afinum Management AG	</td>
-					<td class="green">Rakuten <br /><br> Friends and family of Talmon Marco (very unclear)</td>
-					<td class="red">Facebook</td>
-					<td class="red">Amazon <br /><br> the CIA</td>
-					<td class="red">Janus Friis <br /><br> Iconical <br /><br> Zeta Holdings Luxembourg <br /><br>Morpheus Ventures</td>
-					<td class="green">LAG Foundation Ltd	</td>
-					<td class="green">Venture Capital fund Village Global	</td>
-					<td class="red">Twitter</td>
-				</tr>
-				<tr>
-					<th>App collects customers' data?</th>
-					<td class="red">Yes <br /><br> (Difficult to assess given the app is integrated into Google's greater ecosystem)</td>
-					<td class="red">Yes <br /><br> (Difficult to assess given the app is integrated into Apple's greater ecosystem)</td>
-					<td class="red">Health & fitness / purchases / financial info / location / contact info / contacts / user content / search history / browsing history / identifiers / usage data / sensitive info / diagnostics / other data	</td>
-					<td class="red">Contact info / contacts / identifiers / diagnostics / user content<br /><br> (Contact info not sent when using anonymously)</td>
-					<td class="yellow">Contact Info</td>
-					<td class="red">Identifiers / Contact Info / User Content / Identifiers / Usage Data / Diagnostics</td>
-					<td class="red">Contact info / contacts / identifiers</td>
-					<td class="yellow">Contact info / identifiers / diagnostics<br /><br>(Contact info not sent when using anonymously)</td>
-					<td class="red">Location / identifiers / purchases / location / contact info / contacts / identifiers / usage data / user content / usage data / diagnostics</td>
-					<td class="red">Purchases / financial info / location / contact info / contacts / user content / identifiers / usage data / diagnostics</td>
-					<td class="yellow">Contact info / identifiers / diagnostics<br /><br>(Contact info not sent when using anonymously)</td>
-					<td class="yellow">Contact info / identifiers / usage data / diagnostics</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Purchases / Location / Contact Info / Contacts / User Content / Search History / Browsing History / Identifiers / Usage Data / Diagnostics</td>
-				</tr>
-				<tr>
-					<th>User data and/or metadata sent to parent company and/or third parties?</th>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="green">No<br /><br> (User data is sent to a third party if a payment is made)</td>
-					<td class="yellow">Minimal<br /><br> (Mandatory mobile number sent to third party for registration & recovery)</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="yellow">No<br /><br> (Optional mobile number sent to third party for registration)</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="yellow">No<br /><br> (Optional mobile number sent to third party for registration)</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-				</tr>
-				<tr>
-					<th>Is encryption turned on by default?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes (if device supports it)</td>
-					<td class="green">Yes (if device supports it)</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-				</tr>
-				<tr>
-					<th>Cryptographic primitives	</th>
-					<td class="yellow">Curve25519 / AES-256 / HMAC-SHA256	</td>
-					<td class="green">P-256 ECDH & Kyber-768/1024 / AES-256 / HMAC-SHA384	</td>
-					<td class="yellow">Curve25519 / AES-256 / HMAC-SHA256	</td>
-					<td class="yellow">Curve25519 / AES-256 / HMAC-SHA256	</td>
-					<td class="green">Curve25519 & Kyber-1024 / AES-256 / HMAC-SHA256/512	</td>
-					<td class="yellow">Curve25519 / AES-256 / HMAC-SHA256	</td>
-					<td class="yellow">RSA 2048 / AES 256 / SHA-256	</td>
-					<td class="yellow">Curve25519 256 / XSalsa20 256 / Poly1305-AES 128	</td>
-					<td class="yellow">Curve25519 256 / Salsa20 128 / HMAC-SHA256	</td>
-					<td class="yellow">Curve25519 / AES-256 / HMAC-SHA256	</td>
-					<td class="yellow">ECDH512 / AES-256 / HMAC-SHA256	</td>
-					<td class="yellow">Curve25519 / ChaCha20 / HMAC-SHA256	</td>
-					<td class="green">X25519 / XSalsa20 256 / Poly1305	</td>
-					<td class="green">Curve25519 & sntrup761 1158 / XSalsa20 256 / Poly1305	</td>
-					<td class="">	</td>
-				</tr>
-				<tr>
-					<th>Are the app and server completely open source?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes (clients Element / Riot, server/API matrix.org)</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="yellow">No (clients and API only)</td>
-					<td class="yellow">No (apps only)</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Are reproducible builds used to verify apps against source code?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="yellow">Android only</td>
-					<td class="red">No</td>
-					<td class="green">iOS and Android</td>
-					<td class="yellow">Android only</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Can you sign up to the app anonymously?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Can you add a contact without needing to trust a directory server?</th>
-					<td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">no</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Can you manually verify contacts' fingerprints?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No (session only, does not provide users' fingerprint information)</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-				</tr>
-
-				<tr>
-					<th>Directory service could be modified to enable a MITM attack?</th>
-					<td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-				</tr>
-
-				<tr>
-					<th>Do you get notified if a contact's fingerprint changes?</th>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No (session only, does not provide users' fingerprint information)</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No (setting turned off by default)</td>
-					<td class="green">Yes</td>
-					<td class="yellow">If contact was previously verified</td>
-					<td class="white">N/A</td>
-					<td class="white">N/A</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Is personal information (mobile number, contact list, etc.) hashed?</th>
-					<td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="yellow">Mostly</td>
-					<td class="red">No</td>
-					<td class="red">No (session only, does not provide users' fingerprint information)</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No (setting turned off by default)</td>
-					<td class="green">Yes</td>
-					<td class="yellow">Mostly</td>
-					<td class="white">N/A</td>
-					<td class="white">N/A</td>
-					<td class="white"></td>
-				</tr>
-
-				
-				<tr>
-					<th>Does the app generate & keep a private key on the device itself?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Can messages be read by the company?</th>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the app enforce perfect forward secrecy?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No (session keys do change after being used 100 times)</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the app encrypt metadata?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="yellow">Mostly</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the app use TLS/Noise to encrypt network traffic?</th>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-				</tr>
-
-				<tr>
-					<th>Does the app use certificate pinning?</th>
-					<td class="white"></td>
-					<td class="green">Yes (>=iOS 9.3)</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the app encrypt data on the device? (iOS and Android only)</th>
-					<td class="red">No</td>
-					<td class="green">Yes (if passphrase enabled)</td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="green">Yes (if passphrase enabled)</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">iOS: Yes (if passphrase enabled); Android: Yes (if master key set in the app)s</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">iOS: Yes (if passphrase enabled); Android: Yes (unsure of function)</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the app allow local authentication when opening it?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Are messages encrypted when backed up to the cloud?</th>
-					<td class="green">Yes (>= Android P)</td>
-					<td class="red">Yes</td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="white">N/A, Signal is excluded from iCloud/iTunes & Android backups	</td>
-					<td class="white"></td>
-					<td class="white"></td>
-					<td class="green">Yes</td>
-					<td class="white"></td>
-					<td class="green">iOS: Yes / Android: Yes</td>
-					<td class="white">N/A, Wickr is excluded from iCloud/iTunes & Android backups</td>
-					<td class="white">N/A, Wire is excluded from iCloud/iTunes & Android backups</td>
-					<td class="white">N/A, Session is excluded from iCloud/iTunes & Android backups</td>
-					<td class="white"></td>
-					<td class="white"></td>
-				</tr>
-
-				<tr>
-					<th>Does the company log timestamps/IP addresses?</th>
-					<td class="white"></td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="white"></td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-					<td class="red">Yes</td>
-					<td class="green">No</td>
-					<td class="yellow">Some</td>
-					<td class="green">No</td>
-					<td class="green">No</td>
-					<td class="red">Yes</td>
-				</tr>
-
-				<tr>
-					<th>Have there been a recent code audit and an independent security analysis?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="red">No (Matrix's encryption library reviewed by an independent party)</td>
-					<td class="green">Yes (<a href="https://community.signalusers.org/t/overview-of-third-party-security-audits/13243">many in the last few years</a>)</td>
-					<td class="red">No</td>
-					<td class="green">Yes (November, 2015)</td>
-					<td class="green">Yes (October, 2020)</td>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes (August, 2014)</td>
-					<td class="green">Yes (March, 2018)</td>
-					<td class="green">Yes (April, 2021)</td>
-					<td class="green">Yes (November, 2022)</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Is the design well documented?</th>
-					<td class="red">No</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="red">No</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="yellow">Somewhat</td>
-					<td class="red">No</td>
-				</tr>
-
-				<tr>
-					<th>Does the app have self-destructing messages?</th>
-					<td class="red">No</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="red">No</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-					<td class="green">Yes</td>
-				</tr>
-
-				
-				
-			</tbody>
-			<tfoot>
-    <tr>
-        <th class="darkgrey sticky"></th>
-        <td class="darkgrey" colspan="22" style="text-align: left;">
-            Source code: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Mike Kuketz</a>
-             | 
-            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
-             | 
-            <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
-            <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
-            <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
-            <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
-        </td>
-    </tr>
-</tfoot>
-
-		</table>
-	</div>
+    <table>
+        <thead>
+            <tr>
+                <th style="text-align: center;">
+                    <p>
+                        <font size="5rem">Messenger</font>
+                    </p>
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-toggle="modal" data-bs-target="#filterModal">
+                        Filter Table
+                    </button>
+                </th>
+                <th style="text-align: center;">Google<br>Messages<br><a href="https://www.android.com/google-messages/"><img src="/logos/google-messages.png" alt="Google Messages" width="64" height="64"></a></th>
+                <th style="text-align: center;">Apple<br>iMessage<br><a href="https://support.apple.com/messages"><img src="/logos/imessage.png" alt="iMessage" width="64" height="64"></a></th>
+                <th style="text-align: center;">Facebook<br>Messenger<br><a href="https://www.messenger.com/"><img src="/logos/facebook-messenger.png" alt="Facebook Messenger" width="64" height="64"></a></th>
+                <th style="text-align: center;">Element<br>(Matrix)<br><a href="https://element.io/"><img src="/logos/element.png" alt="Element" width="64" height="64"></a></th>
+                <th style="text-align: center;">Signal<br><br><a href="https://signal.org/"><img src="/logos/signal.png" alt="Signal" width="64" height="64"></a></th>
+                <th style="text-align: center;">Telegram<br><br><a href="https://telegram.org/"><img src="/logos/telegram.png" alt="Telegram" width="64" height="64"></a></th>
+                <th style="text-align: center;">Threema<br><br><a href="https://threema.ch/"><img src="/logos/threema.png" alt="Threema" width="64" height="64"></a></th>
+                <th style="text-align: center;">Viber<br><br><a href="https://www.viber.com/"><img src="/logos/viber.png" alt="Viber" width="64" height="64"></a></th>
+                <th style="text-align: center;">Facebook<br>WhatsApp<br><a href="https://www.whatsapp.com/"><img src="/logos/whatsapp.png" alt="WhatsApp" width="64" height="64"></a></th>
+                <th style="text-align: center;">Amazon<br>Wickr Me<br><a href="https://wickr.com/me/"><img src="/logos/wickr.png" alt="Wickr" width="64" height="64"></a></th>
+                <th style="text-align: center;">Wire<br><br><a href="https://wire.com/"><img src="/logos/wire.png" alt="Wire" width="64" height="64"></a></th>
+                <th style="text-align: center;">Session<br><br><a href="https://getsession.org/"><img src="/logos/session.png" alt="Session" width="64" height="64"></a></th>
+                <th style="text-align: center;">SimpleX<br><br><a href="https://simplex.chat/"><img src="/logos/simplex.png" alt="SimpleX" width="64" height="64"></a></th>
+                <th style="text-align: center;">Twitter<br><br><a href="https://twitter.com/"><img src="/logos/twitter.png" alt="Twitter" width="64" height="64"></a></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="darkgrey sticky">Overview</th>
+                <td class="darkgrey" colspan="14"></td>
+            </tr>
+            <tr>
+                <th>Is the app recommended to secure my messages and attachments?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Main reasons why the app isn't recommended<br /><br /> / <br /><br />Improvements to apps that are recommended</th>
+                <td class="red">Named as NSA partner in Snowden revelations<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent, recent code audit and security analysis</td>
+                <td class="red">Named as NSA partner in Snowden revelations<br /><br />Data not protected, not all data protected<br /><br />No independent, recent code audit and security analysis<br /></td>
+                <td class="red">Named as NSA partner in Snowden revelations<br /><br />Encryption not enabled by default<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent &amp; recent code audit and security analysis</td>
+                <td class="red">No independent, recent code audit and security analysis</td>
+                <td class="green">Remove the mandatory requirement for users to sign up with a mobile number</td>
+                <td class="red">Bespoke cryptography<br /><br />Encryption not enabled by default<br /><br />Data not protected, not all data protected</td>
+                <td class="green">Make APIs and server code open source<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
+                <td class="red">Data not protected, not all data protected<br /><br />No independent & recent code audit and security analysis<br /><br />Closed source</td>
+                <td class="red">Named as NSA partner in Snowden revelations<br /><br />Messages can be read by Facebook if marked as "abusive"<br /><br />Makes money from personal data<br /><br />Data not protected, not all data protected<br /><br />No independent & recent code audit and security analysis<br /><br />Closed source</td>
+                <td class="red">Former NSA chief Keith Alexander is on Amazon’s board of directors<br /><br />Funded by the CIA<br /><br />Recent security audits are not public<br /><br />Has contracts with the US government<br /><br />Closed source</td>
+                <td class="green">Further limit metadata storage and logging<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
+                <td class="green">Implement perfect forward secrecy at the end-to-end encryption layer<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
+                <td class="green">Provide more comprehensive independent assessments of security/privacy</td>
+                <td class="red">End-to-end encryption not implemented for all users and group chats<br /><br />No implementation details<br /><br />No comprehensive independent assessments of security/privacy<br /><br />Closed source</td>
+            </tr>
+            <tr>
+                <th class="darkgrey sticky">Details</th>
+                <td class="darkgrey" colspan="14"></td>
+            </tr>
+            <tr>
+                <th>Company jurisdiction</th>
+                <td class="red">USA</td>
+                <td class="red">USA</td>
+                <td class="red">USA</td>
+                <td class="red">UK</td>
+                <td class="red">USA</td>
+                <td class="red">USA / UK / Belize / UAE</td>
+                <td class="yellow">Switzerland</td>
+                <td class="yellow">Luxembourg / Japan</td>
+                <td class="red">USA</td>
+                <td class="red">USA</td>
+                <td class="red">USA / Switzerland</td>
+                <td class="yellow">Switzerland</td>
+                <td class="red">UK</td>
+                <td class="red">USA</td>
+            </tr>
+            <tr>
+                <th>Infrastructure jurisdiction</th>
+                <td class="red">Worldwide (rollout on-going, unsure of exact locations, most likely Google Cloud regions)</td>
+                <td class="red">USA (Ireland and Denmark planned); iMessage runs on AWS and Google Cloud</td>
+                <td class="red">USA, Sweden (Ireland planned)</td>
+                <td class="red">UK (and potentially all jurisdictions, given it's a decentralised messaging platform)</td>
+                <td class="red">USA</td>
+                <td class="red">UK, Singapore, USA, and Finland</td>
+                <td class="yellow">Switzerland</td>
+                <td class="red">USA</td>
+                <td class="red">USA (unsure of other locations)</td>
+                <td class="red">USA (unsure of other locations)</td>
+                <td class="red">Messages: Worldwide (uses de-centralised servers)<br /><br />Attachments: Centralised server in Canada</td>
+                <td class="red">Worldwide (uses de-centralised servers)</td>
+                <td class="red">Worldwide (uses de-centralised servers)</td>
+                <td class="red">USA, worldwide (unsure of other locations)</td>
+            </tr>
+            <tr>
+                <th>Implicated in giving customers' data to intelligence agencies?</th>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+            </tr>
+            <tr>
+                <th>Surveillance capability built into the app?</th>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+            </tr>
+            <tr>
+                <th>Does the company provide a transparency report?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+            </tr>
+            <tr>
+                <th>Company's general stance on customers' privacy</th>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+            </tr>
+            <tr>
+                <th>Company collects customers' data?</th>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="red">Poor</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="green">Good</td>
+                <td class="red">Poor</td>
+            </tr>
+            <tr>
+                <th>Funding</th>
+                <td class="red">Google</td>
+                <td class="red">Apple</td>
+                <td class="red">Facebook</td>
+                <td class="green">New Vector Limited</td>
+                <td class="green">Freedom of the Press Foundation <br /><br> The Knight Foundation <br /><br> The Shuttleworth Foundation <br /><br> The Open Technology Fund <br /><br> Signal Foundation (Brian Acton)</td>
+                <td class="green">Pavel Durov</td>
+                <td class="green">User pays / Afinum Management AG</td>
+                <td class="green">Rakuten <br /><br> Friends and family of Talmon Marco (very unclear)</td>
+                <td class="red">Facebook</td>
+                <td class="red">Amazon <br /><br> the CIA</td>
+                <td class="red">Janus Friis <br /><br> Iconical <br /><br> Zeta Holdings Luxembourg <br /><br>Morpheus Ventures</td>
+                <td class="green">LAG Foundation Ltd</td>
+                <td class="green">Venture Capital fund Village Global</td>
+                <td class="red">Twitter</td>
+            </tr>
+            <tr>
+                <th>App collects customers' data?</th>
+                <td class="red">Yes <br /><br> (Difficult to assess given the app is integrated into Google's greater ecosystem)</td>
+                <td class="red">Yes <br /><br> (Difficult to assess given the app is integrated into Apple's greater ecosystem)</td>
+                <td class="red">Health & fitness / purchases / financial info / location / contact info / contacts / user content / search history / browsing history / identifiers / usage data / sensitive info / diagnostics / other data</td>
+                <td class="red">Contact info / contacts / identifiers / diagnostics / user content<br /><br> (Contact info not sent when using anonymously)</td>
+                <td class="yellow">Contact Info</td>
+                <td class="red">Contact info / contacts / identifiers</td>
+                <td class="yellow">Contact info / identifiers / diagnostics<br /><br>(Contact info not sent when using anonymously)</td>
+                <td class="red">Location / identifiers / purchases / location / contact info / contacts / identifiers / usage data / user content / usage data / diagnostics</td>
+                <td class="red">Purchases / financial info / location / contact info / contacts / user content / identifiers / usage data / diagnostics</td>
+                <td class="yellow">Contact info / identifiers / diagnostics<br /><br>(Contact info not sent when using anonymously)</td>
+                <td class="yellow">Contact info / identifiers / usage data / diagnostics</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Purchases / Location / Contact Info / Contacts / User Content / Search History / Browsing History / Identifiers / Usage Data / Diagnostics</td>
+            </tr>
+            <tr>
+                <th>User data and/or metadata sent to parent company and/or third parties?</th>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="green">No<br /><br> (User data is sent to a third party if a payment is made)</td>
+                <td class="yellow">Minimal<br /><br> (Mandatory mobile number sent to third party for registration & recovery)</td>
+                <td class="red">Yes</td>
+                <td class="yellow">No<br /><br> (Optional mobile number sent to third party for registration)</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="yellow">No<br /><br> (Optional mobile number sent to third party for registration)</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+            </tr>
+            <tr>
+                <th>Is encryption turned on by default?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes (if device supports it)</td>
+                <td class="green">Yes (if device supports it)</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Cryptographic primitives</th>
+                <td class="yellow">Curve25519 / AES-256 / HMAC-SHA256</td>
+                <td class="green">P-256 ECDH & Kyber-768/1024 / AES-256 / HMAC-SHA384</td>
+                <td class="yellow">Curve25519 / AES-256 / HMAC-SHA256</td>
+                <td class="yellow">Curve25519 / AES-256 / HMAC-SHA256</td>
+                <td class="green">Curve25519 & Kyber-1024 / AES-256 / HMAC-SHA256/512</td>
+                <td class="yellow">RSA 2048 / AES 256 / SHA-256</td>
+                <td class="yellow">Curve25519 256 / XSalsa20 256 / Poly1305-AES 128</td>
+                <td class="yellow">Curve25519 256 / Salsa20 128 / HMAC-SHA256</td>
+                <td class="yellow">Curve25519 / AES-256 / HMAC-SHA256</td>
+                <td class="yellow">ECDH512 / AES-256 / HMAC-SHA256</td>
+                <td class="yellow">Curve25519 / ChaCha20 / HMAC-SHA256</td>
+                <td class="green">X25519 / XSalsa20 256 / Poly1305</td>
+                <td class="green">Curve25519 & sntrup761 1158 / XSalsa20 256 / Poly1305</td>
+                <td class=""></td>
+            </tr>
+            <tr>
+                <th>Are the app and server completely open source?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes (clients Element / Riot, server/API matrix.org)</td>
+                <td class="green">Yes</td>
+                <td class="yellow">No (clients and API only)</td>
+                <td class="yellow">No (apps only)</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Are reproducible builds used to verify apps against source code?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="yellow">Android only</td>
+                <td class="green">iOS and Android</td>
+                <td class="yellow">Android only</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Can you sign up to the app anonymously?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Can you add a contact without needing to trust a directory server?</th>
+                <td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">no</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Can you manually verify contacts' fingerprints?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No (session only, does not provide users' fingerprint information)</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+            </tr>
+            <tr>
+                <th>Directory service could be modified to enable a MITM attack?</th>
+                <td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+            </tr>
+            <tr>
+                <th>Do you get notified if a contact's fingerprint changes?</th>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No (session only, does not provide users' fingerprint information)</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No (setting turned off by default)</td>
+                <td class="green">Yes</td>
+                <td class="yellow">If contact was previously verified</td>
+                <td class="white">N/A</td>
+                <td class="white">N/A</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Is personal information (mobile number, contact list, etc.) hashed?</th>
+                <td class="white">N/A, Google Messages uses RCS, which doesn't use a directory service</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="yellow">Mostly</td>
+                <td class="red">No (session only, does not provide users' fingerprint information)</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="red">No (setting turned off by default)</td>
+                <td class="green">Yes</td>
+                <td class="yellow">Mostly</td>
+                <td class="white">N/A</td>
+                <td class="white">N/A</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app generate & keep a private key on the device itself?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Can messages be read by the company?</th>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app enforce perfect forward secrecy?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No (session keys do change after being used 100 times)</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app encrypt metadata?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="yellow">Mostly</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app use TLS/Noise to encrypt network traffic?</th>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+            </tr>
+            <tr>
+                <th>Does the app use certificate pinning?</th>
+                <td class="white"></td>
+                <td class="green">Yes (>=iOS 9.3)</td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app encrypt data on the device? (iOS and Android only)</th>
+                <td class="red">No</td>
+                <td class="green">Yes (if passphrase enabled)</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="green">Yes (if passphrase enabled)</td>
+                <td class="white"></td>
+                <td class="green">iOS: Yes (if passphrase enabled); Android: Yes (if master key set in the app)s</td>
+                <td class="white"></td>
+                <td class="white"></td>
+                <td class="green">iOS: Yes (if passphrase enabled); Android: Yes (unsure of function)</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the app allow local authentication when opening it?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Are messages encrypted when backed up to the cloud?</th>
+                <td class="green">Yes (>= Android P)</td>
+                <td class="red">Yes</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="white">N/A, Signal is excluded from iCloud/iTunes & Android backups</td>
+                <td class="white"></td>
+                <td class="green">Yes</td>
+                <td class="white"></td>
+                <td class="green">iOS: Yes / Android: Yes</td>
+                <td class="white">N/A, Wickr is excluded from iCloud/iTunes & Android backups</td>
+                <td class="white">N/A, Wire is excluded from iCloud/iTunes & Android backups</td>
+                <td class="white">N/A, Session is excluded from iCloud/iTunes & Android backups</td>
+                <td class="white"></td>
+                <td class="white"></td>
+            </tr>
+            <tr>
+                <th>Does the company log timestamps/IP addresses?</th>
+                <td class="white"></td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="white"></td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+                <td class="red">Yes</td>
+                <td class="green">No</td>
+                <td class="yellow">Some</td>
+                <td class="green">No</td>
+                <td class="green">No</td>
+                <td class="red">Yes</td>
+            </tr>
+            <tr>
+                <th>Have there been a recent code audit and an independent security analysis?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="red">No (Matrix's encryption library reviewed by an independent party)</td>
+                <td class="green">Yes (<a href="https://community.signalusers.org/t/overview-of-third-party-security-audits/13243">many in the last few years</a>)</td>
+                <td class="green">Yes (November, 2015)</td>
+                <td class="green">Yes (October, 2020)</td>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes (August, 2014)</td>
+                <td class="green">Yes (March, 2018)</td>
+                <td class="green">Yes (April, 2021)</td>
+                <td class="green">Yes (November, 2022)</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Is the design well documented?</th>
+                <td class="red">No</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="yellow">Somewhat</td>
+                <td class="red">No</td>
+            </tr>
+            <tr>
+                <th>Does the app have self-destructing messages?</th>
+                <td class="red">No</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="red">No</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+                <td class="green">Yes</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="darkgrey sticky"></th>
+                <td class="darkgrey" colspan="14" style="text-align: left;">
+                    Source code: <a href="https://codeberg.org/kuketzblog/www.messenger-matrix.de">Mike Kuketz</a>
+                     | 
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>
+                     | 
+                    <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1">
+                    <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1">
+                    <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1">
+                    <img style="height:26px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1">
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</div>
 
 <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
     <div class="modal-dialog">
