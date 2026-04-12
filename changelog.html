@@ -643,6 +643,36 @@
     <td>Added official Google documentation links to the Google Messages column</td>
     <td>Links to official Google support pages added to 11 cells to support claims</td>
 </tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Infrastructure jurisdiction" for Apple iMessage from "USA (Ireland and Denmark planned); iMessage runs on AWS and Google Cloud" to "USA, Ireland, Denmark; iMessage uses AWS and Google Cloud for storage"</td>
+    <td>Apple's Ireland and Denmark data centers are now operational (were previously "planned")</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Cryptographic primitives" for Apple iMessage from "P-256 ECDH &amp; Kyber-768/1024 / AES-256 / HMAC-SHA384" to "P-256 ECDH &amp; Kyber-1024 / AES-256 CTR / HKDF-SHA384"</td>
+    <td>Per Apple's PQ3 blog and Stebila's formal analysis, PQ3 uses Kyber-1024 (not 768), AES-256 in CTR mode, and HKDF-SHA384</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Changed "Does the app allow local authentication when opening it?" for Apple iMessage from "No" to "Yes (iOS 18+)"</td>
+    <td>iOS 18 added system-wide app locking with Face ID/Touch ID/passcode which works on the Messages app</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Are messages encrypted when backed up to the cloud?" for Apple iMessage from "Yes" (red) to "Yes, but backup key is escrowed by Apple unless Advanced Data Protection is enabled" (yellow)</td>
+    <td>Clarifies that iCloud Backup is only fully end-to-end encrypted when the opt-in Advanced Data Protection feature (released December 2022) is enabled</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Changed "Have there been a recent code audit and an independent security analysis?" for Apple iMessage from "No" to "Yes" with references to Stebila (2024) and Linker/Basin/Sasse USENIX Security 2025 formal analyses of PQ3</td>
+    <td>Multiple independent formal verifications of Apple's PQ3 protocol have been published since the last update</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added official Apple documentation links to the Apple iMessage column</td>
+    <td>Links to official Apple support pages, security blog, and legal process guidelines added to 11 cells to support claims</td>
+</tr>
 
 
          </tbody>
