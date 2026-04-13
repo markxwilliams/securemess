@@ -755,6 +755,41 @@
 </tr>
 
 
+<tr>
+    <td>04/26</td>
+    <td>Renamed Twitter column to "X" and updated header link from twitter.com to x.com</td>
+    <td>Twitter rebranded to X in July 2023</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Funding" for X from "Twitter" to "X Corp. (subsidiary of xAI Holdings Corp., Elon Musk)"</td>
+    <td>X Corp. merged into xAI in an all-stock deal on 28 March 2025, creating xAI Holdings Corp. (source: Sullivan &amp; Cromwell transaction highlight)</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Infrastructure jurisdiction" for X from "USA, worldwide (unsure of other locations)" to "USA (Portland, OR and Atlanta, GA on-prem; GCP and AWS US regions)"</td>
+    <td>X vacated its Sacramento data centre in 2022/2023; remaining on-prem infrastructure is in Portland, OR and Atlanta, GA; other traffic runs on GCP and AWS US regions</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Main reasons why the app isn't recommended" for X</td>
+    <td>Replaced stale text with XChat-specific weaknesses: no forward secrecy; private keys escrowed server-side via Juicebox behind a 4-digit PIN; no MITM protection (per X's own help page); group chats not E2EE; closed source; Twitter Files revealed compliance with government content suppression requests. Removed "no implementation details" and "no independent assessments" as both are now available via Matthew Green's June 2025 analysis and the Trail of Bits audit</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Filled in "Cryptographic primitives" for X: libsodium (X25519 / XSalsa20-Poly1305); Juicebox (threshold OPRF + secret-sharing) for key storage; no PFS</td>
+    <td>XChat's cryptographic stack documented in Matthew Green's June 2025 analysis</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Filled in 5 previously-empty cells for X: "Do you get notified if a contact's fingerprint changes?" (No); "Does the app generate &amp; keep a private key on the device itself?" (No, escrowed via Juicebox); "Can messages be read by the company?" (Yes); "Does the app enforce perfect forward secrecy?" (No); "Does the app encrypt metadata?" (No)</td>
+    <td>XChat now provides sufficient published detail to assess these rows; sources: Matthew Green's June 2025 analysis and X's help page for Chat, which explicitly states no MITM protection and that message metadata is not encrypted</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added official X documentation links to the X column</td>
+    <td>Links to transparency.x.com, help.x.com/en/using-x/about-chat, and x.com/en/privacy added to "Does the company provide a transparency report?", "Can you manually verify contacts' fingerprints?", "App collects customers' data?", "Does the company log timestamps/IP addresses?", and "Does the app have self-destructing messages?" cells</td>
+</tr>
          </tbody>
 </table>
     </div>
