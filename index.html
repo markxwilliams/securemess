@@ -118,7 +118,7 @@
                 <td class="green">Further limit metadata storage and logging<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
                 <td class="green">Implement perfect forward secrecy at the end-to-end encryption layer<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
                 <td class="green">Provide more comprehensive independent assessments of security/privacy</td>
-                <td class="red">End-to-end encryption not implemented for all users and group chats<br /><br />No implementation details<br /><br />No comprehensive independent assessments of security/privacy<br /><br />Closed source</td>
+                <td class="red"><a href="https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/">XChat E2EE has no forward secrecy</a>; private keys stored on X servers protected only by a 4-digit PIN (Juicebox); <a href="https://help.x.com/en/using-x/about-chat">X's own help page admits no MITM protection</a>; group chats not E2EE; closed source; Twitter Files revealed compliance with government content suppression requests</td>
             </tr>
             <tr>
                 <th class="darkgrey sticky">Details</th>
@@ -156,7 +156,7 @@
                 <td class="red">Messages: Worldwide (uses de-centralised servers)<br /><br />Attachments: Centralised server in Canada</td>
                 <td class="red">Worldwide (uses de-centralised servers)</td>
                 <td class="red">Worldwide (uses de-centralised servers)</td>
-                <td class="red">USA, worldwide (unsure of other locations)</td>
+                <td class="red">USA (Portland, OR and Atlanta, GA on-prem; GCP and AWS US regions)</td>
             </tr>
             <tr>
                 <th>Implicated in giving customers' data to intelligence agencies?</th>
@@ -258,7 +258,7 @@
                 <td class="red">Janus Friis <br /><br> Iconical <br /><br> Zeta Holdings Luxembourg <br /><br>Morpheus Ventures</td>
                 <td class="green">LAG Foundation Ltd</td>
                 <td class="green">Venture Capital fund Village Global</td>
-                <td class="red">Twitter</td>
+                <td class="red"><a href="https://www.sullcrom.com/About/News-and-Events/Highlights/2025/March/xAI-X-Merge-113-Billion-Transaction">X Corp. (subsidiary of xAI Holdings Corp., Elon Musk)</a></td>
             </tr>
             <tr>
                 <th>App collects customers' data?</th>
@@ -326,7 +326,7 @@
                 <td class="yellow">Curve25519 / ChaCha20 / HMAC-SHA256</td>
                 <td class="green">X25519 / XSalsa20 256 / Poly1305</td>
                 <td class="green">Curve25519 & sntrup761 1158 / XSalsa20 256 / Poly1305</td>
-                <td class=""></td>
+                <td class="red"><a href="https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/">libsodium (X25519 / XSalsa20-Poly1305); Juicebox (threshold OPRF + secret-sharing) for key storage; no PFS</a></td>
             </tr>
             <tr>
                 <th>Are the app and server completely open source?</th>
@@ -683,7 +683,7 @@
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="green">Yes</td>
+                <td class="green"><a href="https://help.x.com/en/using-x/about-chat">Yes</a></td>
             </tr>
         </tbody>
         <tfoot>
