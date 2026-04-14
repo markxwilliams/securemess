@@ -78,7 +78,7 @@
                 <th style="text-align: center;">Wire<br><br><a href="https://wire.com/"><img src="/logos/wire.png" alt="Wire" width="64" height="64"></a></th>
                 <th style="text-align: center;">Session<br><br><a href="https://getsession.org/"><img src="/logos/session.png" alt="Session" width="64" height="64"></a></th>
                 <th style="text-align: center;">SimpleX<br><br><a href="https://simplex.chat/"><img src="/logos/simplex.png" alt="SimpleX" width="64" height="64"></a></th>
-                <th style="text-align: center;">Twitter<br><br><a href="https://twitter.com/"><img src="/logos/twitter.png" alt="Twitter" width="64" height="64"></a></th>
+                <th style="text-align: center;">X<br><br><a href="https://x.com/"><img src="/logos/twitter.png" alt="X" width="64" height="64"></a></th>
             </tr>
         </thead>
         <tbody>
@@ -118,7 +118,7 @@
                 <td class="green">Further limit metadata storage and logging<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
                 <td class="green">Implement perfect forward secrecy at the end-to-end encryption layer<br /><br />Provide more comprehensive independent assessments of security/privacy</td>
                 <td class="green">Provide more comprehensive independent assessments of security/privacy</td>
-                <td class="red">End-to-end encryption not implemented for all users and group chats<br /><br />No implementation details<br /><br />No comprehensive independent assessments of security/privacy<br /><br />Closed source</td>
+                <td class="red">Encryption keys stored by X<br /><br />Data not protected, not all data protected<br /><br />No independent &amp; recent code audit and security analysis<br /><br />Closed source</td>
             </tr>
             <tr>
                 <th class="darkgrey sticky">Details</th>
@@ -156,7 +156,7 @@
                 <td class="red">Messages: Worldwide (uses de-centralised servers)<br /><br />Attachments: Centralised server in Canada</td>
                 <td class="red">Worldwide (uses de-centralised servers)</td>
                 <td class="red">Worldwide (uses de-centralised servers)</td>
-                <td class="red">USA, worldwide (unsure of other locations)</td>
+                <td class="red">USA (Portland, OR and Atlanta, GA on-prem; GCP and AWS US regions)</td>
             </tr>
             <tr>
                 <th>Implicated in giving customers' data to intelligence agencies?</th>
@@ -207,7 +207,7 @@
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="green">Yes</td>
+                <td class="green"><a href="https://transparency.x.com/en">Yes</a></td>
             </tr>
             <tr>
                 <th>Company's general stance on customers' privacy</th>
@@ -258,7 +258,7 @@
                 <td class="red">Janus Friis <br /><br> Iconical <br /><br> Zeta Holdings Luxembourg <br /><br>Morpheus Ventures</td>
                 <td class="green">LAG Foundation Ltd</td>
                 <td class="green">Venture Capital fund Village Global</td>
-                <td class="red">Twitter</td>
+                <td class="red"><a href="https://www.sullcrom.com/About/News-and-Events/Highlights/2025/March/xAI-X-Merge-113-Billion-Transaction">X Corp. (subsidiary of xAI Holdings Corp., Elon Musk)</a></td>
             </tr>
             <tr>
                 <th>App collects customers' data?</th>
@@ -275,7 +275,7 @@
                 <td class="yellow">Contact info / identifiers / usage data / diagnostics</td>
                 <td class="green">No</td>
                 <td class="green">No</td>
-                <td class="red">Purchases / Location / Contact Info / Contacts / User Content / Search History / Browsing History / Identifiers / Usage Data / Diagnostics</td>
+                <td class="red"><a href="https://x.com/en/privacy">Purchases / Location / Contact Info / Contacts / User Content / Search History / Browsing History / Identifiers / Usage Data / Diagnostics</a></td>
             </tr>
             <tr>
                 <th>User data and/or metadata sent to parent company and/or third parties?</th>
@@ -326,7 +326,7 @@
                 <td class="yellow">Curve25519 / ChaCha20 / HMAC-SHA256</td>
                 <td class="green">X25519 / XSalsa20 256 / Poly1305</td>
                 <td class="green">Curve25519 & sntrup761 1158 / XSalsa20 256 / Poly1305</td>
-                <td class=""></td>
+                <td class="red"><a href="https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/">libsodium (X25519 / XSalsa20-Poly1305); Juicebox (threshold OPRF + secret-sharing) for key storage; no PFS</a></td>
             </tr>
             <tr>
                 <th>Are the app and server completely open source?</th>
@@ -411,7 +411,7 @@
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="green">Yes</td>
+                <td class="green"><a href="https://help.x.com/en/using-x/about-chat">Yes</a></td>
             </tr>
             <tr>
                 <th>Directory service could be modified to enable a MITM attack?</th>
@@ -445,7 +445,7 @@
                 <td class="yellow">If contact was previously verified</td>
                 <td class="white">N/A</td>
                 <td class="white">N/A</td>
-                <td class="white"></td>
+                <td class="red">No</td>
             </tr>
             <tr>
                 <th>Is personal information (mobile number, contact list, etc.) hashed?</th>
@@ -479,7 +479,7 @@
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="white"></td>
+                <td class="red"><a href="https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/">No (escrowed via Juicebox)</a></td>
             </tr>
             <tr>
                 <th>Can messages be read by the company?</th>
@@ -496,7 +496,7 @@
                 <td class="green">No</td>
                 <td class="green">No</td>
                 <td class="green">No</td>
-                <td class="white"></td>
+                <td class="red"><a href="https://help.x.com/en/using-x/about-chat">Yes</a></td>
             </tr>
             <tr>
                 <th>Does the app enforce perfect forward secrecy?</th>
@@ -513,7 +513,7 @@
                 <td class="green">Yes</td>
                 <td class="red">No</td>
                 <td class="green">Yes</td>
-                <td class="white"></td>
+                <td class="red"><a href="https://blog.cryptographyengineering.com/2025/06/09/a-bit-more-on-twitter-xs-new-encrypted-messaging/">No</a></td>
             </tr>
             <tr>
                 <th>Does the app encrypt metadata?</th>
@@ -530,7 +530,7 @@
                 <td class="yellow">Mostly</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="white"></td>
+                <td class="red"><a href="https://help.x.com/en/using-x/about-chat">No</a></td>
             </tr>
             <tr>
                 <th>Does the app use TLS/Noise to encrypt network traffic?</th>
@@ -632,7 +632,7 @@
                 <td class="yellow">Some</td>
                 <td class="green">No</td>
                 <td class="green">No</td>
-                <td class="red">Yes</td>
+                <td class="red"><a href="https://x.com/en/privacy">Yes</a></td>
             </tr>
             <tr>
                 <th>Have there been a recent code audit and an independent security analysis?</th>
@@ -683,7 +683,7 @@
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
                 <td class="green">Yes</td>
-                <td class="green">Yes</td>
+                <td class="green"><a href="https://help.x.com/en/using-x/about-chat">Yes</a></td>
             </tr>
         </tbody>
         <tfoot>
