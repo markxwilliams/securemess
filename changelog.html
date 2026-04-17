@@ -880,6 +880,106 @@
     <td>Updated "Have there been a recent code audit and an independent security analysis?" for Wire from "Yes (March, 2018)" to include both Phase 1 (Kudelski Security &amp; X41 D-Sec, February 2017) and Phase 2 (X41 D-Sec, March 2018) audits with links</td>
     <td>Phase 1 covered the Proteus/Cryptobox protocol; Phase 2 covered application-level security (iOS/Android/Web); both audits now linked directly</td>
 </tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Company jurisdiction" for Telegram from "USA / UK / Belize / UAE" to "BVI / UAE" and linked to the privacy policy</td>
+    <td>Per telegram.org/privacy#8-2-telegrams-group-companies, the only group companies listed are Telegram Group Inc (BVI, parent), Telegraph Inc (BVI), and Telegram FZ-LLC (Dubai/UAE); neither USA, UK, nor Belize appear in §8.2</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Infrastructure jurisdiction" for Telegram from "UK, Singapore, USA, and Finland" to "USA (Miami), Netherlands (Amsterdam), Singapore" with link to the documented DC map</td>
+    <td>Per the PyroTGFork FAQ, Telegram's data centers are DC1/DC3 in Miami (USA), DC2/DC4 in Amsterdam (Netherlands), and DC5 in Singapore; UK and Finland are not part of the current DC map</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Changed "Does the company provide a transparency report?" for Telegram from "No" to "Minimal" with link to the @transparency channel</td>
+    <td>Telegram publishes limited disclosure statistics via the official t.me/transparency channel</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added FAQ link to "Funding" for Telegram</td>
+    <td>Links to telegram.org/faq#q-who-pays-for-all-this which confirms Pavel Durov as the funder</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added privacy policy link to "App collects customers' data?" for Telegram</td>
+    <td>Links to telegram.org/privacy</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added privacy policy link to "User data and/or metadata sent to parent company and/or third parties?" for Telegram</td>
+    <td>Links to telegram.org/privacy</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added Secret Chats FAQ link to "Is encryption turned on by default?" for Telegram</td>
+    <td>Links to telegram.org/faq#q-how-are-secret-chats-different which documents that end-to-end encryption is only on in opt-in Secret Chats</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added MTProto spec link to "Cryptographic primitives" for Telegram</td>
+    <td>Links to core.telegram.org/mtproto which documents the RSA 2048 / AES-256 / SHA-256 stack</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added source link to "Are the app and server completely open source?" for Telegram</td>
+    <td>Links to telegram.org/apps which enumerates the official clients and their source repositories</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added reproducible-builds documentation link to "Are reproducible builds used to verify apps against source code?" for Telegram</td>
+    <td>Links to core.telegram.org/reproducible-builds</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Fixed "Can you manually verify contacts' fingerprints?" for Telegram from "No (session only, does not provide users' fingerprint information)" to "Yes (Secret Chats only)" with link</td>
+    <td>The previous cell was copy-pasted from Session; Telegram Secret Chats expose a key visualization documented at core.telegram.org/api/end-to-end#key-visualization</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Fixed "Do you get notified if a contact's fingerprint changes?" for Telegram from "No (session only, does not provide users' fingerprint information)" to "Yes (Secret Chats only)" with link</td>
+    <td>The previous cell was copy-pasted from Session; Telegram Secret Chats re-key every 100 messages or one week and surface a new visualization, documented at core.telegram.org/api/end-to-end/pfs</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Fixed "Is personal information (mobile number, contact list, etc.) hashed?" for Telegram from "No (session only, does not provide users' fingerprint information)" to "No"</td>
+    <td>The previous text was erroneously copy-pasted from Session; Telegram uploads contacts in plaintext for directory matching</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added end-to-end documentation link to "Does the app generate &amp; keep a private key on the device itself?" for Telegram</td>
+    <td>Links to core.telegram.org/api/end-to-end which documents key generation in Secret Chats</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added FAQ link to "Can messages be read by the company?" for Telegram</td>
+    <td>Links to telegram.org/faq#q-how-secure-is-telegram which explains the split between cloud chats and Secret Chats</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added PFS documentation link to "Does the app enforce perfect forward secrecy?" for Telegram</td>
+    <td>Links to core.telegram.org/api/end-to-end/pfs which documents the 100-message / one-week rekey in Secret Chats</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added MTProto link to "Does the app use TLS/Noise to encrypt network traffic?" for Telegram</td>
+    <td>Links to core.telegram.org/mtproto documenting the bespoke MTProto transport used in place of TLS/Noise</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added privacy policy link to "Does the company log timestamps/IP addresses?" for Telegram</td>
+    <td>Links to telegram.org/privacy</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Expanded "Have there been a recent code audit and an independent security analysis?" for Telegram to link four independent assessments of MTProto 2.0</td>
+    <td>Added Jakobsen &amp; Orlandi (eprint.iacr.org/2015/1177, 2015); Miculan &amp; Vitacolonna formal analysis (arxiv.org/abs/2012.03141, 2020); Albrecht et al., "Four Attacks and a Proof for Telegram" (Journal of Cryptology, 2025); and Matthew Green's 2024 analysis</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Added FAQ link to "Does the app have self-destructing messages?" for Telegram</td>
+    <td>Links to telegram.org/faq#q-how-do-self-destruct-timers-work</td>
+</tr>
          </tbody>
 </table>
     </div>
