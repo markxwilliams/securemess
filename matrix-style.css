@@ -234,7 +234,10 @@ color: #FFF; /* Text color */
 }
 @media all and (max-width: 1024px) {
 	tbody th:first-child {
-		position: static !important;
+		top: auto !important;
+	}
+	thead th:first-child {
+		z-index: 3;
 	}
 }
 @media all and (max-height: 667px) {
