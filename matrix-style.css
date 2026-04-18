@@ -234,10 +234,7 @@ color: #FFF; /* Text color */
 }
 @media all and (max-width: 1024px) {
 	tbody th:first-child {
-		position: static !important;
-	}
-	thead th:first-child {
-		left: auto;
+		top: auto !important;
 	}
 }
 @media all and (max-height: 667px) {
