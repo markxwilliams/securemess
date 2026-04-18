@@ -219,7 +219,7 @@ color: #FFF; /* Text color */
 		min-width: 130px;
 	}
 	tbody th:first-child {
-		position: static;
+		position: static !important;
 	}
 	thead a img {
 		height: auto;
