@@ -236,6 +236,9 @@ color: #FFF; /* Text color */
 	tbody th:first-child {
 		position: static !important;
 	}
+	thead th:first-child {
+		left: auto;
+	}
 }
 @media all and (max-height: 667px) {
 	/* FORM/FILTER BUTTON */
