@@ -1039,8 +1039,8 @@
 </tr>
 <tr>
     <td>04/26</td>
-    <td>Updated "Main reasons why the app isn't recommended" for Element X: replaced "No independent, recent code audit and security analysis" with "No transparency report" and "UK jurisdiction"</td>
-    <td>The code audit row is now Yes; the remaining reasons Element X is not recommended are absence of a transparency report and its UK legal jurisdiction</td>
+    <td>Updated "Main reasons why the app isn't recommended" for Element X: replaced "No independent, recent code audit and security analysis" with "No transparency report" and "Metadata not encrypted"</td>
+    <td>The code audit row is now Yes; the remaining reasons Element X is not recommended are absence of a transparency report and unencrypted room metadata</td>
 </tr>
 <tr>
     <td>04/26</td>
@@ -1051,6 +1051,16 @@
     <td>04/26</td>
     <td>Added official documentation links to the Element X column</td>
     <td>Links added to: company jurisdiction (element.io/en/about), infrastructure jurisdiction (matrix.org/ecosystem/servers/), privacy stance (element.io/en/legal/privacy), company data collection (element.io/en/legal/privacy), app data collection (element.io/en/legal/privacy), encryption by default (element.io/en/features/end-to-end-encryption), cryptographic primitives (spec.matrix.org/v1.17/olm-megolm/), open source (github.com/element-hq), anonymous signup (matrix.org/docs/matrix-concepts/end-to-end-encryption/), personal info hashing (spec.matrix.org/unstable/identity-service-api/), private key on device (spec.matrix.org/v1.17/olm-megolm/), messages readable (element.io/en/features/end-to-end-encryption), perfect forward secrecy (spec.matrix.org/v1.17/olm-megolm/), TLS encryption (spec.matrix.org/), cloud backup encryption (docs.element.io recovery key), design documentation (spec.matrix.org/) — 15 cells total</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Changed "Does the app encrypt metadata?" for Element X from blank to No (red)</td>
+    <td>Room metadata (names, topics, avatars, join rules, power levels) is stored as plaintext state events on the homeserver; only message content is E2E encrypted. MSC3414 proposes encrypting state events but is not yet shipped.</td>
+</tr>
+<tr>
+    <td>04/26</td>
+    <td>Updated "Main reasons why the app isn't recommended" for Element X: replaced "UK jurisdiction" with "Metadata not encrypted"</td>
+    <td>Unencrypted room metadata is a more direct security concern than jurisdiction alone</td>
 </tr>
          </tbody>
 </table>
